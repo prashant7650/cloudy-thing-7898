@@ -1,0 +1,483 @@
+* {
+    padding: 0%;
+    margin: 0%;
+
+}
+
+#signIn_signUp>p {
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid;
+    padding: 5px;
+    color: white;
+    background-color: rgb(22,123,147);
+    cursor: pointer;
+    font-family: sans-serif;
+
+}
+
+#signIn_signUp {
+    font-family: sans-serif;
+    letter-spacing: 0.06rem;
+}
+
+#signIn_signUp>i {
+    margin-top: 12px;
+}
+
+#navbar {
+
+    border-top: 1px solid rgb(163, 163, 163);
+    height: 60px;
+    /* display: flex; */
+    border-bottom: 1px solid rgb(163, 163, 163);
+    /* justify-content: center;
+    align-content: center; */
+    background-color: white;
+}
+
+#inner {
+    width: 90%;
+    height: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    position: relative;
+    z-index: 1;
+}
+
+#inner>ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-position a:hover{
+    text-decoration: none;
+    color: rgb(0, 170, 255);
+    text-decoration: underline;
+}
+#inner>ul>li {
+
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 0.88rem;
+    line-height: 1.0;
+    letter-spacing: 0.06rem;
+    line-height: 15px;
+}
+
+
+li>div {
+    height: 100%;
+    /* border: 1px solid; */
+    font-family: "Avenir Medium", sans-serif;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.submenu {
+    display: none;
+}
+
+#inner ul li div:hover .submenu {
+    display: flex;
+    position: absolute;
+    margin-top: 5px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.823);
+    opacity: 0.97;
+    z-index: 1;
+}
+
+/* .submenu {
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    /* border: 1px solid; */
+
+
+.submenu-1 {
+    /* margin-right: 20px; */
+    /* display: flex; */
+    padding-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: white;
+
+}
+
+.listDiv>ul {
+    display: block;
+    margin: 10px 0px;
+    margin-right: 50px;
+}
+
+.listDiv ul li {
+    display: block;
+    margin: 10px;
+}
+
+.submenu-2 {
+    display: flex;
+}
+
+.submenu-1>div {
+    margin-left: 10px;
+    margin-bottom: 20px;
+
+}
+
+.submenu-1 img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+hr {
+    color: rgb(197, 197, 197);
+}
+h1+hr {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    color: rgb(168, 167, 167);
+}
+
+hr+p {
+    width: 80%;
+    margin: auto;
+}
+
+input+p {
+    margin-top: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.companyLogo_searchBar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#comapnyLogo {
+    display: flex;
+    /* border: 1px solid; */
+    /* align-items: center; */
+    margin-left: 30px;
+}
+
+#comapnyLogo>div:first-child {
+    /* margin-right: 20px; */
+    cursor: pointer;
+    /* height: 100%; */
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid; */
+    border-top: 5px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+#comapnyLogo>div:last-child {
+    cursor: pointer;
+    opacity: 0.4;
+    /* height: 100%; */
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid; */
+    /* border-top: 5px solid; */
+    /* border-left: 1px solid grey; */
+    border-right: 1px solid grey;
+}
+
+#comapnyLogo>div:last-child:hover {
+    opacity: 1;
+}
+
+#searchBar_cart {
+    width: 30%;
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+    /* border: 1px solid; */
+
+}
+
+#searchBar {
+    width: 70%;
+    /* height: 50px; */
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-right: 20px;
+    /* justify-content: space-between; */
+}
+
+#searchBar img {
+    /* height: 40px; */
+    opacity: 0.7;
+    cursor: pointer;
+
+}
+
+.search {
+    width: 100%;
+    height: 35px;
+    font-size: 1.1rem;
+    border: 1px solid;
+    padding: 0px 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-bottom: 20px;
+    /* border-radius: 10px;       */
+}
+#signIn_signUp>button{
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#searchBar>button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#cart img {
+    height: 40px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#signIn_signUp {
+    height: 40px;
+    display: flex;
+    justify-content: end;
+
+    /* margin-right: 100px; */
+    background-color: #f7f6f2;
+    color: rgb(0, 208, 255);
+}
+
+#signIn_signUp button {
+    margin-right: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-color: transparent;
+    letter-spacing: inherit;
+    color: rgb(100, 179, 195);
+
+}
+
+#forSticky {
+    position: sticky;
+    top: 0px;
+}
+
+.bg_modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* opacity: 0.3; */
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: fixed;
+    z-index: 8000;
+}
+
+.div_content {
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+
+
+.bg_modal_creat {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* opacity: 0.3; */
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: fixed;
+    z-index: 8000;
+}
+
+.div_content_creat {
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.div_content>h1 {
+    margin-bottom: 10px;
+}
+
+#signinform input {
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    width: 80%;
+}
+
+.submitButton {
+    width: 80%;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    right: 14px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.mobileNumber {
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+#signUp_tag {
+    margin: 10px 0px;
+}
+
+#signUp {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/* creat account */
+
+
+
+
+.div_content_creat>h1 {
+    margin-bottom: 10px;
+}
+
+#nav-position input {
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    width: 80%;
+}
+#searchBar>input{
+    margin-bottom: 18px;
+    margin-left: 20px;
+    font-size: 15px;
+    
+}
+#searchBar>input::placeholder{
+    color: rgb(115, 170, 181);
+}
+.submitButton_creat {
+    width: 80%;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.submitButton_creat:hover {
+    background-color: white;
+    color: black;
+}
+
+.close_creat {
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    right: 14px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.mobileNumber_creat {
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+#btnlog {
+    margin-top: 20px;
+
+}
+#cart{
+    cursor: pointer;
+    /* border: 1px solid; */
+}
+
+#for-bg-modal-css{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#nav-position{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    margin-bottom: 15px;
+}
+
+#cart{
+    cursor: pointer;
+    /* border: 1px solid; */
+    display: flex;
+    /* border: 1px solid; */
+    position: relative;
+}
+#onnavbar{
+    display: none;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    height: 20px;
+    width: 20px;
+    padding-left: 5px;
+    background-color: rgb(22,123,147);
+    opacity: 0.8;
+    position:absolute;
+    border-radius: 10px;
+    right: -3px;
+}
