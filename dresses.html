@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dresses</title>
+    <style>
+    #container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+   
+
+    }
+    #container>div>img{
+    width: 100%;
+    height: 50%;
+    }
+    #container>div{
+    height: 500px;
+    text-align: center;
+    box-shadow: rgba(7, 7, 7, 0.35) 0px 5px 15px;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="index.html"><button>Home page</button></a>
+     </div>
+     <div id="container"></div>
+
+    
+</body>
+</html>
+
+<script>
+let item=[
+    {
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_014_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Maxi Dress",
+    price: "",
+    productID: "",
+    catagory: "Home",
+    img: [],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130647160057_031_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "Robin Tiered Mini Dress",
+    price: "498.00",
+    productID: "Garden1",
+    catagory: "Home",
+    img: ['url("data:image/jpeg;base64,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")'],
+  },
+    {
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130264840011_040_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Mini Dress",
+    price: "998.00",
+    productID: "Garden2",
+    catagory: "Home",
+    img: ['url( "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhMVFRUVFRcXFxcVGBgXFRcVFRUXFxcVFRcYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDg0NDysZFRktLSsrKysrLTc3KzcrLSstLSsrNzctNzc3Ny0tNys3Ny0rLS03KzctNzc3LSstLS03Lf/AABEIAOEA4QMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQIH/8QAJhABAQEAAAQFBAMAAAAAAAAAAAERAiFh8BIxQVHBobHR8XGBkf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAwDAQACEQMRAD8A4xUWswYW1FQADAWJSUoC2CWgGkQVQhRCotQUWJQFol5KChgICWqCYqwsA0hhAAAZUAEXUBFABQgJQAEUFABChxIKVYaCBBRVgiiCYlUFhQtAIYaC6JoCIqApq1AQKaApDQECgYSJgK0gtEShUFXFzkhoi1BYBKLEAA0BUAWgoJy7xVz+VBjWVKCoGghgUACAIpQRUUUioAUC0C0iaoAoIAUEpi4mAukiyACpFnfUDl7KxgAUxAUNUGSKgEhhpgLqUAII1ATWqyaBUa1BUUURFSLQBqM2gBpQFtSKBpI14WbQPFVTw98gCVMIlgCpFoIACKmLBSglAVNWAUJFETEqpAWAsAioQCwq1KCQFAxYmkoNaza1EoM6LnfdUEiWLCgiosoEqGoAqasAWxNWgkiyJiwFgJQNKyoGrEIiqsQVFSwpgBUUBUqwFiLYmUDRM6BQOI0AkVmLoJErTNgKQ0gLogAGgLAhQQACVeogNWVDVAQAEq4AjUTAFMWRATA5e8/wBBSggQBcRUBMa1MMBZCoUEWVK1KKRcSAhai4YCSkMXAXRCAst79wsQE0qgCxAFpUiwEDb1ARUAAAVKUBFCAJY0gIsMBVEURLVnpzzvpzSgEqxmNQDFiAGi1nAUpIUANICwlQBc6CAItEAVMXAKi4gIpSUFQ0BFRoDCqmAgACxJFwDVSRQQEwAUgEAwFkTdFBBrwzv9gM6hpoFAwFRalAtEigaULQTGozjUFDUgIigKpiRbRFEUBDV0GYoAtJTixICxKqAb3qpgCUtCAKEAqKUEtEqyAtiU0tBMaiasASqgGgABFAVFAiKgAAKkVMBdSqkgKADOCFBYBAWoqACYCgqALEaBIUKIYimCmqkBFppFoIGAFNAAFARZUwDev3ABEvygDUJ39ABq/n7s8XoAF+EnkANRADCr6gBxJQBanuALPwABPT+1ACpxACcPy1PKgKxFAFvkkARQBX/9k=")',
+    'url( "https://images.urbndata.com/is/image/Anthropologie/45246403AA_047_s?fit=constrain&hei=56&qlt=75")'],
+  },
+    {
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130578570014_066_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Mini Dress: Linen Edition",
+    price: "1198.00",
+    productID: "Garden3",
+    catagory: "Home",
+    img: ['url("ddata:image/jpeg;base64,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")'],
+  },
+    {
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130728470001_034_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "Devotion Twins Embroidered Ella Tunic Dress",
+    price: "598.00",
+    productID: "Garden4",
+    catagory: "Newest",
+    img: ['url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUeADSQdkcVAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC")'],
+  },
+    {
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130647160137_069_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "By Anthropologie Tiered Maxi Dress",
+    price: "36.00",
+    productID: "Garden5",
+    catagory: "Bestselling",
+    img: ['url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyI0YS268yf66pRHOjO3ASQ5eQI1Uuw5ZbKg&usqp=CAU")'],
+  },
+    {
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130370060072_083_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Maxi Dress",
+    price: "138.00",
+    productID: "Garden6",
+    catagory: "Bestselling",
+    img: ['url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyI0YS268yf66pRHOjO3ASQ5eQI1Uuw5ZbKg&usqp=CAU")'],
+  },
+    {
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130347470050_059_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "Geisha Designs Asymmetrical Hem Midi Dress",
+    price: "2198.00",
+    productID: "Garden7",
+    catagory: "Bestselling",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/66895517_014_s?fit=constrain&hei=56&qlt=75")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130578570018_009_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "By Anthropologie Printed Midi Dress",
+    price: "30.40",
+    productID: "Garden8",
+    catagory: "Bestselling",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/69655785_010_s?fit=constrain&hei=56&qlt=75")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130370060077_070_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "By Anthropologie Pleated Halter Midi Dress",
+    price: "54.40",
+    productID: "Garden9",
+    catagory: "Newest",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/66490830_018_s?fit=constrain&hei=56&qlt=75")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130370060076_095_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "By Anthropologie Halter Midi Dress",
+    price: "28.00",
+    productID: "Garden10",
+    catagory: "Newest",
+    img: ['url("data:image/png;base64,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")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130526830093_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "Black Halo One-Shoulder Mini Dress",
+    price: "898.00",
+    productID: "Garden11",
+    catagory: "Newest",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/67608109_010_s?fit=constrain&hei=56&qlt=75")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130578570013_014_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Maxi Dress: Linen Edition",
+    price: "114.00",
+    productID: "Garden12",
+    catagory: "Home",
+    img: ['url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130652010001_095_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "Elyse Bias Slip Dress",
+    price: "63.20",
+    productID: "Garden13",
+    catagory: "Home",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/55344436_073_s?fit=constrain&hei=56&qlt=75")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130370060074_079_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "By Anthropologie Twist-Front Midi Dress",
+    price: "46.40",
+    productID: "Garden15",
+    catagory: "Bestselling",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/66363441_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/66363441_095_s?fit=constrain&hei=56&qlt=75")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130348690173_066_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "By Anthropologie Off-The-Shoulder Linen Mini Dress",
+    price: "114.00",
+    productID: "Garden15",
+    catagory: "Bestselling",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/66363441_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_068_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Maxi Dress",
+    price: "98.00",
+    productID: "Garden16",
+    catagory: "Bestselling",
+    img: ['url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_066_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Maxi Dress",
+    price: "42.00",
+    productID: "Garden17",
+    catagory: "Bestselling",
+    img: ['url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw8PDw8VFRUVDxUPFRUPFRUPFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDg0NDisZFRkrKys3Ny0rKysrNysrNysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAMIBAwMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQcC/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDERFAQAAAAAAACigioIqooAioqCoAoCKogCiKACAACACgqKg5FRQAABQQAAAABBQBQgKACCCoIogCgCgAACgAiACgoIICKAAKmCgigKigCGKgKAgAACKAACCoIogqqAgACACgCooIoIAqIKIIAooCKiooCKgAAKIoAACoAqACCoIAAAAKigAAKgAAKAAgqKgAKAIAAAqAAAoigAAAAVKoCAKEFEQABFBQBUVA0AAAAUQBAVAAAFQAAAABBUBVAAEUAAAAAAAAAFBAADAAAARcFEFRAAAAAAAAEAAFQFUAAIAIoACAqoAAoIAqACKAAAAgoCACAAoAIAAAKACCiAqgAAAAAAAoiggCgAAqQQAFUwBEQVAABAAABQAQAAAFFEVFAAAAAAAAAVQRUQFQBagUABQRUQAFQAAAQAAABQAQVAVUUAAAAAVFBFEUUEQAAAAAAQBUAAAAAAAEAAUFRQARFEUUAAVFBFAEAUAAAAAEQQFAAAAABAAUAEBUUUAAAAAAABQAFQAAUQAAAQqRQEhQAUARYAJQAWEAABAAFIAotQEBYAJVACigEAUf/2Q==")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_011_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Maxi Dress",
+    price: "68.00",
+    productID: "Garden18",
+    catagory: "Bestselling",
+    img: ['url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_020_b3?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Maxi Dress",
+    price: "48.00",
+    productID: "Garden19",
+    catagory: "Home",
+    img: ['url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130728470001_015_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "Devotion Twins Embroidered Ella Tunic Dress",
+    price: "98.00",
+    productID: "Garden20",
+    catagory: "Home",
+    img: ['url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
+  },]
+
+
+    function displayCard(item){
+    document.querySelector("#container").innerHTML="";
+     item.forEach(elem => {
+
+    let div=document.createElement("div");
+
+    let imageProd = document.createElement("img");
+    imageProd.setAttribute("src",elem.image)
+
+    let name=document.createElement("p")
+    name.innerText=elem.name;
+
+    let title=document.createElement("p");
+    title.innerText=elem.price;
+
+    let cost=document.createElement("h3");
+    cost.innerText="RS"+" "+elem.cost
+
+    let btn=document.createElement("button");
+    btn.innerText="Add to card"
+
+    btn.addEventListener("click",function(){
+        cartItems.push(elem);
+        localStorage.setItem("cart_Products",JSON.stringify(men_item));
+    })
+    div.append(imageProd,name,title);
+
+    document.querySelector("#container").append(div);
+      
+  });
+ }
+ displayCard(item);
+</script>
