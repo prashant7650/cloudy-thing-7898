@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>footer</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    
+    #footer a{
+        text-decoration: none;
+    }
+    #footer{
+        margin-top: 30px;
+        position: static;
+        background-color: 
+        #f7f6f2 ;
+    }
+    .footerHelp{
+        list-style-type: none;
+    }
+    .footerHelp>li {
+        color: #555;
+        font-size: 13px;
+    }
+    
+    .footerHelp>li:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        zoom: 101%;
+    }
+    .footerHelp>a>li {
+        color: #555;
+        font-size: 13px;
+    }
+    
+    .footerHelp>a>li:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        zoom: 101%;
+    }
+    #help {
+        display: flex;
+        padding-left:100px;
+        padding-right: 100px;
+        justify-content: space-evenly;
+    }
+    #help>div {
+        width: 200px;
+        line-height: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #help>div>h3{
+        margin-bottom: 10px;
+    }
+    
+    #help>div>h3~div {
+        margin-left: 25px;
+        margin-bottom: 2px;
+    }
+    
+    #help>div>h3~div>a>img{
+        width: 100%;
+        border-radius: 10px;
+    
+    }
+    #help>div>div {
+        height: 40px;
+        width: 40px;
+    }
+    
+    #contactFooter{
+        margin-top: 50px;
+    }
+    #contactFooter>div:nth-child(1) {
+        width: 300px;
+        margin: auto;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #contactFooter>div:nth-child(1)>div:nth-child(1){
+        width: 100px;
+    }
+    
+    #contactFooter>div:nth-child(1)>div:nth-child(1):hover{
+        cursor: pointer;
+    }
+    
+    #contactFooter>div:nth-child(1)>div+div {
+        display: flex;
+    }
+    
+    #contactFooter>div:nth-child(1)>div+div>div {
+        width: 40px;
+        height: 40px;
+    }
+    #contactFooter>div:nth-child(1)>div+div>div>a>img {
+        width: 100%;
+    }
+    #contactFooter>div:nth-child(2){
+        width: 90%;
+        margin: 20px auto;
+        width: 90%;
+    }
+    #contactFooter>div:nth-child(2):hover {
+        cursor: pointer;
+    }
+    #contactFooter>div:nth-child(2)>img{
+        width: 100%;
+    }
+    #contactFooter>div:nth-child(3) {
+        width: 30%;
+        margin: auto;
+    }
+    .footerLaguage {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .footerLaguage>li {
+        color: #555;
+        font-size: 12px;
+        border-right: 1px solid #555;
+        padding-right: 10px;
+    }
+    
+    .footerLaguage>li:last-child {
+        border-right: 1px solid transparent;
+    }
+    
+    .footerLaguage>li:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        zoom: 101%;
+    }
+    #contactFooter>div:last-child{
+        justify-content: space-between;
+        display: flex;
+    }
+    #contactFooter>div:last-child>div {
+        margin-top: 30px;
+        width: 50%;
+    }
+    #contactFooter>div:last-child>div:first-child>.footerLaguage>li{
+        font-size: 10px;
+    }
+    #contactFooter>div:last-child>div:last-child>.footerLaguage{
+        font-size: 14px;
+        display: flex;
+        justify-content: right;
+    }
+    #emailcontainer{
+        display: flex;
+        justify-content: space-between;
+    }
+    #emailcontainer>div{
+        margin-left: 150px;
+    }
+    #emailcontainer>div>div{
+        margin-right: 150px;
+    }
+    #enter{
+        margin-top: 25px;
+        width: auto;
+        display: flex;
+        /* margin-right: 50px; */
+        /* width: 50px; */
+
+    }
+    </style>
+  </head>
+  <body>
+   
+    <div id="footer">
+                   <div id="emailcontainer">
+                    <div> <h1> Sign Up for Email</h1><br><p>Receive early access to new arrivals, sales, exclusive content, events and much more!</p></div>
+                    
+                    <h2>Email Address</h2>
+                    <div id="enter">
+                          <!-- <label for="email"><b>Email Address </b></label>                        -->
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                        <div>
+                    <button type="button" class="cancelbtn">Submit</button>
+                    </div>
+                   </div>
+                   </div>
+      <div id="help">
+        <div>
+          
+          <h3>help</h3>
+          <ul class="footerHelp">
+            <li>Track Your Order</li>
+            <li>Start A Return Or Exchange (US)</li>
+            <li>Return And Exchange</li>
+            <li>Shipping</li>
+            <li>Customer Service</li>
+            <li>Current Promotions</li>
+            <li>Product Recalls</li>
+          </ul>
+        </div>
+        <div>
+          <h3>About Us</h3>
+          <ul class="footerHelp">
+            <a href="ourStory.html"><li>Our Story</li></a>
+            <li>Events</li>
+            <li>A Greater Good</li>
+            <li>Diversity & Inclusion</li>
+            <li>Stories</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul class="footerHelp">
+            <li>AnthroPerks</li>
+            <li>Gift Cards</li>
+            <li>Trade Membership</li>
+            <li>Furniture: Guides & Services</li>
+            <li>Store Pickup & Collection Points</li>
+            <li>Klarna</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul class="footerHelp">
+            <a href="contact.html"><li>Contact Us</li></a>
+            <li>Stay Connected</li>
+            <li>Careers</li>
+            <li>Styling Services</li>
+            <li>Request A Catalog</li>
+          </ul>
+        </div>
+        <div>
+          <h3></h3>
+          <div>
+            <a href=""
+              ><img
+                src="https://cdn-icons-png.flaticon.com/128/2838/2838912.png"
+            /></a>
+          </div>
+          <div>
+            <a href=""
+              ><img
+                src="https://cdn-icons-png.flaticon.com/128/9327/9327236.png"
+            /></a>
+          </div>
+          <div>
+            <a href=""
+              ><img
+                src=""
+            /></a>
+          </div>
+          <div>
+            <a href=""
+              ><img
+                src=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div id="contactFooter">
+        <div>
+          <div>
+            <img
+              style="height: 100%"
+              src="https://images.ctfassets.net/5de70he6op10/4gWq1G4qLLgmqlNeHfzV2T/55298745127c36c5876f4013434c0c37/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917_Copy_2.svg"
+            />
+          </div>
+          <div>
+            <div>
+              <a href=""
+                ><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYRHI1E_Mh-Hpi4hqtCifpStom1SsyNniyLSIP6e8HU1HN6-lnJ31V&usqp=CAE&s"
+              /></a>
+            </div>
+            <div>
+              <a href=""
+                ><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAMAAACZHrEMAAAAY1BMVEX///8ArO0AqOwAqu0ApuwApOwAouv4/P7t9/3z+v6v3Pfj8vzY7fvd8Puq2vaJzPPP6vpEte+TzvQvsu633/iByPNiwPF1xvLC5PlnvvEur+6g1PXJ5vlPuO9ww/KX0/UAnOoO9ENTAAAEeElEQVR4nO2b2ZajIBCGIwXuS4j7lsz7P+WoSaa7EyNViNM3fHd9jtK/RfFTLDmdLBaLxWKxWCwWi8XyC3hB0oRpWMSB99tKiiwXgjPGuHDzMgx+T0pUdgycLwCgjlee84vDg+ZlwJxXGC/fopN2F2yTuqIb8S5lCY/bf38sSoFzbJtlqqelXpeyROf6DI6X1B1zGDYwEbhnDSne+FnLpKbz54fOvXTnx+5/IbhMT9PVBCNsaJnUyCGsHLhnNy+wzXZTJ3cRVcxmXBY4fz7CWmyrsZhTDtbG4wYb+fIG5Gjvydj9BZKahuO1OA6+6fYhHxK8Fr8jxIU/Gg4adbvy31vqh59k+E5i+aIlGGqhzsvk6yMBm/OBwGtp/TkmteQC4WbnbyNUZDgvJgSmPhdl7nJweIZoePjeMJOYvP/qWTX5w2mgxXznDzGTcSISZyANpQXoUKP7/GKkrFa+VhI85qFF4kw1fn1x8nHFK4Rx/dDiIA0+em9a1JvvetTAMImdJr1x5Uu620ZfxUQxy+hGcl2bfbn87AoNTQy/oqWcTuH62GBO+OGDQpqYkKDls52yfL2z0u1C5qURbIn3oPr4pUzUzbtXkSJDFVNsfClAV8Yv3UXKGaoYhW8wIcv0e3+RRhNZjLJSAiacazhEd0kknyGLObWIlAQOnWzr26SJ4sCsV//7n/jomW9aUHN8MaMlhupjFDEaC8TePUgMunpcSO4Dt6fXKDhIy8O065dB0h/UU4Q1x2R5nME1TFYKGyOgF9kLcw3JAEDW1SFiKFpO8dNjGGX+wwIjSQyl1KfDbiQxKPvVhuNXqQtHDaMFRtxq8Un2TmSkbsRWx/UTUOrfheY4MRozk2J3bgeCZHkLGmtnJEDWct/vPAJ6mTfhOcd0FFOt2leJDtHiSL1zgPMRHcUwm1VrHJHEiB3FDyS56eAAel/8naA1rIaRlvyvFJ3ZvtqjZRrivTRXYlFLmRU5TclM9ZZ2+k4pE/veyfP8JF7dyiKj5b5PEpDjhDRVC4tdR8pmy89dgZlM2GjFl9OLhx90BkODOULZhLq/uwFxubRGaczzmM7Z9AvSUEexcr+WU2QobVCnVkoGI2K0LhCsEBuwvP2T0j81cu+YgsqUlmmqLHeaH217SMUw7hni1HsMKrwwF7qps6+8WyfORiYYvbTZPQ2s40VDmtXEAO2cqzfxibslwoTzfiDlNC38uLhE1KULPywu/sUl5ougn58gpfTUKRPggDE9E1xyqu0BaO1+KJUMFTFvJ9h4wM1N71xLjUUcvxjWEiRFX/EPlzW3w5IbqV+aOuvTNO1v9dh1DtOqZQAyQzeAk/bPfKtYT8aCUN62ocjZVS9wSTqCVOI1uW5cAFKjhdRCU1HddlYi8vSYm9jzBWKSHua0K/dHTBGF0sXqAQE3w8XlG37fOkqfYRzGC+l4WJtoKHMH1kc6zHcRu2sT/c8fOvhTuVnlwhX8bkHLXQyX51WZNju26XbgeX48FOmdYoh97Z8DWCwWi8VisVgsFotFl7+teTrpC785FgAAAABJRU5ErkJggg=="
+              /></a>
+            </div>
+            <div>
+              <a href=""
+                ><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIMAAACDCAMAAACZQ1hUAAAAtFBMVEX///8fRJz///4fQ53///weRJqGi7BJWYyYobv2+/4WPp36/PsSL4Hs8PU8TZYUPpkAL5IBNpVQYp7S2eMSMYff5u7o7/kAGIE5TY4AJojV3eq1vdafqMalrc2Sl7Q9TogAI4oAFIbJzt0AIX41R4tVY5C7xNdhbpo0R4RdaqBhcaNMV5OGkrM0RIwkPI0AL4sEJnoAAHqpq8FvfKQlO4Bzf56xt8kAAGbH0ecmM3t3f68sSJbwEyfmAAAFzklEQVR4nO2be1viOhCH01yQNnbbQqFQPYiAoIJ01d097jnf/3udTJpWeOwlksqeP/JTLg/Y5u3MJJMmI0JWVlZWVlaGwpRShGg3MuEQv6aiFBvZAWMET6cJKSsCxskQ4iwG11BeiiED94dX130DXf81Grvyaj7RrmxbYGOOUTq7iZN5aKTpbTzpLRDimB400cwggxge7tXNMgoc4hiLeNPVtS/iQgZHOwNSHRK93S09x2HMnICI3yC8Watu3o4AmBBCs9gjDnPgYShG5Im8ZU/EBZhYwwwQyP5mCvTmADmFQGCMhPdjRHW6CIUBwX8IoX1xbCcQDCRMGqxGSGvIFNZyHyOIRHEYaYvI/A9UG458Ibntj2JJnSba+hTrMGC0y7QvkQgjMyJbLIAlR439okekF5TrpPXyS0HAgbPBag4JAs/zlGkKGx0jT/saQYmpfx/ojwmSQTQeZfHTdnC32WzuLib7LCKVpiCMXKaolYGi/lSbQLqCkGi66l0Nfc45nIG7o8UuFs19hBB/HfYQb2UYrzz2CTswZ/59N8wtSPNMLd671QwCwrkctgflS8j0wiHvCtH+msvcWPhSvhnH4KYKszlgCDkSNkXmwNNjYOAHJ9ukVeP/OBbfVpxFMAQTmUabGPwl0UtTDELh+cUVEfTxfDV2kFEZD0tzVUl8s55qDtGAkK1lT/vY4wVDpR3g8sIX1Jg1MOpHmslSREN2jVD14FvnC1D02sbQ87RzZfjqQi7m9KNh/TpfiDMHF4jihhGb8oGnGQ+E/Cjali9l14De6cfgqpoDn5onqZRf6DI480URCTLfi4sfSvkcfMFqT0P2biMD1mfwBtAjFLqgSHuTOMuyZfztYZeOLyuHqFyXzQxgB0ePIVvj0qZi8tl7FvkeBm5CvPB2wGQer7ZDVwyE3LjlVEDkuW3oqKwtk2hA6jtXZwwsnCGVG8Ajr5nyoJzNFG9PYRBdRosB2kuGZTdAKE3aqbtlgJAnE79EwOindmfqkMHxNhyV/dL9TqomTV/JIFN2HxV2wGhxS+qHgy9iEOE2/1V4QhiiH0IWPRMDy40gXpO0PET0Cs/JPaSVZzphgFHgeVy4QiSth6Awj05YmPqCsYKB45LB3eYMmkFhyBDEhf72i0NEglqpD/ekdoDujmH/5vpK75MQzMfqs/FSZypqyBCPoC/CbfH7tOV9+Q+7yVkYaJ6wD6xwMCFykzPEA9ih9mhM/wcM2DL8eQZ8ZoZyGltc/MGto5vUT2S7Y7hK8/n7MMXlWI1c9WH6lulkT0MGMk1y3a6KQ4Q9xr/Vp1NSfXPVKQODm23IW+LmQvlCDFn+t2IOq3Wjapo35SqT+Do4ZgjkgqDmTMo8d5NjBsBQdmi4peiUIQc5YsAFg666mldbBstgGSyDZbAMlsEyWAbLYBnqpbV30AEDrV1DwGdkqCGA+7bzMNS6AjbGtPbUzBlqYyGvELv7eoYVR02FWhT98+W+CG5QY6UWRbPIaTOEAQOsUXiPqjq0VuuwdRnBiIHJff/m4iCof2jZCzmdQRaoZIvWosxBUF820AGDQ+6bh0nQS9S2GWPAIB7ZTq4rNo7W4yeN3ZiT+4VwRQpmaKxYw6gf1pYuqKthwJBfCBSc+hNdBuaQ6GeLH+RZ/UnQvLhFDtYGQfoMwo1x2l5bK4y0XjYv+cKm7reDst3Zv/q+kFv1rWYQP69hiy+Y4wWRUhhGgTZCtNXwBDiYundR86mKOkm5MEo0a26hsG7i0+ZwVBCwAn0RNQ9Uh81q7aPJ52CV8vaqwUL+RShjQu3c6mxbNrSfbw+T6EdlXVuNMEe7qZdX9bKiuONk5QvMZL5xP1Xxzjlab/PdiE/l5Wo7wFO4+uXS1srJQ8kayKtV5gX66/HVAPJ4L3ra+RpF7scMsg7aX7/+TpKs7IanyIvmyX6z9hHXqe4+kqw8g2NGi/6uZ6LZYgRFnpjzz/3zgZWVlZWVlZWVlZWW/gMrRH5rndgStwAAAABJRU5ErkJggg=="
+              /></a>
+            </div>
+            <div>
+              <a href=""
+                ><img
+                  src=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/5de70he6op10/2DRgCRXNIEkk0wIqUo2ywa/20ea44a95fb361eaf034b42eec179d44/_site_footer__download_app_enable_push_.jpg"
+          />
+        </div>
+        <div>
+          <ul class="footerLaguage">
+            <li>UK</li>
+            <li>India</li>
+            <li>US</li>
+            <li>France</li>
+            <li>Germany</li>
+            <li>Italy</li>
+            <li>Spain</li>
+          </ul>
+        </div>
+        <div>
+          <div>
+            <ul class="footerLaguage">
+              <li>Privacy Policy</li>
+              <li>Terms of Use</li>
+              <li>CA Transparency</li>
+              <li>Accessibility</li>
+              <li>URBN.com</li>
+              <li>For CA Residents</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="footerLaguage">
+              <li>2022 URBN.com. All Rights Reserved.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
