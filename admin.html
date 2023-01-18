@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" ></script>
+
+    <script src="https://kit.fontawesome.com/e962f2728f.js" crossorigin="anonymous"></script>
+    <title>DASHBOARD</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+
+        }
+        body{
+            width: 100%;
+            background: #E5E7EB;
+            position: relative;
+            display: flex;
+        }
+        #menu{
+            background-color: #111827;
+            width: 300px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        #menu .logo{
+            display: flex;
+            align-items: center;
+            padding: 20px 0 0 20px;
+            color: azure;
+            /* justify-content: space-around; */
+        }
+       #menu .logo img{
+        width: 60px;
+        margin-right: 13px;
+        border-radius: 9px;
+        }
+       #menu .items{
+        margin-top: 40px;
+       }
+       #menu .items li{
+        list-style: none;
+        padding:15px 0;
+        transition: 0.9s ease;
+       }
+       #menu .items li:hover{
+        background: #253047;
+        cursor: pointer;
+       }
+       #menu .items li:nth-child(1){
+        border-left: 4px solid white;
+       }
+       #menu .items li i{
+        color: rgb(134, 141, 151);
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 14px;
+        margin: 0px 10px 0 25px;
+       }
+       #menu .items li:hover i, #menu .items li:hover a{
+        color: #f3f4f5;
+       }
+       #menu .items li a{
+        text-decoration: none;
+        color: rgb(134, 141, 151); ;
+        font-weight: 300px;
+        transition: 0.9s ease;
+       }
+       #interface{
+        width: calc(100% - 300px);
+        margin-left: 300px;
+        position: relative;
+       }
+       #interface .navigation{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        padding: 15px 30px;
+        border-bottom: 3px solid blue;
+        position: fixed;
+        width: calc(100% - 300px);
+       }
+       #interface .navigation .search{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 14px;
+        border: 1px solid #d7dbe6;
+        border-radius: 4px;
+       }
+       #interface .navigation .search i{
+        margin-right: 14px;
+       }
+       #interface .navigation .search input{
+        border: none;
+        outline: none;
+        font-size: 14px;
+       }
+       #interface .navigation .profile{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+       }
+       #interface .navigation .profile i{
+        margin-right: 20px;
+        font-size: 19px;
+        font-weight: 400;
+       }
+       #interface .navigation .profile img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+       }
+       .n1{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+       }
+       #menu-btn{
+        display: none;
+        color: #2b2b2b;
+        cursor: pointer;
+        font-size: 20px;
+        margin-right: 40px;
+
+       }
+       .i-name{
+        color:#444a35;
+        padding:30px 30px 0 30px ;
+        font-size:24px ;
+        font-weight:700 ;
+        margin-top: 70px;
+       }
+       .values{
+        padding:30px 30px 0 30px ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+       }
+       .values .val-box{
+        background: #fff;
+        width:235px ;
+        padding:15px 20px ;
+        border-radius: 5px;
+        display: flex;
+        justify-content: flex-start ;
+        align-items: center;
+       }
+       .values .val-box i{
+        font-size:25px ;
+        width:60px ;
+        height:60px ;
+        line-height: 60px;
+        border-radius:50% ;
+        text-align:center ;
+        /* color: rgb(255, 7, 7) ; */
+        /* background: black ; */
+        margin-right:15px ;
+       }
+       .values .val-box:nth-child(1) i{
+        background-color: #111827;
+        color: red;
+       }
+       .values .val-box:nth-child(2) i{
+        background-color: #022b83;
+        color: rgb(51, 255, 0);
+       }
+       .values .val-box:nth-child(3) i{
+        background-color: #08eaff;
+        color: rgba(16, 35, 20, 0.625);
+       }
+       .values .val-box:nth-child(4) i{
+        background-color: #eabc07;
+        color: rgb(199, 18, 178);
+       }
+       .values .val-box h3{
+        font-size: 18px;
+        font-weight: 600;
+       }
+       .values .val-box span{
+        font-size: 15px;
+        color: #a9a9a9;
+       }
+       .board{
+        width: 96%;
+        margin: 30px 0 30px 30px;
+        overflow: auto;
+        background: white;
+        border-radius: 9px;
+       }
+       .board img{
+        width: 45px;
+        height: 45px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 15px;
+       }
+       .board h5{
+        font-weight: 600;
+        font-size: 14px;
+       }
+       .board p{
+        font-weight: 400;
+        font-size: 13px;
+        color: #787d8d;
+       }
+       .board .people{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: start;
+       }
+       table{
+        border-collapse: collapse;
+       }
+       tr{
+        border-bottom: 1px solid #a9a9a9;
+       }
+       thead td{
+        font-size: 14px;
+        font-weight: 400;
+        background: #F9FBFB ;
+        text-align: start;
+        padding: 15px;
+       }
+       tbody tr td{
+        padding: 10px 15px;
+       }
+       .active p{
+        background: #d7fada;
+        padding: 2px 10px;
+        display: inline-block;
+        border-radius: 40px;
+        color: #2b2b2b;
+       }
+       .edit a{
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        color: #554cd5;
+       }
+
+       @media  (max-width:769px) {
+        #menu{
+            width: 270px;
+            position: fixed;
+            left:-270px;
+           
+        }
+        #menu.active{
+            left: 0;
+            /* z-index: 0; */
+            transition: 0.5s ease;
+        }
+        #interface{
+        width: 100% ;
+        margin-left: 0;
+        display: inline-block;
+        transition: 0.5s ease;
+       }
+       #menu.active ~ #interface{
+        width: calc(100% - 270px);
+        margin-left: 270px;
+        transition: 0.5s ease;
+       }
+       #interface .navigation{
+       
+        width: 100%;
+       }
+       .values{
+        padding:30px 30px 0 30px ;
+       
+        justify-content: flex-start;
+        
+       }
+       .values .val-box{
+      
+        padding:16px 20px ;
+       margin: 10px 20px 10px 0;
+       }
+       .board{
+        width: 92%;
+       padding: 0;
+       overflow-x: auto;
+       }
+       #menu-btn{
+        display: initial;
+       }
+       .table{
+      width: 100%;
+      border-collapse: collapse
+       }
+       }
+       @media  (max-width:477px) {
+       #interface .navigation{
+       padding: 15px;
+       }
+       .i-name{
+        padding: 30px 15px 0 15px;
+       }
+       #interface .navigation .search input{
+        width: 150px;
+       }
+       .values{
+        padding:15px 15px 0 15px ;
+       }
+       .values .val-box{
+      width: 100%;
+      margin: 8px 0;
+       }
+       .board{
+       margin: 30px 15px 30px 15px;
+       }
+      
+       }
+    </style>
+</head>
+<body>
+    <!-- side nav bar -->
+    <section id="menu">
+        <div class="logo">
+            <img src="./logo/logo.jpg" alt="">
+            <h4>E-SHOPPING MART</h4>
+        </div>
+        <div class="items">
+           <li><i class="fa-solid fa-chart-simple"></i> <a href="#">DASHBOARD</a></li> 
+           <li><i class="fa-solid fa-circle-info"></i> <a href="#">USER INFO</a></li>
+           <li><i class="fa-solid fa-people-group"></i> <a href="#">TOTAL CUSTOMER</a></li>
+           <li><i class="fa-solid fa-wrench"></i> <a href="#">UPDATE DATA</a></li>
+           <li><i class="fa-solid fa-trash"></i> <a href="#">DELETE DATA</a></li>
+           <li><i class="fa-solid fa-truck-fast"></i> <a href="#">BUYED ITEM</a></li>
+           <li><i class="fa-solid fa-user"></i> <a href="#">ADD ADMIN</a></li>
+          
+        </div>
+    </section>
+    <!-- top search section -->
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="menu-btn" class="fa-solid fa-bars"></i>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="search" id="">
+                </div>
+            </div>
+            <!-- profile section -->
+            <div class="profile">
+                <i class="fa-solid fa-bell"></i>
+                <img src="./logo/logo.jpg" alt="">
+            </div>
+        </div>
+        <!-- info box -->
+        <h3 class="i-name">DASHBOARD</h3>
+        <div class="values">
+            <!-- 1st -->
+            <div class="val-box">
+                <i class="fa-solid fa-users"></i>
+                <div>
+                    <h3>9000</h3>
+                    <span>TOTAL LOGINS</span>
+                </div>
+            </div>
+            <!-- 2nd -->
+            <div class="val-box">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div>
+                    <h3>000</h3>
+                    <span>TOTAL ORDERS</span>
+                </div>
+            </div>
+            <!-- 3rd -->
+            <div class="val-box">
+                
+                <i class="fa-solid fa-chart-simple"></i>
+
+                <div>
+                    <h3>56000</h3>
+                    <span>PRODUCT SELL</span>
+                </div>
+            </div>
+            <!-- 4th -->
+            <div class="val-box">
+                <i class="fa-solid fa-sack-dollar"></i> 
+                <div>
+                    <h3>000</h3>
+                    <span>EARNING</span>
+                </div>
+            </div>
+        </div>
+        <dir class="board">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>NAME</td>
+                        <td>TITLE</td>
+                        <td>STATUS</td>
+                        <td>ROLE</td>
+                        <td></td>
+                    </tr>
+                </thead>
+               <tbody>
+                <tr>
+                    <td class="people">
+                        <img src="logo/logo.jpg" alt="">
+                        <div class="people-de">
+                            <h5>Prashant</h5>
+                            <p>prashant@gmail.com</p>
+                        </div>
+                    </td>
+                    <td class="people-des">
+                        <h5>owner</h5>
+                        <p>web devloper</p>
+                    </td>
+                    <td class="active"> 
+                        <p>active</p>
+                    </td>
+                    <td class="role">
+                        <p>Team lead</p>
+                    </td>
+                    <td class="edit">
+                        <a href="#">edit</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="people">
+                        <img src="logo/logo.jpg" alt="">
+                        <div class="people-de">
+                            <h5>Saloni</h5>
+                            <p>saloni@gmail.com</p>
+                        </div>
+                    </td>
+                    <td class="people-des">
+                        <h5>beauty and wellness</h5>
+                        <p>web devloper</p>
+                    </td>
+                    <td class="active"> 
+                        <p>active</p>
+                    </td>
+                    <td class="role">
+                        <p>developer</p>
+                    </td>
+                    <td class="edit">
+                        <a href="#">edit</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="people">
+                        <img src="logo/logo.jpg" alt="">
+                        <div class="people-de">
+                            <h5>Kausal</h5>
+                            <p>kausal@gmail.com</p>
+                        </div>
+                    </td>
+                    <td class="people-des">
+                        <h5>Furniture section</h5>
+                        <p>web devloper</p>
+                    </td>
+                    <td class="active"> 
+                        <p>active</p>
+                    </td>
+                    <td class="role">
+                        <p>developer</p>
+                    </td>
+                    <td class="edit">
+                        <a href="#">edit</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="people">
+                        <img src="logo/logo.jpg" alt="">
+                        <div class="people-de">
+                            <h5>Tejas</h5>
+                            <p>tejas@gmail.com</p>
+                        </div>
+                    </td>
+                    <td class="people-des">
+                        <h5>Home section</h5>
+                        <p>web devloper</p>
+                    </td>
+                    <td class="active"> 
+                        <p>active</p>
+                    </td>
+                    <td class="role">
+                        <p>developer</p>
+                    </td>
+                    <td class="edit">
+                        <a href="#">edit</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="people">
+                        <img src="logo/logo.jpg" alt="">
+                        <div class="people-de">
+                            <h5>Rajneesh</h5>
+                            <p>rajneesh@gmail.com</p>
+                        </div>
+                    </td>
+                    <td class="people-des">
+                        <h5>Admin section</h5>
+                        <p>web devloper</p>
+                    </td>
+                    <td class="active"> 
+                        <p>active</p>
+                    </td>
+                    <td class="role">
+                        <p>developer</p>
+                    </td>
+                    <td class="edit">
+                        <a href="#">edit</a>
+                    </td>
+                </tr>
+               </tbody>
+            </table>
+        </dir>
+    </section>
+    <script>
+        $(`#menu-btn`).click(function(){
+            $(`#menu`).toggleClass("active")
+        })
+    </script>
+</body>
+</html>
+
