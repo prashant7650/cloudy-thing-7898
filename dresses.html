@@ -4,37 +4,547 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dresses</title>
+    <title>DRESSES</title>
+    <a href="clothing.html"></a>
+    <a href="shoes.html"></a>
+    <link rel="stylesheet" href="./style/backgroud.css">
+
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <script src="https://kit.fontawesome.com/38439e7720.js" crossorigin="anonymous"></script>
     <style>
-    #container{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: auto;
-    gap: 20px;
-   
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family:  Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        #upper>div>h2:hover{
+            cursor: pointer;
+            color: rgb(66, 153, 253);
+        }
+        #shoes>div{
+            position:relative;
+        }
+       #upper>div>div{
+        position: relative;
+       }
+        
+        #complete{
+            /* border: 1px solid red; */
+            width:90%;
+            margin: auto;
+            margin-top: 10px;
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            z-index: -1;
+        }
+        #top{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        #top>div{
+            /* border:1px solid green; */
+            width:15%;
+            height:60px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           font-size: 14px;
+           font-weight: 10px;
+           box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        #shoes{
+            /* border: 1px solid green; */
+            /* margin-left: 300px; */
+            margin-top: 20px;
+            display: flex;
+            
+    
+        }
+        #shoes>div:nth-child(1){
+            /* border: 1px solid blue; */
+            display: flex;
+            width:400px;
+        
+            /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+        
+        }
+        #shoes>div:nth-child(1)>p{
+            margin-top: 13px;
+            margin-left: 13px;
+            color: #555;
+            margin-right: 40px;
+
+        }
+        #shoes>div:last-child{
+            display: flex;
+            /* border: 1px solid green; */
+            width:200px;
+            margin-left: 200px;
+            margin-top: 12px;
+        }
+        #sort{
+        
+            width:60%;
+            font-size: 15px;
+            color: rgb(92,92,95);
+            /* margin-left: 20px; */
+            padding: 5px;
+            
+            
+        }
+        #shoes>div:last-child>p{
+            color:black;
+            margin-top: 7px;
+            margin-right: 2px;
+        }
+        #images{
+            /* border: 1px solid green; */
+            /* margin-left: 300px; */
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 15px;
+            
+        }
+        /* #images>div{
+            border:1px solid red;
+        } */
+        #images>div {
+            overflow: hidden;
+            position: relative;
+            height: 405px;
+        }
+        #images>div>img{
+            width:100%;
+            height:300px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            transition-duration: 2s;
+        }
+        #images>div>p{
+            margin-top: 10px;
+        }
+        #images>div>p+p{
+            color:#555;
+            margin-top: 5px;
+            font-size: 15px;
+        }
+        #images>div:hover img{
+            transform: scale(1.1);
+        }
+        img+p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #top>div:nth-child(1){
+            background-color:rgb(194,165,116) ;
+            color:white;
+        }
+        #top>div:nth-child(2){
+            background-color: rgb(219,133,143);
+            color:white;
+        }
+        #top>div:nth-child(3){
+            background-color: rgb(223,153,122);
+            color:white;
+        }
+        #top>div:nth-child(4){
+            background-color:rgb(221,172,150);
+            color:white;
+        }
+        #top>div:nth-child(5){
+            background-color:rgb(182,136,140);
+            color:white;
+        }
+        #top>div:nth-child(6){
+            background-color:rgb(208,119,119) ;
+            color:white;
+        }
+        h1{
+        font-family: Arial, Helvetica, sans-serif;
+         font-size: 20px;
+         font-weight: 2px;
+         margin-top: 7px;
+        }
+        #box{
+            /* border: 1px solid yellow; */
+            margin-left: 0px;
+            width:1400px;
+        
+            
+            /* position: relative; */
+            
+        }
+       
+        .coloursForPic{
+            position: absolute;
+            bottom:0px;
+        
+        }
+        #upper{
+            /* border:1px solid red; */
+            display: flex;
+            margin-top: 10px;
+            position: relative;
+        }
+        #upper>div:first-child{
+            /* border: 1px solid green; */
+            
+            width: 250px;
+            height: 600px;
+            display: block;
+            margin-top: 29px;
+            margin-right: 40px;
+        }
+        #complete>#upper a{
+            margin-top: 20px;
+            text-decoration: none;
+            display: block;
+            color: #555;
+        }
+        #complete>#upper a:hover{
+            text-decoration: underline;
+        }
+        #shoes>div:nth-child(2){
+            /* border: 1px solid red; */
+            width:300px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #cloth{
+            margin-top: 0px;
+            width:50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px 0 5px;
+            padding-bottom: 20px;
+        }
+        #sec1{
+         margin-top: 20px;
+         /* border: 1px solid red; */
+         width:100px;
+         padding-right: 20px;
+         
+        }
+        #complete>#upper a+h3{
+            margin-top: 20px;
+            
+        }
+        #upper>div:first-child>h2{
+            margin-top: 20px;
+        }
+        #price~h2{
+            font-weight: normal;
+            font-size: 20px;
+        }
+        #price{
+            font-weight: normal;
+            font-size: 20px;
+        }
+        
+        #btn-btn{
+            margin-left: 100px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+        #images>div>p>button{
+            height:20px;
+            width:20px;
+            border-radius: 50%;
+            /* margin: 5px; */
+            margin-right: 5px;
+           }
+           .coloursForPic>button{
+            border:0.5px solid #5555;
+           }
+    @media all and (min-width:784px) and (max-width:1074px){
+        #images{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(7,420px);
+            /* width:100%; */
+            gap:10px;
+            
+            
+        }
+
+       
+        /* #complete{
+            width: 400px;
+            height: 380px;
+        } */
+        #box{
+            width:100%;
+        
+        }
+        #shoes>div:nth-child(1)>p{
+            margin-left: 4px;
+        }
+        #upper{
+            width:100%;
+        }
 
     }
-    #container>div>img{
-    width: 100%;
-    height: 50%;
+    #footer{
+        display: flex;
+        justify-content: space-evenly;
     }
-    #container>div{
-    height: 500px;
-    text-align: center;
-    box-shadow: rgba(7, 7, 7, 0.35) 0px 5px 15px;
+    @media all and (min-width:200px) and (max-width:783px){
+        #images{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(10,400px);
+            /* width:100%; */
+            gap:10px;
+        }
+        
+        /* #complete{
+            width: 400px;
+            height: 380px;
+        } */
+        #box{
+            width:100%;
+        }
+        #shoes>div:nth-child(1)>p{
+            margin-left: 4px;
+        }
+        #upper>div:first-child{
+            display: none;
+        }
+        /* #upper>div:first-child>h2{
+           margin-top: 0px;
+           height: 0px;
+           display: none;
+        } */
+    #upper{
+        width:100%;
     }
+    }
+
+    
+    
+    
     </style>
 </head>
 <body>
-    <div>
-        <a href="index.html"><button>Home page</button></a>
-     </div>
-     <div id="container"></div>
 
     
+  
+  </div>
+
+
+  <!-- main -->
+
+
+
+    <div id="complete">
+        <div id="top">
+            <div>CASUAL</div>
+            <div>PARTY</div>
+            <div>WHITE</div>
+            <div>WEDDING</div>
+            <div>BLACK</div>
+            <div>FORMAL</div>
+        </div>
+    <div id="upper">
+        <div>
+            <h3>Browse by:</h3>
+            <hr>
+            <a href="index.html">Home</a>
+            <a href="shoes.html">shoes</a>
+            <a href="clothing.html">clothing</a>
+            <a href="homepage2.html">Homes and Furniture</a>
+            <a href="wedding.html">Weddings</a>
+            <a href="sale.html">Sale</a>
+            <a href="gift.html">Gifts & Candels</a>
+            <h3>Filter by:</h3>
+            <hr>
+            <h2 id="price">Price +</h2>
+            <hr>
+            <h2 id="size">Size +</h2>
+            <hr>
+            <h2>Color +</h2>
+            <hr>
+            <h2>Brand +</h2>
+            <hr>
+            <h2>Free pickup +</h2>
+            <hr>
+        </div>
+    <div id="box">
+        <div id="shoes">
+            <div>
+                <h1>Dresses</h1>
+                <p>1041 products</p>
+            </div>
+            <div>
+                <p>Sort:</p>
+                <select name="" id="sort">
+                    <option value="Featured">Featured</option>
+                    <option value="lowhigh">Price:Low to High</option>
+                    <option value="highlow">Price:High to Low</option>
+                    <option value="Newest">Newest</option>
+                    <option value="Bestselling">Bestselling</option>
+                    <option value="az">A-Z</option>
+                    <option value="za">Z-A</option>
+                </select>
+                <!-- <button class="btn-btn"><a class="cloth"href=""><</a></button> -->
+                <button id="btn-btn"><a id="cloth" href="clothing.html">1</a></button>
+            </div>
+        </div>
+        <div id="images">
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <div id="footer">
+        <div id="help">
+          <div>
+            
+            <h3>help</h3>
+            <ul class="footerHelp">
+              <li>Track Your Order</li>
+              <li>Start A Return Or Exchange (US)</li>
+              <li>Return And Exchange</li>
+              <li>Shipping</li>
+              <li>Customer Service</li>
+              <li>Current Promotions</li>
+              <li>Product Recalls</li>
+            </ul>
+          </div>
+          <div>
+            <h3>About Us</h3>
+            <ul class="footerHelp">
+              <a href="ourStory.html"><li>Our Story</li></a>
+              <li>Events</li>
+              <li>A Greater Good</li>
+              <li>Diversity & Inclusion</li>
+              <li>Stories</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Services</h3>
+            <ul class="footerHelp">
+              <li>AnthroPerks</li>
+              <li>Gift Cards</li>
+              <li>Trade Membership</li>
+              <li>Furniture: Guides & Services</li>
+              <li>Store Pickup & Collection Points</li>
+              <li>Klarna</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <ul class="footerHelp">
+              <a href="contact.html"><li>Contact Us</li></a>
+              <li>Stay Connected</li>
+              <li>Careers</li>
+              <li>Styling Services</li>
+              <li>Request A Catalog</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Social Network</h3>
+            <div>
+              <a href="https://www.instagram.com/gaurav_7ingh/"
+                ><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYRHI1E_Mh-Hpi4hqtCifpStom1SsyNniyLSIP6e8HU1HN6-lnJ31V&usqp=CAE&s"
+              /></a>
+            </div>
+            <div>
+              <a href="https://twitter.com/gaurav__singh"
+                ><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAMAAACZHrEMAAAAY1BMVEX///8ArO0AqOwAqu0ApuwApOwAouv4/P7t9/3z+v6v3Pfj8vzY7fvd8Puq2vaJzPPP6vpEte+TzvQvsu633/iByPNiwPF1xvLC5PlnvvEur+6g1PXJ5vlPuO9ww/KX0/UAnOoO9ENTAAAEeElEQVR4nO2b2ZajIBCGIwXuS4j7lsz7P+WoSaa7EyNViNM3fHd9jtK/RfFTLDmdLBaLxWKxWCwWi8XyC3hB0oRpWMSB99tKiiwXgjPGuHDzMgx+T0pUdgycLwCgjlee84vDg+ZlwJxXGC/fopN2F2yTuqIb8S5lCY/bf38sSoFzbJtlqqelXpeyROf6DI6X1B1zGDYwEbhnDSne+FnLpKbz54fOvXTnx+5/IbhMT9PVBCNsaJnUyCGsHLhnNy+wzXZTJ3cRVcxmXBY4fz7CWmyrsZhTDtbG4wYb+fIG5Gjvydj9BZKahuO1OA6+6fYhHxK8Fr8jxIU/Gg4adbvy31vqh59k+E5i+aIlGGqhzsvk6yMBm/OBwGtp/TkmteQC4WbnbyNUZDgvJgSmPhdl7nJweIZoePjeMJOYvP/qWTX5w2mgxXznDzGTcSISZyANpQXoUKP7/GKkrFa+VhI85qFF4kw1fn1x8nHFK4Rx/dDiIA0+em9a1JvvetTAMImdJr1x5Uu620ZfxUQxy+hGcl2bfbn87AoNTQy/oqWcTuH62GBO+OGDQpqYkKDls52yfL2z0u1C5qURbIn3oPr4pUzUzbtXkSJDFVNsfClAV8Yv3UXKGaoYhW8wIcv0e3+RRhNZjLJSAiacazhEd0kknyGLObWIlAQOnWzr26SJ4sCsV//7n/jomW9aUHN8MaMlhupjFDEaC8TePUgMunpcSO4Dt6fXKDhIy8O065dB0h/UU4Q1x2R5nME1TFYKGyOgF9kLcw3JAEDW1SFiKFpO8dNjGGX+wwIjSQyl1KfDbiQxKPvVhuNXqQtHDaMFRtxq8Un2TmSkbsRWx/UTUOrfheY4MRozk2J3bgeCZHkLGmtnJEDWct/vPAJ6mTfhOcd0FFOt2leJDtHiSL1zgPMRHcUwm1VrHJHEiB3FDyS56eAAel/8naA1rIaRlvyvFJ3ZvtqjZRrivTRXYlFLmRU5TclM9ZZ2+k4pE/veyfP8JF7dyiKj5b5PEpDjhDRVC4tdR8pmy89dgZlM2GjFl9OLhx90BkODOULZhLq/uwFxubRGaczzmM7Z9AvSUEexcr+WU2QobVCnVkoGI2K0LhCsEBuwvP2T0j81cu+YgsqUlmmqLHeaH217SMUw7hni1HsMKrwwF7qps6+8WyfORiYYvbTZPQ2s40VDmtXEAO2cqzfxibslwoTzfiDlNC38uLhE1KULPywu/sUl5ougn58gpfTUKRPggDE9E1xyqu0BaO1+KJUMFTFvJ9h4wM1N71xLjUUcvxjWEiRFX/EPlzW3w5IbqV+aOuvTNO1v9dh1DtOqZQAyQzeAk/bPfKtYT8aCUN62ocjZVS9wSTqCVOI1uW5cAFKjhdRCU1HddlYi8vSYm9jzBWKSHua0K/dHTBGF0sXqAQE3w8XlG37fOkqfYRzGC+l4WJtoKHMH1kc6zHcRu2sT/c8fOvhTuVnlwhX8bkHLXQyX51WZNju26XbgeX48FOmdYoh97Z8DWCwWi8VisVgsFotFl7+teTrpC785FgAAAABJRU5ErkJggg=="
+              /></a>
+            </div>
+            <div>
+              <a href="https://www.facebook.com/profile.php?id=100007446062466"
+                ><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIMAAACDCAMAAACZQ1hUAAAAtFBMVEX///8fRJz///4fQ53///weRJqGi7BJWYyYobv2+/4WPp36/PsSL4Hs8PU8TZYUPpkAL5IBNpVQYp7S2eMSMYff5u7o7/kAGIE5TY4AJojV3eq1vdafqMalrc2Sl7Q9TogAI4oAFIbJzt0AIX41R4tVY5C7xNdhbpo0R4RdaqBhcaNMV5OGkrM0RIwkPI0AL4sEJnoAAHqpq8FvfKQlO4Bzf56xt8kAAGbH0ecmM3t3f68sSJbwEyfmAAAFzklEQVR4nO2be1viOhCH01yQNnbbQqFQPYiAoIJ01d097jnf/3udTJpWeOwlksqeP/JTLg/Y5u3MJJMmI0JWVlZWVlaGwpRShGg3MuEQv6aiFBvZAWMET6cJKSsCxskQ4iwG11BeiiED94dX130DXf81Grvyaj7RrmxbYGOOUTq7iZN5aKTpbTzpLRDimB400cwggxge7tXNMgoc4hiLeNPVtS/iQgZHOwNSHRK93S09x2HMnICI3yC8Watu3o4AmBBCs9gjDnPgYShG5Im8ZU/EBZhYwwwQyP5mCvTmADmFQGCMhPdjRHW6CIUBwX8IoX1xbCcQDCRMGqxGSGvIFNZyHyOIRHEYaYvI/A9UG458Ibntj2JJnSba+hTrMGC0y7QvkQgjMyJbLIAlR439okekF5TrpPXyS0HAgbPBag4JAs/zlGkKGx0jT/saQYmpfx/ojwmSQTQeZfHTdnC32WzuLib7LCKVpiCMXKaolYGi/lSbQLqCkGi66l0Nfc45nIG7o8UuFs19hBB/HfYQb2UYrzz2CTswZ/59N8wtSPNMLd671QwCwrkctgflS8j0wiHvCtH+msvcWPhSvhnH4KYKszlgCDkSNkXmwNNjYOAHJ9ukVeP/OBbfVpxFMAQTmUabGPwl0UtTDELh+cUVEfTxfDV2kFEZD0tzVUl8s55qDtGAkK1lT/vY4wVDpR3g8sIX1Jg1MOpHmslSREN2jVD14FvnC1D02sbQ87RzZfjqQi7m9KNh/TpfiDMHF4jihhGb8oGnGQ+E/Cjali9l14De6cfgqpoDn5onqZRf6DI480URCTLfi4sfSvkcfMFqT0P2biMD1mfwBtAjFLqgSHuTOMuyZfztYZeOLyuHqFyXzQxgB0ePIVvj0qZi8tl7FvkeBm5CvPB2wGQer7ZDVwyE3LjlVEDkuW3oqKwtk2hA6jtXZwwsnCGVG8Ajr5nyoJzNFG9PYRBdRosB2kuGZTdAKE3aqbtlgJAnE79EwOindmfqkMHxNhyV/dL9TqomTV/JIFN2HxV2wGhxS+qHgy9iEOE2/1V4QhiiH0IWPRMDy40gXpO0PET0Cs/JPaSVZzphgFHgeVy4QiSth6Awj05YmPqCsYKB45LB3eYMmkFhyBDEhf72i0NEglqpD/ekdoDujmH/5vpK75MQzMfqs/FSZypqyBCPoC/CbfH7tOV9+Q+7yVkYaJ6wD6xwMCFykzPEA9ih9mhM/wcM2DL8eQZ8ZoZyGltc/MGto5vUT2S7Y7hK8/n7MMXlWI1c9WH6lulkT0MGMk1y3a6KQ4Q9xr/Vp1NSfXPVKQODm23IW+LmQvlCDFn+t2IOq3Wjapo35SqT+Do4ZgjkgqDmTMo8d5NjBsBQdmi4peiUIQc5YsAFg666mldbBstgGSyDZbAMlsEyWAbLYBnqpbV30AEDrV1DwGdkqCGA+7bzMNS6AjbGtPbUzBlqYyGvELv7eoYVR02FWhT98+W+CG5QY6UWRbPIaTOEAQOsUXiPqjq0VuuwdRnBiIHJff/m4iCof2jZCzmdQRaoZIvWosxBUF820AGDQ+6bh0nQS9S2GWPAIB7ZTq4rNo7W4yeN3ZiT+4VwRQpmaKxYw6gf1pYuqKthwJBfCBSc+hNdBuaQ6GeLH+RZ/UnQvLhFDtYGQfoMwo1x2l5bK4y0XjYv+cKm7reDst3Zv/q+kFv1rWYQP69hiy+Y4wWRUhhGgTZCtNXwBDiYundR86mKOkm5MEo0a26hsG7i0+ZwVBCwAn0RNQ9Uh81q7aPJ52CV8vaqwUL+RShjQu3c6mxbNrSfbw+T6EdlXVuNMEe7qZdX9bKiuONk5QvMZL5xP1Xxzjlab/PdiE/l5Wo7wFO4+uXS1srJQ8kayKtV5gX66/HVAPJ4L3ra+RpF7scMsg7aX7/+TpKs7IanyIvmyX6z9hHXqe4+kqw8g2NGi/6uZ6LZYgRFnpjzz/3zgZWVlZWVlZWVlZWW/gMrRH5rndgStwAAAABJRU5ErkJggg=="
+              /></a>
+            </div>
+            <div>
+              <a href="https://github.com/gaurav7ingh"
+                ><img
+                  src="data:image/png;base64,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"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div id="contactFooter">
+          <div>
+            <div>
+              <img
+                style="height: 100%"
+                src="https://images.ctfassets.net/5de70he6op10/4gWq1G4qLLgmqlNeHfzV2T/55298745127c36c5876f4013434c0c37/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917_Copy_2.svg"
+              />
+            </div>
+            <div>
+              <div>
+                <a href="https://www.instagram.com/gaurav_7ingh/"
+                  ><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYRHI1E_Mh-Hpi4hqtCifpStom1SsyNniyLSIP6e8HU1HN6-lnJ31V&usqp=CAE&s"
+                /></a>
+              </div>
+              <div>
+                <a href="https://twitter.com/gaurav__singh"
+                  ><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAMAAACZHrEMAAAAY1BMVEX///8ArO0AqOwAqu0ApuwApOwAouv4/P7t9/3z+v6v3Pfj8vzY7fvd8Puq2vaJzPPP6vpEte+TzvQvsu633/iByPNiwPF1xvLC5PlnvvEur+6g1PXJ5vlPuO9ww/KX0/UAnOoO9ENTAAAEeElEQVR4nO2b2ZajIBCGIwXuS4j7lsz7P+WoSaa7EyNViNM3fHd9jtK/RfFTLDmdLBaLxWKxWCwWi8XyC3hB0oRpWMSB99tKiiwXgjPGuHDzMgx+T0pUdgycLwCgjlee84vDg+ZlwJxXGC/fopN2F2yTuqIb8S5lCY/bf38sSoFzbJtlqqelXpeyROf6DI6X1B1zGDYwEbhnDSne+FnLpKbz54fOvXTnx+5/IbhMT9PVBCNsaJnUyCGsHLhnNy+wzXZTJ3cRVcxmXBY4fz7CWmyrsZhTDtbG4wYb+fIG5Gjvydj9BZKahuO1OA6+6fYhHxK8Fr8jxIU/Gg4adbvy31vqh59k+E5i+aIlGGqhzsvk6yMBm/OBwGtp/TkmteQC4WbnbyNUZDgvJgSmPhdl7nJweIZoePjeMJOYvP/qWTX5w2mgxXznDzGTcSISZyANpQXoUKP7/GKkrFa+VhI85qFF4kw1fn1x8nHFK4Rx/dDiIA0+em9a1JvvetTAMImdJr1x5Uu620ZfxUQxy+hGcl2bfbn87AoNTQy/oqWcTuH62GBO+OGDQpqYkKDls52yfL2z0u1C5qURbIn3oPr4pUzUzbtXkSJDFVNsfClAV8Yv3UXKGaoYhW8wIcv0e3+RRhNZjLJSAiacazhEd0kknyGLObWIlAQOnWzr26SJ4sCsV//7n/jomW9aUHN8MaMlhupjFDEaC8TePUgMunpcSO4Dt6fXKDhIy8O065dB0h/UU4Q1x2R5nME1TFYKGyOgF9kLcw3JAEDW1SFiKFpO8dNjGGX+wwIjSQyl1KfDbiQxKPvVhuNXqQtHDaMFRtxq8Un2TmSkbsRWx/UTUOrfheY4MRozk2J3bgeCZHkLGmtnJEDWct/vPAJ6mTfhOcd0FFOt2leJDtHiSL1zgPMRHcUwm1VrHJHEiB3FDyS56eAAel/8naA1rIaRlvyvFJ3ZvtqjZRrivTRXYlFLmRU5TclM9ZZ2+k4pE/veyfP8JF7dyiKj5b5PEpDjhDRVC4tdR8pmy89dgZlM2GjFl9OLhx90BkODOULZhLq/uwFxubRGaczzmM7Z9AvSUEexcr+WU2QobVCnVkoGI2K0LhCsEBuwvP2T0j81cu+YgsqUlmmqLHeaH217SMUw7hni1HsMKrwwF7qps6+8WyfORiYYvbTZPQ2s40VDmtXEAO2cqzfxibslwoTzfiDlNC38uLhE1KULPywu/sUl5ougn58gpfTUKRPggDE9E1xyqu0BaO1+KJUMFTFvJ9h4wM1N71xLjUUcvxjWEiRFX/EPlzW3w5IbqV+aOuvTNO1v9dh1DtOqZQAyQzeAk/bPfKtYT8aCUN62ocjZVS9wSTqCVOI1uW5cAFKjhdRCU1HddlYi8vSYm9jzBWKSHua0K/dHTBGF0sXqAQE3w8XlG37fOkqfYRzGC+l4WJtoKHMH1kc6zHcRu2sT/c8fOvhTuVnlwhX8bkHLXQyX51WZNju26XbgeX48FOmdYoh97Z8DWCwWi8VisVgsFotFl7+teTrpC785FgAAAABJRU5ErkJggg=="
+                /></a>
+              </div>
+              <div>
+                <a href="https://www.facebook.com/profile.php?id=100007446062466"
+                  ><img
+                    src="data:image/png;base64,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"
+                /></a>
+              </div>
+              <div>
+                <a href="https://github.com/gaurav7ingh"
+                  ><img
+                    src="data:image/png;base64,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"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <!-- <div>
+            <img
+              src="https://images.ctfassets.net/5de70he6op10/2DRgCRXNIEkk0wIqUo2ywa/20ea44a95fb361eaf034b42eec179d44/_site_footer__download_app_enable_push_.jpg"
+            />
+          </div> -->
+          <div>
+            <ul class="footerLaguage">
+              <li>UK</li>
+              <li>India</li>
+              <li>US</li>
+              <li>France</li>
+              <li>Germany</li>
+              <li>Italy</li>
+              <li>Spain</li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <ul class="footerLaguage">
+                <li>Privacy Policy</li>
+                <li>Terms of Use</li>
+                <li>CA Transparency</li>
+                <li>Accessibility</li>
+                <li>URBN.com</li>
+                <li>For CA Residents</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="footerLaguage">
+                <li>2022 URBN.com. All Rights Reserved.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
-
 <script>
 let item=[
     {
@@ -207,39 +717,346 @@ let item=[
     productID: "Garden20",
     catagory: "Home",
     img: ['url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
-  },]
+  },
+  {
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_014_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Maxi Dress",
+    price: "",
+    productID: "",
+    catagory: "Home",
+    img: [],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130647160057_031_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "Robin Tiered Mini Dress",
+    price: "498.00",
+    productID: "Garden1",
+    catagory: "Home",
+    img: ['url("data:image/jpeg;base64,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")'],
+  },
+    {
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130264840011_040_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Mini Dress",
+    price: "998.00",
+    productID: "Garden2",
+    catagory: "Home",
+    img: ['url( "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhMVFRUVFRcXFxcVGBgXFRcVFRUXFxcVFRcYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDg0NDysZFRktLSsrKysrLTc3KzcrLSstLSsrNzctNzc3Ny0tNys3Ny0rLS03KzctNzc3LSstLS03Lf/AABEIAOEA4QMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQIH/8QAJhABAQEAAAQFBAMAAAAAAAAAAAERAiFh8BIxQVHBobHR8XGBkf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAwDAQACEQMRAD8A4xUWswYW1FQADAWJSUoC2CWgGkQVQhRCotQUWJQFol5KChgICWqCYqwsA0hhAAAZUAEXUBFABQgJQAEUFABChxIKVYaCBBRVgiiCYlUFhQtAIYaC6JoCIqApq1AQKaApDQECgYSJgK0gtEShUFXFzkhoi1BYBKLEAA0BUAWgoJy7xVz+VBjWVKCoGghgUACAIpQRUUUioAUC0C0iaoAoIAUEpi4mAukiyACpFnfUDl7KxgAUxAUNUGSKgEhhpgLqUAII1ATWqyaBUa1BUUURFSLQBqM2gBpQFtSKBpI14WbQPFVTw98gCVMIlgCpFoIACKmLBSglAVNWAUJFETEqpAWAsAioQCwq1KCQFAxYmkoNaza1EoM6LnfdUEiWLCgiosoEqGoAqasAWxNWgkiyJiwFgJQNKyoGrEIiqsQVFSwpgBUUBUqwFiLYmUDRM6BQOI0AkVmLoJErTNgKQ0gLogAGgLAhQQACVeogNWVDVAQAEq4AjUTAFMWRATA5e8/wBBSggQBcRUBMa1MMBZCoUEWVK1KKRcSAhai4YCSkMXAXRCAst79wsQE0qgCxAFpUiwEDb1ARUAAAVKUBFCAJY0gIsMBVEURLVnpzzvpzSgEqxmNQDFiAGi1nAUpIUANICwlQBc6CAItEAVMXAKi4gIpSUFQ0BFRoDCqmAgACxJFwDVSRQQEwAUgEAwFkTdFBBrwzv9gM6hpoFAwFRalAtEigaULQTGozjUFDUgIigKpiRbRFEUBDV0GYoAtJTixICxKqAb3qpgCUtCAKEAqKUEtEqyAtiU0tBMaiasASqgGgABFAVFAiKgAAKkVMBdSqkgKADOCFBYBAWoqACYCgqALEaBIUKIYimCmqkBFppFoIGAFNAAFARZUwDev3ABEvygDUJ39ABq/n7s8XoAF+EnkANRADCr6gBxJQBanuALPwABPT+1ACpxACcPy1PKgKxFAFvkkARQBX/9k=")',
+    'url( "https://images.urbndata.com/is/image/Anthropologie/45246403AA_047_s?fit=constrain&hei=56&qlt=75")'],
+  },
+    {
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130578570014_066_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Mini Dress: Linen Edition",
+    price: "1198.00",
+    productID: "Garden3",
+    catagory: "Home",
+    img: ['url("ddata:image/jpeg;base64,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")'],
+  },
+    {
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130728470001_034_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "Devotion Twins Embroidered Ella Tunic Dress",
+    price: "598.00",
+    productID: "Garden4",
+    catagory: "Newest",
+    img: ['url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUeADSQdkcVAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC")'],
+  },
+    {
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130647160137_069_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "By Anthropologie Tiered Maxi Dress",
+    price: "36.00",
+    productID: "Garden5",
+    catagory: "Bestselling",
+    img: ['url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyI0YS268yf66pRHOjO3ASQ5eQI1Uuw5ZbKg&usqp=CAU")'],
+  },
+    {
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130370060072_083_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Maxi Dress",
+    price: "138.00",
+    productID: "Garden6",
+    catagory: "Bestselling",
+    img: ['url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyI0YS268yf66pRHOjO3ASQ5eQI1Uuw5ZbKg&usqp=CAU")'],
+  },
+    {
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130347470050_059_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "Geisha Designs Asymmetrical Hem Midi Dress",
+    price: "2198.00",
+    productID: "Garden7",
+    catagory: "Bestselling",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/66895517_014_s?fit=constrain&hei=56&qlt=75")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130578570018_009_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "By Anthropologie Printed Midi Dress",
+    price: "30.40",
+    productID: "Garden8",
+    catagory: "Bestselling",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/69655785_010_s?fit=constrain&hei=56&qlt=75")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130370060077_070_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "By Anthropologie Pleated Halter Midi Dress",
+    price: "54.40",
+    productID: "Garden9",
+    catagory: "Newest",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/66490830_018_s?fit=constrain&hei=56&qlt=75")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130370060076_095_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "By Anthropologie Halter Midi Dress",
+    price: "28.00",
+    productID: "Garden10",
+    catagory: "Newest",
+    img: ['url("data:image/png;base64,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")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130526830093_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "Black Halo One-Shoulder Mini Dress",
+    price: "898.00",
+    productID: "Garden11",
+    catagory: "Newest",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/67608109_010_s?fit=constrain&hei=56&qlt=75")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130578570013_014_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Maxi Dress: Linen Edition",
+    price: "114.00",
+    productID: "Garden12",
+    catagory: "Home",
+    img: ['url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130652010001_095_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "Elyse Bias Slip Dress",
+    price: "63.20",
+    productID: "Garden13",
+    catagory: "Home",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/55344436_073_s?fit=constrain&hei=56&qlt=75")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130370060074_079_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "By Anthropologie Twist-Front Midi Dress",
+    price: "46.40",
+    productID: "Garden15",
+    catagory: "Bestselling",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/66363441_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/66363441_095_s?fit=constrain&hei=56&qlt=75")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130348690173_066_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "By Anthropologie Off-The-Shoulder Linen Mini Dress",
+    price: "114.00",
+    productID: "Garden15",
+    catagory: "Bestselling",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/66363441_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_068_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Maxi Dress",
+    price: "98.00",
+    productID: "Garden16",
+    catagory: "Bestselling",
+    img: ['url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_066_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Maxi Dress",
+    price: "42.00",
+    productID: "Garden17",
+    catagory: "Bestselling",
+    img: ['url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw8PDw8VFRUVDxUPFRUPFRUPFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDg0NDisZFRkrKys3Ny0rKysrNysrNysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAMIBAwMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQcC/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDERFAQAAAAAAACigioIqooAioqCoAoCKogCiKACAACACgqKg5FRQAABQQAAAABBQBQgKACCCoIogCgCgAACgAiACgoIICKAAKmCgigKigCGKgKAgAACKAACCoIogqqAgACACgCooIoIAqIKIIAooCKiooCKgAAKIoAACoAqACCoIAAAAKigAAKgAAKAAgqKgAKAIAAAqAAAoigAAAAVKoCAKEFEQABFBQBUVA0AAAAUQBAVAAAFQAAAABBUBVAAEUAAAAAAAAAFBAADAAAARcFEFRAAAAAAAAEAAFQFUAAIAIoACAqoAAoIAqACKAAAAgoCACAAoAIAAAKACCiAqgAAAAAAAoiggCgAAqQQAFUwBEQVAABAAABQAQAAAFFEVFAAAAAAAAAVQRUQFQBagUABQRUQAFQAAAQAAABQAQVAVUUAAAAAVFBFEUUEQAAAAAAQBUAAAAAAAEAAUFRQARFEUUAAVFBFAEAUAAAAAEQQFAAAAABAAUAEBUUUAAAAAAABQAFQAAUQAAAQqRQEhQAUARYAJQAWEAABAAFIAotQEBYAJVACigEAUf/2Q==")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_011_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Maxi Dress",
+    price: "68.00",
+    productID: "Garden18",
+    catagory: "Bestselling",
+    img: ['url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_020_b3?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Maxi Dress",
+    price: "48.00",
+    productID: "Garden19",
+    catagory: "Home",
+    img: ['url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130728470001_015_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "Devotion Twins Embroidered Ella Tunic Dress",
+    price: "98.00",
+    productID: "Garden20",
+    catagory: "Home",
+    img: ['url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
+  },
+  {
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_068_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Maxi Dress",
+    price: "98.00",
+    productID: "Garden16",
+    catagory: "Bestselling",
+    img: ['url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_066_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    name: "The Somerset Maxi Dress",
+    price: "42.00",
+    productID: "Garden17",
+    catagory: "Bestselling",
+    img: ['url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw8PDw8VFRUVDxUPFRUPFRUPFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDg0NDisZFRkrKys3Ny0rKysrNysrNysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAMIBAwMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQcC/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDERFAQAAAAAAACigioIqooAioqCoAoCKogCiKACAACACgqKg5FRQAABQQAAAABBQBQgKACCCoIogCgCgAACgAiACgoIICKAAKmCgigKigCGKgKAgAACKAACCoIogqqAgACACgCooIoIAqIKIIAooCKiooCKgAAKIoAACoAqACCoIAAAAKigAAKgAAKAAgqKgAKAIAAAqAAAoigAAAAVKoCAKEFEQABFBQBUVA0AAAAUQBAVAAAFQAAAABBUBVAAEUAAAAAAAAAFBAADAAAARcFEFRAAAAAAAAEAAFQFUAAIAIoACAqoAAoIAqACKAAAAgoCACAAoAIAAAKACCiAqgAAAAAAAoiggCgAAqQQAFUwBEQVAABAAABQAQAAAFFEVFAAAAAAAAAVQRUQFQBagUABQRUQAFQAAAQAAABQAQVAVUUAAAAAVFBFEUUEQAAAAAAQBUAAAAAAAEAAUFRQARFEUUAAVFBFAEAUAAAAAEQQFAAAAABAAUAEBUUUAAAAAAABQAFQAAUQAAAQqRQEhQAUARYAJQAWEAABAAFIAotQEBYAJVACigEAUf/2Q==")'],
+  },
+]
+   let items=JSON.parse(localStorage.getItem("data"))||[]
 
+ document.querySelector("#sort").addEventListener("change", on1)
+ function on1(){
+    let select=document.querySelector("#sort").value
+    
 
-    function displayCard(item){
-    document.querySelector("#container").innerHTML="";
-     item.forEach(elem => {
+    if(select=="lowhigh"){
+        item.sort(function(a,b){
+        
+            return a.price-b.price
+        })
+        display(item);
+    }else if(select=="highlow"){
+        item.sort(function(a,b){
+            return b.price-a.price
+        })
+        display(item);
+    }
+else if(select=="az"){
+        item.sort(function(a,b){
+    if(a.name>b.name) return 1
+    if(a.name<b.name) return -1
+    else return 0
+         })
+         display(item);
+        }else if(select=="za"){
+        item.sort(function(a,b){
+    if(a.name<b.name) return 1
+    if(a.name>b.name) return -1
+    else return 0
+         })
+         display(item)
+    }else if(select=="shl"){
+        item.sort(function(a,b){
+            if(a.size<b.size) return 1
+            if(a.size>b.size) return -1
+            else return 0
+        })
+        display(item)
+    }else if(select=="slh"){
+        item.sort(function(a,b){
+            if(a.size>b.size) return 1
+            if(a.size<b.size) return -1
+            else return 0
+        })
+        display(item)
+    }else if(select=="Newest"){
+        output=item.filter(function(el){
+            return(el.catagory=="Newest")
+        })
+        display(output)
+    }else if(select=="Bestselling"){
+        output=item.filter(function(el){
+            return(el.catagory=="Bestselling")
+        })
+        display(output)
+    }else if(select=="Featured"){
+        window.location.reload()
+    }
 
-    let div=document.createElement("div");
+    // window.location.reload()
 
-    let imageProd = document.createElement("img");
-    imageProd.setAttribute("src",elem.image)
+}
+display1(items)
+ display(item)
 
-    let name=document.createElement("p")
-    name.innerText=elem.name;
-
-    let title=document.createElement("p");
-    title.innerText=elem.price;
-
-    let cost=document.createElement("h3");
-    cost.innerText="RS"+" "+elem.cost
-
-    let btn=document.createElement("button");
-    btn.innerText="Add to card"
-
-    btn.addEventListener("click",function(){
-        cartItems.push(elem);
-        localStorage.setItem("cart_Products",JSON.stringify(men_item));
+ 
+ function display(item){
+   document.querySelector("#images").innerHTML=""
+   item.forEach(function(el){
+    let box=document.createElement("div")
+    box.addEventListener("click", function(){
+        send(el)
     })
-    div.append(imageProd,name,title);
-
-    document.querySelector("#container").append(div);
+    let im=document.createElement("img")
+    im.setAttribute("src",el.image)
+    let nam=document.createElement("p")
+    nam.innerText=el.name
+    // if(item.price==""){
+    let pr=document.createElement("p")
+    if(el.price!=""){
+    pr.innerText=`$ ${el.price}`
+    }
+    // let sz=document.createElement("p")
+    let colr=document.createElement("p")
+     for(let i=0;i<el.img.length;i++){
+        colr.setAttribute("class","coloursForPic")
+        if(i<4){
+        let inp=document.createElement("button")
+        //let a=
+       // console.log(a)
       
-  });
+        inp.style.backgroundImage =el.img[i]
+    
+    
+        
+       
+       colr.append(inp)
+        }else
+        colr.append("+"+(el.img.length-4))
+     }    
+    
+    box.append(im,nam,pr,colr)
+    document.querySelector("#images").append(box)
+
+   })
+   localStorage.setItem("data", JSON.stringify(item))
  }
- displayCard(item);
+ function display1(items){
+
+   items.forEach(function(el){
+    let box=document.createElement("div")
+    let im=document.createElement("img")
+    im.setAttribute("src",el.image)
+    let nam=document.createElement("p")
+    nam.innerText=el.name
+    let pr=document.createElement("p")
+    pr.innerText=`$ ${el.price}`
+    // let sz=document.createElement("p")
+    // sz.innerText=el.size
+    box.append(im,nam,pr)
+    document.querySelector("#images").append(box)
+
+   })
+   localStorage.setItem("data",JSON.stringify(item))
+ }
+//  document.querySelector("#btn-btn").addEventListener("click", on2)
+//  function on2(){
+   
+//  }
+function send(el){
+    localStorage.setItem("obj", JSON.stringify(el))
+    window.location.href="cartshoe.html"
+}
+document.querySelector("#price").addEventListener("click", pri)
+ function pri(){
+    item.sort(function(a,b){
+        return a.price-b.price
+    })
+    display(item)
+ }
+ document.querySelector("#size").addEventListener("click", siz)
+ function siz(){
+    item.sort(function(a,b){
+        return a.size-b.size
+    })
+    display(item)
+ }
+ 
 </script>
+
+<script src="./script/search.js"></script>
+<script src="./script/Sign.js"></script>
