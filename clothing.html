@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOTHING</title>
+    <a href="clothing.html"></a>
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/backgroud.css">
+
+    <script src="https://kit.fontawesome.com/38439e7720.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family:  Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        #upper>div>h2:hover{
+            cursor: pointer;
+            color: rgb(66, 153, 253);
+
+        }
+        #shoes>div{
+            position:relative;
+        }
+       #upper>div>div{
+        position: relative;
+       }
+        #complete{
+            /* border: 1px solid red; */
+            width:90%;
+            margin: auto;
+            margin-top: 10px;
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            z-index: -1;
+        }
+        #top{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        #top>div{
+            /* border:1px solid green; */
+            width:15%;
+            height:60px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           font-size: 14px;
+           font-weight: 10px;
+           box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        #shoes{
+            /* border: 1px solid green; */
+            /* margin-left: 300px; */
+            margin-top: 20px;
+            display: flex;
+    
+        }
+        #shoes>div:nth-child(1){
+            /* border: 1px solid blue; */
+            display: flex;
+            width:400px;
+            /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+        
+        }
+        #shoes>div:nth-child(1)>p{
+            margin-top: 13px;
+            margin-left: 13px;
+            color:#555 ;
+            margin-right: 40px;
+
+        }
+        #shoes>div:last-child{
+            display: flex;
+            /* border: 1px solid green; */
+            width:200px;
+            margin-left: 200px;
+            margin-top: 12px;
+        }
+        #sort{
+            /* margin-left: 20px; */
+            width:60%;
+            font-size: 15px;
+            color: rgb(92,92,95);
+            padding: 5px;
+        }
+        #shoes>div:last-child>p{
+            color:black;
+            margin-top: 7px;
+            margin-right: 2px;
+        }
+        #images{
+            /* border: 1px solid green; */
+            /* margin-left: 300px; */
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 15px;
+        }
+        /* #images>div{
+            border:1px solid red;
+        } */
+        #images>div {
+            overflow: hidden;
+            height: 405px;
+        }
+        #images>div>img{
+            width:100%;
+            height:300px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            transition-duration: 2s;
+        }
+        #images>div>p{
+            margin-top: 10px;
+        }
+        #images>div>p+p{
+            color:#555;
+            margin-top: 5px;
+            font-size: 15px;
+        
+        }
+        #images>div:hover img{
+            transform: scale(1.1);
+        }
+        img+p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #top>div:nth-child(1){
+            background-color:rgb(20,104,71) ;
+            color:white;
+        }
+        #top>div:nth-child(2){
+            background-color: rgb(69,157,147);
+            color:white;
+        }
+        #top>div:nth-child(3){
+            background-color: rgb(102,135,167);
+            color:white;
+        }
+        #top>div:nth-child(4){
+            background-color:#4f9589;
+            color:white;
+        }
+        #top>div:nth-child(5){
+            background-color:#5d8b52;
+            color:white;
+        }
+        #top>div:nth-child(6){
+            background-color: #6799aa;
+            color:white;
+        }
+        h1{
+        font-family: Arial, Helvetica, sans-serif;
+         font-size: 20px;
+         font-weight: 2px;
+         margin-top: 7px;
+        }
+        #box{
+            /* border: 1px solid yellow; */
+            margin-left: 0px;
+            width:1400px
+            
+        }
+        #upper{
+            /* border:1px solid red; */
+            display: flex;
+            margin-top: 10px;
+            /* position: relative; */
+        }
+        #images>div{
+            position: relative;
+            height: 410px;
+        }
+        #upper>div:first-child{
+            /* border: 1px solid green; */
+            
+            width:250px;
+            height: 600px;
+            display: block;
+            margin-top: 29px;
+            margin-right: 40px;
+        }
+        #complete a{
+            margin-top: 20px;
+            text-decoration: none;
+            display: block;
+            color:#555
+        }
+        #complete a:hover{
+            text-decoration: underline;
+        }
+        #shoes>div:nth-child(2){
+            /* border: 1px solid red; */
+            width:300px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #cloth{
+            margin-top: 0px;
+            width:50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px 0 5px;
+            padding-bottom: 20px;
+        }
+        #sec1{
+         margin-top: 20px;
+         border: 1px solid red;
+         width:100px;
+         padding-right: 20px;
+         
+        }
+        #complete a+h3{
+            margin-top: 20px;
+            
+        }
+        #upper>div:first-child>h2{
+            margin-top: 20px;
+        }
+        #price~h2{
+            font-weight: normal;
+            font-size: 20px;
+        }
+        #price{
+            font-weight: normal;
+            font-size: 20px;
+        }
+        #btn-btn{
+            margin-left: 100px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+        #images>div>p>button{
+            height:20px;
+            width:20px;
+            border-radius: 50%;
+            margin-right: 5px;
+           }
+           .coloursForPic{
+            position: absolute;
+            bottom: 0px;
+            
+           }
+           .coloursForPic>button{
+            border:0.5px solid #555;
+           }
+        @media all and (min-width:784px) and (max-width:1074px){
+        #images{
+            grid-template-columns: repeat(3,1fr);
+            /* width:100%; */
+            gap:10px;
+        }
+       
+       
+        #box{
+            width:100%;
+        }
+        #shoes>div:nth-child(1)>p{
+            margin-left: 4px;
+        }
+        #upper{
+            width:100%;
+        }
+
+    }
+    @media all and (min-width:200px) and (max-width:783px){
+        #images{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(10,420px);
+            /* width:100%; */
+            gap:10px;
+        }
+        
+        /* #complete{
+            width: 400px;
+            height: 380px;
+        } */
+        #box{
+            width:100%;
+        }
+        #shoes>div:nth-child(1)>p{
+            margin-left: 4px;
+        }
+        #upper>div:first-child{
+            display: none;
+        }
+        /* #upper>div:first-child>h2{
+           margin-top: 0px;
+           height: 0px;
+           display: none;
+        } */
+        #upper{
+            width:100%;
+        }
+    
+    }
+
+
+    
+    
+    
+    </style>
+</head>
+<body>
+
+
+    <div id="complete">
+        
+    <div id="upper">
+        <div>
+            <h3>Browse by:</h3>
+            <hr>
+            <a href="index.html">Home</a>
+            <a href="shoes.html">shoes</a>
+            <a href="beauty1.html">Beauty & Wellness</a>
+            <a href="">Homes and furniture</a>
+            <a href="">Weddings</a>
+            <a href="sale.html">Sale</a>
+            <a href="">Garden & outdoor</a>
+            <h3>Filter by:</h3>
+            <hr>
+            <h2 id="price">Price +</h2>
+            <hr>
+            <h2 id="size">Size +</h2>
+            <hr>
+            <h2>Color +</h2>
+            <hr>
+            <h2>Brand +</h2>
+            <hr>
+            <h2>Free pickup +</h2>
+            <hr>
+        </div>
+    <div id="box">
+        <div id="shoes">
+            <div>
+                <h1>Women's Clothing</h1>
+                <p>3916 products</p>
+            </div>
+            <div>
+                <p>Sort:</p>
+                <select name="" id="sort">
+                    <option value="">Featured</option>
+                    <option value="lowhigh">Price:Low to High</option>
+                    <option value="highlow">Price:High to Low</option>
+                    <option value="Newest">Newest</option>
+                    <option value="Bestselling">Bestselling</option>
+                
+                    <option value="az">A-Z</option>
+                    <option value="za">Z-A</option>
+                </select>
+                <!-- <button class="btn-btn"><a class="cloth"href=""><</a></button> -->
+                <button id="btn-btn"><a id="cloth" href="shoes.html">2</a></button>
+            </div>
+        </div>
+        <div id="images">
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <div id="footer">
+        <div id="help">
+          <div>
+            
+            <h3>help</h3>
+            <ul class="footerHelp">
+              <li>Track Your Order</li>
+              <li>Start A Return Or Exchange (US)</li>
+              <li>Return And Exchange</li>
+              <li>Shipping</li>
+              <li>Customer Service</li>
+              <li>Current Promotions</li>
+              <li>Product Recalls</li>
+            </ul>
+          </div>
+          <div>
+            <h3>About Us</h3>
+            <ul class="footerHelp">
+              <a href="ourStory.html"><li>Our Story</li></a>
+              <li>Events</li>
+              <li>A Greater Good</li>
+              <li>Diversity & Inclusion</li>
+              <li>Stories</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Services</h3>
+            <ul class="footerHelp">
+              <li>AnthroPerks</li>
+              <li>Gift Cards</li>
+              <li>Trade Membership</li>
+              <li>Furniture: Guides & Services</li>
+              <li>Store Pickup & Collection Points</li>
+              <li>Klarna</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <ul class="footerHelp">
+              <a href="contact.html"><li>Contact Us</li></a>
+              <li>Stay Connected</li>
+              <li>Careers</li>
+              <li>Styling Services</li>
+              <li>Request A Catalog</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Social Network</h3>
+            <div>
+              <a href="https://www.instagram.com/gaurav_7ingh/"
+                ><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYRHI1E_Mh-Hpi4hqtCifpStom1SsyNniyLSIP6e8HU1HN6-lnJ31V&usqp=CAE&s"
+              /></a>
+            </div>
+            <div>
+              <a href="https://twitter.com/gaurav__singh"
+                ><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAMAAACZHrEMAAAAY1BMVEX///8ArO0AqOwAqu0ApuwApOwAouv4/P7t9/3z+v6v3Pfj8vzY7fvd8Puq2vaJzPPP6vpEte+TzvQvsu633/iByPNiwPF1xvLC5PlnvvEur+6g1PXJ5vlPuO9ww/KX0/UAnOoO9ENTAAAEeElEQVR4nO2b2ZajIBCGIwXuS4j7lsz7P+WoSaa7EyNViNM3fHd9jtK/RfFTLDmdLBaLxWKxWCwWi8XyC3hB0oRpWMSB99tKiiwXgjPGuHDzMgx+T0pUdgycLwCgjlee84vDg+ZlwJxXGC/fopN2F2yTuqIb8S5lCY/bf38sSoFzbJtlqqelXpeyROf6DI6X1B1zGDYwEbhnDSne+FnLpKbz54fOvXTnx+5/IbhMT9PVBCNsaJnUyCGsHLhnNy+wzXZTJ3cRVcxmXBY4fz7CWmyrsZhTDtbG4wYb+fIG5Gjvydj9BZKahuO1OA6+6fYhHxK8Fr8jxIU/Gg4adbvy31vqh59k+E5i+aIlGGqhzsvk6yMBm/OBwGtp/TkmteQC4WbnbyNUZDgvJgSmPhdl7nJweIZoePjeMJOYvP/qWTX5w2mgxXznDzGTcSISZyANpQXoUKP7/GKkrFa+VhI85qFF4kw1fn1x8nHFK4Rx/dDiIA0+em9a1JvvetTAMImdJr1x5Uu620ZfxUQxy+hGcl2bfbn87AoNTQy/oqWcTuH62GBO+OGDQpqYkKDls52yfL2z0u1C5qURbIn3oPr4pUzUzbtXkSJDFVNsfClAV8Yv3UXKGaoYhW8wIcv0e3+RRhNZjLJSAiacazhEd0kknyGLObWIlAQOnWzr26SJ4sCsV//7n/jomW9aUHN8MaMlhupjFDEaC8TePUgMunpcSO4Dt6fXKDhIy8O065dB0h/UU4Q1x2R5nME1TFYKGyOgF9kLcw3JAEDW1SFiKFpO8dNjGGX+wwIjSQyl1KfDbiQxKPvVhuNXqQtHDaMFRtxq8Un2TmSkbsRWx/UTUOrfheY4MRozk2J3bgeCZHkLGmtnJEDWct/vPAJ6mTfhOcd0FFOt2leJDtHiSL1zgPMRHcUwm1VrHJHEiB3FDyS56eAAel/8naA1rIaRlvyvFJ3ZvtqjZRrivTRXYlFLmRU5TclM9ZZ2+k4pE/veyfP8JF7dyiKj5b5PEpDjhDRVC4tdR8pmy89dgZlM2GjFl9OLhx90BkODOULZhLq/uwFxubRGaczzmM7Z9AvSUEexcr+WU2QobVCnVkoGI2K0LhCsEBuwvP2T0j81cu+YgsqUlmmqLHeaH217SMUw7hni1HsMKrwwF7qps6+8WyfORiYYvbTZPQ2s40VDmtXEAO2cqzfxibslwoTzfiDlNC38uLhE1KULPywu/sUl5ougn58gpfTUKRPggDE9E1xyqu0BaO1+KJUMFTFvJ9h4wM1N71xLjUUcvxjWEiRFX/EPlzW3w5IbqV+aOuvTNO1v9dh1DtOqZQAyQzeAk/bPfKtYT8aCUN62ocjZVS9wSTqCVOI1uW5cAFKjhdRCU1HddlYi8vSYm9jzBWKSHua0K/dHTBGF0sXqAQE3w8XlG37fOkqfYRzGC+l4WJtoKHMH1kc6zHcRu2sT/c8fOvhTuVnlwhX8bkHLXQyX51WZNju26XbgeX48FOmdYoh97Z8DWCwWi8VisVgsFotFl7+teTrpC785FgAAAABJRU5ErkJggg=="
+              /></a>
+            </div>
+            <div>
+              <a href="https://www.facebook.com/profile.php?id=100007446062466"
+                ><img
+                  src="data:image/png;base64,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"
+              /></a>
+            </div>
+            <div>
+              <a href="https://github.com/gaurav7ingh"
+                ><img
+                  src="data:image/png;base64,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"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div id="contactFooter">
+          <div>
+            <div>
+              <img
+                style="height: 100%"
+                src="https://images.ctfassets.net/5de70he6op10/4gWq1G4qLLgmqlNeHfzV2T/55298745127c36c5876f4013434c0c37/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917_Copy_2.svg"
+              />
+            </div>
+            <div>
+              <div>
+                <a href="https://www.instagram.com/gaurav_7ingh/"
+                  ><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYRHI1E_Mh-Hpi4hqtCifpStom1SsyNniyLSIP6e8HU1HN6-lnJ31V&usqp=CAE&s"
+                /></a>
+              </div>
+              <div>
+                <a href="https://twitter.com/gaurav__singh"
+                  ><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAMAAACZHrEMAAAAY1BMVEX///8ArO0AqOwAqu0ApuwApOwAouv4/P7t9/3z+v6v3Pfj8vzY7fvd8Puq2vaJzPPP6vpEte+TzvQvsu633/iByPNiwPF1xvLC5PlnvvEur+6g1PXJ5vlPuO9ww/KX0/UAnOoO9ENTAAAEeElEQVR4nO2b2ZajIBCGIwXuS4j7lsz7P+WoSaa7EyNViNM3fHd9jtK/RfFTLDmdLBaLxWKxWCwWi8XyC3hB0oRpWMSB99tKiiwXgjPGuHDzMgx+T0pUdgycLwCgjlee84vDg+ZlwJxXGC/fopN2F2yTuqIb8S5lCY/bf38sSoFzbJtlqqelXpeyROf6DI6X1B1zGDYwEbhnDSne+FnLpKbz54fOvXTnx+5/IbhMT9PVBCNsaJnUyCGsHLhnNy+wzXZTJ3cRVcxmXBY4fz7CWmyrsZhTDtbG4wYb+fIG5Gjvydj9BZKahuO1OA6+6fYhHxK8Fr8jxIU/Gg4adbvy31vqh59k+E5i+aIlGGqhzsvk6yMBm/OBwGtp/TkmteQC4WbnbyNUZDgvJgSmPhdl7nJweIZoePjeMJOYvP/qWTX5w2mgxXznDzGTcSISZyANpQXoUKP7/GKkrFa+VhI85qFF4kw1fn1x8nHFK4Rx/dDiIA0+em9a1JvvetTAMImdJr1x5Uu620ZfxUQxy+hGcl2bfbn87AoNTQy/oqWcTuH62GBO+OGDQpqYkKDls52yfL2z0u1C5qURbIn3oPr4pUzUzbtXkSJDFVNsfClAV8Yv3UXKGaoYhW8wIcv0e3+RRhNZjLJSAiacazhEd0kknyGLObWIlAQOnWzr26SJ4sCsV//7n/jomW9aUHN8MaMlhupjFDEaC8TePUgMunpcSO4Dt6fXKDhIy8O065dB0h/UU4Q1x2R5nME1TFYKGyOgF9kLcw3JAEDW1SFiKFpO8dNjGGX+wwIjSQyl1KfDbiQxKPvVhuNXqQtHDaMFRtxq8Un2TmSkbsRWx/UTUOrfheY4MRozk2J3bgeCZHkLGmtnJEDWct/vPAJ6mTfhOcd0FFOt2leJDtHiSL1zgPMRHcUwm1VrHJHEiB3FDyS56eAAel/8naA1rIaRlvyvFJ3ZvtqjZRrivTRXYlFLmRU5TclM9ZZ2+k4pE/veyfP8JF7dyiKj5b5PEpDjhDRVC4tdR8pmy89dgZlM2GjFl9OLhx90BkODOULZhLq/uwFxubRGaczzmM7Z9AvSUEexcr+WU2QobVCnVkoGI2K0LhCsEBuwvP2T0j81cu+YgsqUlmmqLHeaH217SMUw7hni1HsMKrwwF7qps6+8WyfORiYYvbTZPQ2s40VDmtXEAO2cqzfxibslwoTzfiDlNC38uLhE1KULPywu/sUl5ougn58gpfTUKRPggDE9E1xyqu0BaO1+KJUMFTFvJ9h4wM1N71xLjUUcvxjWEiRFX/EPlzW3w5IbqV+aOuvTNO1v9dh1DtOqZQAyQzeAk/bPfKtYT8aCUN62ocjZVS9wSTqCVOI1uW5cAFKjhdRCU1HddlYi8vSYm9jzBWKSHua0K/dHTBGF0sXqAQE3w8XlG37fOkqfYRzGC+l4WJtoKHMH1kc6zHcRu2sT/c8fOvhTuVnlwhX8bkHLXQyX51WZNju26XbgeX48FOmdYoh97Z8DWCwWi8VisVgsFotFl7+teTrpC785FgAAAABJRU5ErkJggg=="
+                /></a>
+              </div>
+              <div>
+                <a href="https://www.facebook.com/profile.php?id=100007446062466"
+                  ><img
+                    src="data:image/png;base64,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"
+                /></a>
+              </div>
+              <div>
+                <a href="https://github.com/gaurav7ingh"
+                  ><img
+                    src="data:image/png;base64,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"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://images.ctfassets.net/5de70he6op10/2DRgCRXNIEkk0wIqUo2ywa/20ea44a95fb361eaf034b42eec179d44/_site_footer__download_app_enable_push_.jpg"
+            />
+          </div>
+          <div>
+            <ul class="footerLaguage">
+              <li>UK</li>
+              <li>India</li>
+              <li>US</li>
+              <li>France</li>
+              <li>Germany</li>
+              <li>Italy</li>
+              <li>Spain</li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <ul class="footerLaguage">
+                <li>Privacy Policy</li>
+                <li>Terms of Use</li>
+                <li>CA Transparency</li>
+                <li>Accessibility</li>
+                <li>URBN.com</li>
+                <li>For CA Residents</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="footerLaguage">
+                <li>2022 URBN.com. All Rights Reserved.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+<script>
+let item=[
+    {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4115929840011_011_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Favorite Daughter Favorite Blazer",
+        price:298,
+        size:12,
+        catagory:"",
+        img:""
+        
+    },
+    {
+        image:"https://images.ctfassets.net/5de70he6op10/7XhpDhqFrXly1LleAtAJX/12e2ea7893440a8e0ffc4d8c55e326b4/May_2022_Site_Content_____In-Grid_Banner__Shop_All_-_Pants_2x.jpg?w=1440&q=80&fm=webp",
+        name:"Favorite Daughter Fancy Pants",
+        price:128,
+        size:14,
+        catagory:"Newest",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972366_067_s?fit=constrain&hei=56&qlt=75")',
+    'url( "https://images.urbndata.com/is/image/Anthropologie/65972366_040_s?fit=constrain&hei=56&qlt=75")']
+       
+     },    
+    
+    {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4125402250009_014_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"English Factory Two-Piece Top and Shorts set",
+        price:128,
+        size:10,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/69266591_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_010_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_040_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_070_s?fit=constrain&hei=56&qlt=75")',
+	'url("https://images.urbndata.com/is/image/Anthropologie/69266591_072_s?fit=constrain&hei=56&qlt=75")']
+    },
+    {
+        image:"https://images.urbndata.com/is/image/Anthropologie/68889245_001_b3?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+        name:"The Shoales Two-Piece Set",
+        price:128,
+        size:10,
+        catagory:"Newest",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972366_067_s?fit=constrain&hei=56&qlt=75")',
+    'url( "https://images.urbndata.com/is/image/Anthropologie/65972366_040_s?fit=constrain&hei=56&qlt=75")']
+    },
+    {
+        image:"https://images.urbndata.com/is/image/Anthropologie/69090538_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Favorite Daughter Sleeveless Blouse Bodysuit",
+        price:188,
+        size:19,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/76183508_000_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4115929840015_049_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Favorite Daughter Break Up Blazer",
+        price:289,
+        size:10,
+        catagory:"Newest",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972366_067_s?fit=constrain&hei=56&qlt=75")',
+    'url( "https://images.urbndata.com/is/image/Anthropologie/65972366_040_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4123650590090_010_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"The Essential Slim Kick Flare Pants",
+        price:130,
+        size:10,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972366_067_s?fit=constrain&hei=56&qlt=75")',
+    'url( "https://images.urbndata.com/is/image/Anthropologie/65972366_040_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4110929840014_010_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"FAvourite Daughter Eyelet Buttondown",
+        price:198,
+        size:7,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/69267698_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_072_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_070_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4130647160128_049_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+        name:"Significant Other Ophelia Shorts",
+        price:218,
+        size:10,
+        catagory:"Newest",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/78001815_040_s?fit=constrain&hei=56&qlt=75")',
+        'url("https://images.urbndata.com/is/image/Anthropologie/78001815_066_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4110089540080_010_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Sarah Campbell For Anthropologie Floral Blouse",
+        price:90,
+        size:10,
+        catagory:"Newest",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/69266591_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_010_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_040_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_070_s?fit=constrain&hei=56&qlt=75")',
+	'url("https://images.urbndata.com/is/image/Anthropologie/69266591_072_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4115464030018_049_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Hutch tailored Floral Blazer",
+        price:180,
+        size:17,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/78001815_040_s?fit=constrain&hei=56&qlt=75")',
+        'url("https://images.urbndata.com/is/image/Anthropologie/78001815_066_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4115650590061_090_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Sarah Campbell for Anthropologie Anorak Jacket",
+        price:180,
+        size:18,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/69266591_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_010_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_040_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_070_s?fit=constrain&hei=56&qlt=75")',
+	'url("https://images.urbndata.com/is/image/Anthropologie/69266591_072_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4112800430066_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Sanctuary Dream Buttondown",
+        price:469,
+        size:18,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/67983239_000_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4130647160137_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"By Anthropologie Tierred Maxi Dress",
+        price:180,
+        size:14,
+        catagory:"Newest",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/67983239_000_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4130646420009_014_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"The Somerset Maxi Dress",
+        price:168,
+        size:9,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972366_067_s?fit=constrain&hei=56&qlt=75")',
+    'url( "https://images.urbndata.com/is/image/Anthropologie/65972366_040_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/64215254_046_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"By Anthrolpologie Seamless Square-Neck Bralette",
+        price:24,
+        size:10,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/67983239_000_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4130728470001_065_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Devotion Twins Ella Tunic",
+        price:239,
+        size:8,
+        catagory:"Newest",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/78001815_040_s?fit=constrain&hei=56&qlt=75")',
+        'url("https://images.urbndata.com/is/image/Anthropologie/78001815_066_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4123650590131_060_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=720",
+        name:"Maeve The Colette Cropped Wide-Leg Pants",
+        price:120,
+        size:10,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/69267698_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_072_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_070_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/64222805_083_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Jenny Seamless T-Back Bralette",
+        price:24,
+        size:9,
+        catagory:"Newest",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972366_067_s?fit=constrain&hei=56&qlt=75")',
+    'url( "https://images.urbndata.com/is/image/Anthropologie/65972366_040_s?fit=constrain&hei=56&qlt=75")']
+
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4112609690111_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"T.La Classic V-Neck Tee",
+        price:48,
+        size:12,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/69267698_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_072_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_070_s?fit=constrain&hei=56&qlt=75")']
+
+    },
+    {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4115929840011_011_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Favorite Daughter Favorite Blazer",
+        price:298,
+        size:12,
+        catagory:"",
+        img:""
+        
+    },
+    {
+        image:"https://images.ctfassets.net/5de70he6op10/7XhpDhqFrXly1LleAtAJX/12e2ea7893440a8e0ffc4d8c55e326b4/May_2022_Site_Content_____In-Grid_Banner__Shop_All_-_Pants_2x.jpg?w=1440&q=80&fm=webp",
+        name:"Favorite Daughter Fancy Pants",
+        price:128,
+        size:14,
+        catagory:"Newest",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972366_067_s?fit=constrain&hei=56&qlt=75")',
+    'url( "https://images.urbndata.com/is/image/Anthropologie/65972366_040_s?fit=constrain&hei=56&qlt=75")']
+       
+     },    
+    
+    {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4125402250009_014_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"English Factory Two-Piece Top and Shorts set",
+        price:128,
+        size:10,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/69266591_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_010_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_040_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_070_s?fit=constrain&hei=56&qlt=75")',
+	'url("https://images.urbndata.com/is/image/Anthropologie/69266591_072_s?fit=constrain&hei=56&qlt=75")']
+    },
+    {
+        image:"https://images.urbndata.com/is/image/Anthropologie/68889245_001_b3?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+        name:"The Shoales Two-Piece Set",
+        price:128,
+        size:10,
+        catagory:"Newest",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972366_067_s?fit=constrain&hei=56&qlt=75")',
+    'url( "https://images.urbndata.com/is/image/Anthropologie/65972366_040_s?fit=constrain&hei=56&qlt=75")']
+    },
+    {
+        image:"https://images.urbndata.com/is/image/Anthropologie/69090538_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Favorite Daughter Sleeveless Blouse Bodysuit",
+        price:188,
+        size:19,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/76183508_000_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4115929840015_049_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Favorite Daughter Break Up Blazer",
+        price:289,
+        size:10,
+        catagory:"Newest",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972366_067_s?fit=constrain&hei=56&qlt=75")',
+    'url( "https://images.urbndata.com/is/image/Anthropologie/65972366_040_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4123650590090_010_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"The Essential Slim Kick Flare Pants",
+        price:130,
+        size:10,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972366_067_s?fit=constrain&hei=56&qlt=75")',
+    'url( "https://images.urbndata.com/is/image/Anthropologie/65972366_040_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4110929840014_010_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"FAvourite Daughter Eyelet Buttondown",
+        price:198,
+        size:7,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/69267698_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_072_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_070_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4130647160128_049_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+        name:"Significant Other Ophelia Shorts",
+        price:218,
+        size:10,
+        catagory:"Newest",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/78001815_040_s?fit=constrain&hei=56&qlt=75")',
+        'url("https://images.urbndata.com/is/image/Anthropologie/78001815_066_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4110089540080_010_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Sarah Campbell For Anthropologie Floral Blouse",
+        price:90,
+        size:10,
+        catagory:"Newest",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/69266591_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_010_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_040_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_070_s?fit=constrain&hei=56&qlt=75")',
+	'url("https://images.urbndata.com/is/image/Anthropologie/69266591_072_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4115464030018_049_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Hutch tailored Floral Blazer",
+        price:180,
+        size:17,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/78001815_040_s?fit=constrain&hei=56&qlt=75")',
+        'url("https://images.urbndata.com/is/image/Anthropologie/78001815_066_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4115650590061_090_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Sarah Campbell for Anthropologie Anorak Jacket",
+        price:180,
+        size:18,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/69266591_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_010_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_040_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_070_s?fit=constrain&hei=56&qlt=75")',
+	'url("https://images.urbndata.com/is/image/Anthropologie/69266591_072_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4112800430066_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Sanctuary Dream Buttondown",
+        price:469,
+        size:18,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/67983239_000_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4130647160137_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"By Anthropologie Tierred Maxi Dress",
+        price:180,
+        size:14,
+        catagory:"Newest",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/67983239_000_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4130646420009_014_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"The Somerset Maxi Dress",
+        price:168,
+        size:9,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972366_067_s?fit=constrain&hei=56&qlt=75")',
+    'url( "https://images.urbndata.com/is/image/Anthropologie/65972366_040_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/64215254_046_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"By Anthrolpologie Seamless Square-Neck Bralette",
+        price:24,
+        size:10,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/67983239_000_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4130728470001_065_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Devotion Twins Ella Tunic",
+        price:239,
+        size:8,
+        catagory:"Newest",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/78001815_040_s?fit=constrain&hei=56&qlt=75")',
+        'url("https://images.urbndata.com/is/image/Anthropologie/78001815_066_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4123650590131_060_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=720",
+        name:"Maeve The Colette Cropped Wide-Leg Pants",
+        price:120,
+        size:10,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/69267698_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_072_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_070_s?fit=constrain&hei=56&qlt=75")']
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/64222805_083_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Jenny Seamless T-Back Bralette",
+        price:24,
+        size:9,
+        catagory:"Newest",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972366_067_s?fit=constrain&hei=56&qlt=75")',
+    'url( "https://images.urbndata.com/is/image/Anthropologie/65972366_040_s?fit=constrain&hei=56&qlt=75")']
+
+    },
+     {
+        image:"https://images.urbndata.com/is/image/Anthropologie/4112609690111_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"T.La Classic V-Neck Tee",
+        price:48,
+        size:12,
+        catagory:"Bestselling",
+        img: ['url("https://images.urbndata.com/is/image/Anthropologie/69267698_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_072_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_070_s?fit=constrain&hei=56&qlt=75")']
+
+    }
+     
+     
+
+];
+   let items=JSON.parse(localStorage.getItem("data"))||[]
+
+ document.querySelector("#sort").addEventListener("change", on1)
+ function on1(){
+    let select=document.querySelector("#sort").value
+    
+
+    if(select=="lowhigh"){
+        item.sort(function(a,b){
+        
+            return a.price-b.price
+        })
+        display(item);
+    }else if(select=="highlow"){
+        item.sort(function(a,b){
+            return b.price-a.price
+        })
+        display(item);
+    }
+else if(select=="az"){
+        item.sort(function(a,b){
+    if(a.name>b.name) return 1
+    if(a.name<b.name) return -1
+    else return 0
+         })
+         display(item);
+        }else if(select=="za"){
+        item.sort(function(a,b){
+    if(a.name<b.name) return 1
+    if(a.name>b.name) return -1
+    else return 0
+         })
+         display(item)
+    }else if(select=="shl"){
+        item.sort(function(a,b){
+            if(a.size<b.size) return 1
+            if(a.size>b.size) return -1
+            else return 0
+        })
+        display(item)
+    }else if(select=="slh"){
+        item.sort(function(a,b){
+            if(a.size>b.size) return 1
+            if(a.size<b.size) return -1
+            else return 0
+        })
+        display(item)
+    }else if(select=="Newest"){
+        output=item.filter(function(el){
+            return(el.catagory=="Newest")
+        })
+        display(output)
+    }else if(select=="Bestselling"){
+        output=item.filter(function(el){
+            return(el.catagory=="Bestselling")
+        })
+        display(output)
+    }else if(select=="Featured"){
+        window.location.reload()
+    }
+
+    // window.location.reload()
+
+}
+display1(items)
+ display(item)
+
+ 
+ function display(item){
+   document.querySelector("#images").innerHTML=""
+   item.forEach(function(el){
+    let box=document.createElement("div")
+    box.addEventListener("click", function(){
+        send(el)
+    })
+    let im=document.createElement("img")
+    im.setAttribute("src",el.image)
+    let nam=document.createElement("p")
+    nam.innerText=el.name
+    // if(item.price==""){
+    let pr=document.createElement("p")
+    if(el.price!=""){
+    pr.innerText=`$ ${el.price}`
+    }
+    let sz=document.createElement("p")
+    let colr=document.createElement("p")
+     for(let i=0;i<el.img.length;i++){
+        colr.setAttribute("class","coloursForPic")
+        if(i<4){
+        let inp=document.createElement("button")
+        //let a=
+       // console.log(a)
+      
+        inp.style.backgroundImage =el.img[i]
+    
+    
+        
+       
+       colr.append(inp)
+        }else
+        colr.append("+"+(el.img.length-4))
+     }    
+    
+    box.append(im,nam,pr,sz,colr)
+    document.querySelector("#images").append(box)
+
+   })
+   localStorage.setItem("data", JSON.stringify(item))
+ }
+ function display1(items){
+
+   items.forEach(function(el){
+    let box=document.createElement("div")
+    let im=document.createElement("img")
+    im.setAttribute("src",el.image)
+    let nam=document.createElement("p")
+    nam.innerText=el.name
+    let pr=document.createElement("p")
+    pr.innerText=`$ ${el.price}`
+    let sz=document.createElement("p")
+    // sz.innerText=el.size
+    box.append(im,nam,pr,sz)
+    document.querySelector("#images").append(box)
+
+   })
+   localStorage.setItem("data",JSON.stringify(item))
+ }
+//  document.querySelector("#btn-btn").addEventListener("click", on2)
+//  function on2(){
+   
+//  }
+function send(el){
+    localStorage.setItem("obj", JSON.stringify(el))
+    window.location.href="cartshoe.html"
+}
+document.querySelector("#price").addEventListener("click", pri)
+ function pri(){
+    item.sort(function(a,b){
+        return a.price-b.price
+    })
+    display(item)
+ }
+ document.querySelector("#size").addEventListener("click", siz)
+ function siz(){
+    item.sort(function(a,b){
+        return a.size-b.size
+    })
+    display(item)
+ }
+
+</script>
+<script src="./script/Sign.js"></script>
+<script src="./script/search.js"></script>
