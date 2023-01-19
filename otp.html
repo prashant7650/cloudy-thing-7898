@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href=".css"> -->
+    <link rel="stylesheet" href="./style/otp.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="otpDiv">
+        
+        <div id="otpline">
+            <h2>Verify with OTP</h2>
+            <p>Sent to registered Mobile No.<p id="otpNum"></p></p>
+        </div>
+        <div id="inputDiv">
+            <input id="otp1" type="tel" maxlength="1" >
+            <input id="otp2" type="tel" maxlength="1" >
+            <input id="otp3" type="tel" maxlength="1" >
+            <input id="otp4" type="tel" maxlength="1" >
+            
+        </div>
+       <button id="checkotp" onclick="otpfun()"> CONFIRM <a href="./index.html"></a></button></a>
+        <div id="checkDiv">
+            <h4>RESEND OTP</h4>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+
+
+ let res_otp=otp();
+    alert("Your OTP is "+res_otp)
+function otpfun (){
+    let add1=document.getElementById("otp1").value;
+    let add2=document.getElementById("otp2").value;
+    let add3=document.getElementById("otp3").value;
+    let add4=document.getElementById("otp4").value;
+    let add=add1+add2+add3+add4
+    add=+(add);
+    debugger;
+       if(res_otp===add){
+
+        alert("logIn successfull")
+
+       } else{
+            alert("Invalid OTP")
+       }
+    
+} 
+
+
+function otp(){
+    let pass=Math.floor(1000+Math.random()*9000)
+    // alert ("OTP"+" "+pass)
+    
+    return pass;
+}
+
+
+
+
+</script>
+
+
