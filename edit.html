@@ -9,9 +9,7 @@
     <script src="https://kit.fontawesome.com/e962f2728f.js" crossorigin="anonymous"></script>
     <title>DASHBOARD</title>
     <style>
-       #menu .items li:nth-child(1){
-        border-left: 4px solid white;
-       }
+      
     </style>
     <link rel="stylesheet" href="/style/adminPage.css">
 </head>
@@ -52,9 +50,9 @@
             </div>
         </div>
         <!-- info box -->
-        <h3 class="i-name">DASHBOARD</h3>
+        <!-- <h3 class="i-name">DASHBOARD</h3>
         <div class="values">
-            <!-- 1st -->
+       
             <div class="val-box">
                 <i class="fa-solid fa-users"></i>
                 <div>
@@ -62,7 +60,7 @@
                     <span>TOTAL LOGINS</span>
                 </div>
             </div>
-            <!-- 2nd -->
+           
             <div class="val-box">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <div>
@@ -70,7 +68,7 @@
                     <span>TOTAL ORDERS</span>
                 </div>
             </div>
-            <!-- 3rd -->
+           
             <div class="val-box">
                 
                 <i class="fa-solid fa-chart-simple"></i>
@@ -80,7 +78,7 @@
                     <span>PRODUCT SELL</span>
                 </div>
             </div>
-            <!-- 4th -->
+            
             <div class="val-box">
                 <i class="fa-solid fa-sack-dollar"></i> 
                 <div>
@@ -88,9 +86,9 @@
                     <span>EARNING</span>
                 </div>
             </div>
-        </div>
+        </div> -->
         <dir class="board">
-            <table width="100%">
+            <!-- <table width="100%">
                 <thead>
                     <tr>
                         <td>NAME</td>
@@ -101,7 +99,7 @@
                     </tr>
                 </thead>
                <tbody>
-                <!-- <tr>
+                <tr>
                     <td class="people">
                         <img src="logo/logo.jpg" alt="">
                         <div class="people-de">
@@ -210,9 +208,9 @@
                     <td class="edit">
                         <a href="#">edit</a>
                     </td>
-                </tr> -->
+                </tr>
                </tbody>
-            </table>
+            </table> -->
         </dir>
     </section>
     <script>
@@ -221,7 +219,6 @@
             $(`#menu`).toggleClass("active")
         })
 // variables
-let tbody =document.querySelector("tbody")
        let changeProfile= document.getElementById("pro")
        let email = localStorage.getItem("e")
        let data =JSON.parse(localStorage.getItem("email"))
@@ -234,65 +231,13 @@ let tbody =document.querySelector("tbody")
         }
        });
        changeProfile.src=`${x}`
-
-    // admin data
-let arr=[{img:"logo/person-logo.png", name:"Tejas", email:"tejas@gmail.com", desc:"Home section", p:"web devloper", active:"active", role:"developer", edit:"edit", detail:"" },
-{img:"logo/person-logo.png", name:"Prashant", email:"prashant@gmail.com", desc:"owner", p:"web devloper", active:"active", role:"Team lead", edit:"edit"},{img:"logo/person-logo.png", name:"saloni", email:"saloni@gmail.com", desc:"beauty and wellness", p:"web devloper", active:"active", role:"developer", edit:"edit"},
-{img:"logo/CE0E26F3-51A2-4401-BD15-EAF9C0DDF644 (1).JPG", name:"Kausal", email:"kausal@gmail.com", desc:"shoes section", p:"web devloper", active:"active", role:"developer", edit:"edit"},
-{img:"logo/IMG_20211101_152537.jpg", name:"Rajneesh", email:"rajneesh@gmail.com", desc:"Admin section", p:"web devloper", active:"active", role:"developer", edit:"edit"},]
-
-
-
-arr.forEach((ele) => {
-    let tr =document.createElement("tr")
-    // 1st td
-    let td1 = document.createElement("td")
-    td1.classList.add("people")
-    let img = document.createElement("img")
-    img.setAttribute("src" , `${ele.img}`)
-    let div= document.createElement("div")
-    div.classList.add("people-de")
-    let h5= document.createElement("h5")
-    h5.innerText=`${ele.name}`
-    let p =document.createElement("p")
-    p.innerText= `${ele.email}`
-    div.append(h5 , p)
-    td1.append(img, div)
-    // 2nd td
-    let td2= document.createElement("td")
-    td2.classList.add("people-des")
-    let h52= document.createElement("h5")
-    h52.innerText=`${ele.desc}`
-    let p2=document.createElement("p")
-    p2.innerText=`${ele.p}`
-    td2.append(h52, p2)
-    // 3rd td
-    let td3 = document.createElement("td")
-    td3.classList.add("active")
-    let p3 = document.createElement("p")
-    p3.innerText=`${ele.active}`
-    td3.append(p3)
-    // 4th td
-    let td4 = document.createElement("td")
-    td4.classList.add("role")
-    let p4 = document.createElement("p")
-    p4.innerText=`${ele.role}`
-    td4.append(p4)
-    // 5th td
-    let td5 = document.createElement("td")
-    td5.classList.add("edit")
-    let a = document.createElement("a")
-    a.setAttribute("href", "#")
-    a.addEventListener("click", ()=>{
-        localStorage.setItem("see", JSON.stringify(ele))
-        self.location="edit.html"
+//  edit btn
+edit.forEach((ele) => {
+    ele.addEventListener("click",()=>{
+        console.log(ele);
+        self.location=""
     })
-    a.innerText=`${ele.edit}`
-    td5.append(a)
-    tr.append(td1, td2, td3, td4, td5)
-    tbody.append(tr)
-    })
-
+});
     </script>
 </body>
 </html>
