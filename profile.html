@@ -6,16 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/profile.css">
+    <style>
+       
+       #admin {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all .3s;
+  box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+             margin-left: 120px;
+}
+
+#admin:hover {
+  border: 1px solid white;
+}
+
+#admin:active {
+  box-shadow: 4px 4px 12px #c5c5c5,
+             -4px -4px 12px #ffffff;
+}
+    </style>
 </head>
 <body>
     <div id="boxbody">
-        <!-- <div class="imgbo">
-                <img src="https://bit.ly/3tV4k8R" alt="">
-        </div> -->
-
        <div class="signin">
                 
-           <h2>Login <span>or</span> Signup</h2>
+           <h2>Login <span>or</span> Signin</h2>
            <div>
            <input type="tel" placeholder="Mobile Number*" id="mob">
            <input type="password" placeholder="Enter password" id="pass">
@@ -25,11 +45,16 @@
            <button id="signup_button1">continue</button>
              <p>Have trouble logging in?<span> Get help</span> </p>
              <p>Don't have an account ? <span id="signUp"><a style="text-decoration: none; color:#ff3f6c ;" href="./signup.html">Sign up</a></span> </p>
-             
-    
         </div>
-
+        <div id="hello">
+            <button id="admin"> LOGIN AS ADMIN
+        </button>
+        </div>
     </div>
+
+    
+    
 </body>
 </html>
-<script src="./profile.js"></script>
+
+<script src="./script/profile.js"></script>

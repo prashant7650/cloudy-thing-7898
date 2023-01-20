@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antropologies</title>
     <script src="https://kit.fontawesome.com/38439e7720.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href=".style/navbar.css">
-    <!-- <link rel="stylesheet" href="index.html">
-   <link rel="stylesheet" href="./style/footer.css"> -->
+<link rel="stylesheet" href="style/navbar.css">
+   <link rel="stylesheet" href="style/footer.css">
    
    
     <style>
@@ -17,495 +16,6 @@
     margin: 0%;
 
 }
-
-#signIn_signUp>p {
-    margin-top: 10px;
-    margin-right: 10px;
-    border: 1px solid;
-    padding: 5px;
-    color: white;
-    background-color: rgb(22,123,147);
-    cursor: pointer;
-    font-family: sans-serif;
-
-}
-
-#signIn_signUp {
-    font-family: sans-serif;
-    letter-spacing: 0.06rem;
-}
-
-#signIn_signUp>i {
-    margin-top: 12px;
-}
-
-#navbar {
-
-    border-top: 1px solid rgb(163, 163, 163);
-    height: 60px;
-    /* display: flex; */
-    border-bottom: 1px solid rgb(163, 163, 163);
-    /* justify-content: center;
-    align-content: center; */
-    background-color: white;
-}
-
-#inner {
-    width: 100%;
-    height: 100%;
-    /* border: 1px solid; */
-    display: flex;
-    margin-left: 5px;
-    justify-content: center;
-    align-items: center;
-    /* margin-top: 30px;
-    margin-bottom: 30px; */
-    position: relative;
-    z-index: 1;
-}
-
-#inner>ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#nav-position a:hover{
-    text-decoration: none;
-    color: rgb(0, 170, 255);
-    text-decoration: underline;
-}
-#inner>ul>li {
-
-    margin-left: 15px;
-    margin-right: 15px;
-    font-size: 0.88rem;
-    line-height: 1.0;
-    letter-spacing: 0.06rem;
-    line-height: 15px;
-}
-
-
-li>div {
-    height: 100%;
-    /* border: 1px solid; */
-    font-family: "Avenir Medium", sans-serif;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-.submenu {
-    display: none;
-}
-
-#inner ul li div:hover .submenu {
-    display: flex;
-    position: absolute;
-    margin-top: 5px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.823);
-    opacity: 0.97;
-    z-index: 1;
-}
-
-/* .submenu {
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-    /* border: 1px solid; */
-
-
-.submenu-1 {
-    /* margin-right: 20px; */
-    /* display: flex; */
-    padding-top: 30px;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    background-color: white;
-
-}
-
-.listDiv>ul {
-    display: block;
-    margin: 10px 0px;
-    margin-right: 50px;
-}
-
-.listDiv ul li {
-    display: block;
-    margin: 10px;
-}
-
-.submenu-2 {
-    display: flex;
-}
-
-.submenu-1>div {
-    margin-left: 10px;
-    margin-bottom: 20px;
-
-}
-
-.submenu-1 img {
-    width: 80%;
-    display: block;
-    margin: auto;
-}
-
-hr {
-    color: rgb(197, 197, 197);
-}
-h1+hr {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 20px;
-    color: rgb(168, 167, 167);
-}
-
-hr+p {
-    width: 80%;
-    margin: auto;
-}
-
-input+p {
-    margin-top: 20px;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-.companyLogo_searchBar {
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-}
-
-#comapnyLogo {
-    display: flex;
-    height: 30px;
-    width: 60px;
-    /* border: 1px solid;  */
-    align-items: center;
-     margin-left: 30px;
-}
-/* #mainlogo{
-    height: 30px;
-    width: 60px;
-} */
-
-#comapnyLogo>div:first-child {
-
-     margin-right: 25px; 
-    cursor: pointer;
-    /* height: 100%; */
-    padding: 0px 10px;
-    display: flex;
-    align-items: center;
-    height: 30px;
-    width: 60px;
-    /* border: 1px solid; */
-    /* border-top: 5px solid; */
-    /* border-left: 1px solid;
-    border-right: 1px solid; */
-}
-
-#comapnyLogo>div:last-child {
-    margin-top: 5px;
-    cursor: pointer;
-    opacity: 0.4;
-    /* height: 100%; */
-    padding: 0px 30px;
-    display: flex;
-    align-items: center;
-    /* border: 1px solid; */
-    border-top: 5px solid;
-    /* border-left: 1px solid grey; */
-    border-right: 1px solid grey;
-}
-
-#comapnyLogo>div:last-child:hover {
-    opacity: 1;
-}
-
-#searchBar_cart {
-    width: 30%;
-    display: flex;
-    margin-right: 50px;
-    align-items: center;
-    /* border: 1px solid; */
-
-}
-
-#searchBar {
-    width: 70%;
-    /* height: 50px; */
-    /* border: 1px solid; */
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-    margin-right: 20px;
-    /* justify-content: space-between; */
-}
-
-#searchBar img {
-    /* height: 40px; */
-    opacity: 0.7;
-    cursor: pointer;
-
-}
-
-.search {
-    width: 100%;
-    height: 35px;
-    font-size: 1.1rem;
-    border: 1px solid;
-    padding: 0px 10px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    margin-bottom: 20px;
-    /* border-radius: 10px;       */
-}
-#signIn_signUp>button{
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-#searchBar>button {
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-#cart img {
-    height: 40px;
-    opacity: 0.7;
-    cursor: pointer;
-}
-
-#signIn_signUp {
-    height: 40px;
-    display: flex;
-    justify-content: end;
-
-    /* margin-right: 100px; */
-    background-color: #f7f6f2;
-    color: rgb(0, 208, 255);
-}
-
-#signIn_signUp button {
-    margin-right: 100px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    background-color: transparent;
-    letter-spacing: inherit;
-    color: rgb(100, 179, 195);
-
-}
-
-#forSticky {
-    position: sticky;
-    top: 0px;
-}
-
-.bg_modal {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    /* opacity: 0.3; */
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-    position: fixed;
-    z-index: 8000;
-}
-
-.div_content {
-    width: 500px;
-    height: 600px;
-    background-color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-}
-
-
-
-.bg_modal_creat {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    /* opacity: 0.3; */
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-    position: fixed;
-    z-index: 8000;
-}
-
-.div_content_creat {
-    width: 500px;
-    height: 600px;
-    background-color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-}
-.div_content>h1 {
-    margin-bottom: 10px;
-}
-
-#signinform input {
-    display: block;
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 20px;
-    font-size: 20px;
-    width: 80%;
-}
-
-.submitButton {
-    width: 80%;
-    padding: 10px;
-    background-color: gray;
-    color: white;
-    cursor: pointer;
-}
-
-.submitButton:hover {
-    background-color: white;
-    color: black;
-}
-
-.close {
-    position: absolute;
-    top: 0;
-    font-size: 30px;
-    right: 14px;
-    transform: rotate(45deg);
-    cursor: pointer;
-}
-
-.mobileNumber {
-    background-color: transparent;
-    margin-bottom: 10px;
-}
-
-#signUp_tag {
-    margin: 10px 0px;
-}
-
-#signUp {
-    background-color: transparent;
-    cursor: pointer;
-}
-
-
-/* creat account */
-
-
-
-
-.div_content_creat>h1 {
-    margin-bottom: 10px;
-}
-
-#nav-position input {
-    display: block;
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 20px;
-    font-size: 20px;
-    width: 80%;
-}
-#searchBar>input{
-    margin-bottom: 18px;
-    margin-left: 20px;
-    font-size: 15px;
-    
-}
-#searchBar>input::placeholder{
-    color: rgb(115, 170, 181);
-}
-.submitButton_creat {
-    width: 80%;
-    padding: 10px;
-    background-color: gray;
-    color: white;
-    cursor: pointer;
-}
-
-.submitButton_creat:hover {
-    background-color: white;
-    color: black;
-}
-
-.close_creat {
-    position: absolute;
-    top: 0;
-    font-size: 30px;
-    right: 14px;
-    transform: rotate(45deg);
-    cursor: pointer;
-}
-
-.mobileNumber_creat {
-    background-color: transparent;
-    margin-bottom: 10px;
-}
-
-#btnlog {
-    margin-top: 20px;
-
-}
-#cart{
-    cursor: pointer;
-    /* border: 1px solid; */
-}
-
-#for-bg-modal-css{
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-#nav-position{
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    margin-bottom: 15px;
-}
-
-#cart{
-    cursor: pointer;
-    /* border: 1px solid; */
-    display: flex;
-    /* border: 1px solid; */
-    position: relative;
-}
-#onnavbar{
-    display: none;
-    text-align: center;
-    color: white;
-    font-size: 15px;
-    height: 20px;
-    width: 20px;
-    padding-left: 5px;
-    background-color: rgb(22,123,147);
-    opacity: 0.8;
-    position:absolute;
-    border-radius: 10px;
-    right: -3px;
-} */ 
-
  /* main page css */
 
 
@@ -567,9 +77,7 @@ grid-template-columns: repeat(3,1fr);
 #sixth{
         width: 90%;
             margin: auto;
-           
-           
-           
+  
         }
         #sixth>div>img{
             width: 100%;
@@ -765,7 +273,7 @@ a{
     margin: auto;
     margin-top: 15px;
     margin-bottom: 40px;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
 }
 #home_au>h2{
     font-family: Arial, Helvetica, sans-serif;
@@ -777,362 +285,127 @@ a{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14.5px;
     line-height: 20px;
-}
+} 
 
 
-/* footer css */
-
-*{
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
-    }
-    
-    #footer a{
-        text-decoration: none;
-    }
-    #footer{
-        margin-top: 30px;
-        position: static;
-        background-color: 
-        #f7f6f2 ;
-    }
-    .footerHelp{
-        list-style-type: none;
-    }
-    .footerHelp>li {
-        color: #555;
-        font-size: 13px;
-    }
-    
-    .footerHelp>li:hover {
-        cursor: pointer;
-        text-decoration: underline;
-        zoom: 101%;
-    }
-    .footerHelp>a>li {
-        color: #555;
-        font-size: 13px;
-    }
-    
-    .footerHelp>a>li:hover {
-        cursor: pointer;
-        text-decoration: underline;
-        zoom: 101%;
-    }
-    #help {
-        display: flex;
-        padding-left:100px;
-        padding-right: 100px;
-        justify-content: space-evenly;
-    }
-    #help>div {
-        width: 200px;
-        line-height: 30px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    #help>div>h3{
-        margin-bottom: 10px;
-    }
-    
-    #help>div>h3~div {
-        margin-left: 25px;
-        margin-bottom: 2px;
-    }
-    
-    #help>div>h3~div>a>img{
-        width: 100%;
-        border-radius: 10px;
-    
-    }
-    #help>div>div {
-        height: 40px;
-        width: 40px;
-    }
-    
-    #contactFooter{
-        margin-top: 50px;
-    }
-    #contactFooter>div:nth-child(1) {
-        width: 300px;
-        margin: auto;
-        height: 40px;
-        display: flex;
-        justify-content: space-between;
-    }
-    #contactFooter>div:nth-child(1)>div:nth-child(1){
-        width: 100px;
-    }
-    
-    #contactFooter>div:nth-child(1)>div:nth-child(1):hover{
-        cursor: pointer;
-    }
-    
-    #contactFooter>div:nth-child(1)>div+div {
-        display: flex;
-    }
-    
-    #contactFooter>div:nth-child(1)>div+div>div {
-        width: 40px;
-        height: 40px;
-    }
-    #contactFooter>div:nth-child(1)>div+div>div>a>img {
-        width: 100%;
-    }
-    #contactFooter>div:nth-child(2){
-        width: 90%;
-        margin: 20px auto;
-        width: 90%;
-    }
-    #contactFooter>div:nth-child(2):hover {
-        cursor: pointer;
-    }
-    #contactFooter>div:nth-child(2)>img{
-        width: 100%;
-    }
-    #contactFooter>div:nth-child(3) {
-        width: 30%;
-        margin: auto;
-    }
-    .footerLaguage {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .footerLaguage>li {
-        color: #555;
-        font-size: 12px;
-        border-right: 1px solid #555;
-        padding-right: 10px;
-    }
-    
-    .footerLaguage>li:last-child {
-        border-right: 1px solid transparent;
-    }
-    
-    .footerLaguage>li:hover {
-        cursor: pointer;
-        text-decoration: underline;
-        zoom: 101%;
-    }
-    #contactFooter>div:last-child{
-        justify-content: space-between;
-        display: flex;
-    }
-    #contactFooter>div:last-child>div {
-        margin-top: 30px;
-        width: 50%;
-    }
-    #contactFooter>div:last-child>div:first-child>.footerLaguage>li{
-        font-size: 10px;
-    }
-    #contactFooter>div:last-child>div:last-child>.footerLaguage{
-        font-size: 14px;
-        display: flex;
-        justify-content: right;
-    }
-    #emailcontainer{
-        display: flex;
-        justify-content: space-between;
-    }
-    #emailcontainer>div{
-        margin-left: 150px;
-    }
-    #emailcontainer>div>div{
-        margin-right: 150px;
-    }
-    #enter{
-        margin-top: 25px;
-        width: auto;
-        display: flex;
-        /* margin-right: 50px; */
-        /* width: 50px; */
-
-    }
 
      </style>
 </head>
 <body>
-        <!-- nav bar  -->
+     
+       <!-- nav bar  -->
 
-        <div id="signIn_signUp">
-            <i class="fa fa-user" aria-hidden="true"></i>
-            <button> Sign in / Sign Up</button>
-        </div>
+       <div id="signIn_signUp">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <button id="signin">Sign in/</button> <button id="signup">Sign Up</button>
+    </div>
 
-        <!-- nav positioning -->
 
-        
-        <div id="nav-position">
-        <div id="forSticky">
-            <div class="companyLogo_searchBar">
-                <div id="comapnyLogo">
-                    
-                    <div style="margin-top: 30px;" id="mainlogo" ><a href="index.html"><img style="width: 80px; height: 60px;"src="e-Shopping mart.png " ></a></div>
-                <div style="align-items: ;"><a href="homepage2.html"><img src="https://images.ctfassets.net/5de70he6op10/y1O9tEDOvCGliGUvT9RoJ/eb8ab4734c5e3778b8b61da70ed441ac/AL_NewLogo_2.svg"></a></div>
-                </div>
-                
-                <div id="searchBar_cart">
-                    <div id="searchBar">
-                            <input type="search" class="search" placeholder="Search Anthropologies">
-                            <button id="search-btn">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                    <div id="cart">
-                        <a id="anch">
-                         <img  src="data:image/png;base64,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" alt="">
-                        </a>
-                        <div id="onnavbar"></div>
+    
+    <div id="nav-position">
+    <div id="forSticky">
+        <div class="companyLogo_searchBar">
+            <div id="comapnyLogo">
+                <div  id="mainlogo" ><a href="homepage.html">
+                    <img style="width: 80px; height: 60px;" src="./logo/logo.jpg" ></a></div>
+            <div "><a href="homepage.html"><img src="https://images.ctfassets.net/5de70he6op10/y1O9tEDOvCGliGUvT9RoJ/eb8ab4734c5e3778b8b61da70ed441ac/AL_NewLogo_2.svg"></a></div>
+            </div>
+            
+            <div id="searchBar_cart">
+                <div id="searchBar">
+                        <input type="search" class="search" placeholder="Search Anthropologies">
+                        <button id="search-btn">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
                     </div>
+                <div id="cart">
+                    <a id="anch">
+                     <img  src="data:image/png;base64,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" alt="">
+                    </a>
+                    <div id="onnavbar"></div>
                 </div>
             </div>
-            <div id="navbar">
-                <div id="inner">
-                    <ul>
-                        <li>
-                            <div><a href="index.html">New!</a>
-                            <div class="submenu">
-                                <div class="submenu-1">
-                                        <div><h4>Shop by category</h4>
-                                        </div>
-                                        <hr>
-                                        <div class="submenu-2">
-                                            
-                                            <div class="listDiv"><ul>
-                                                <li><a href="www.masaischool.com">Accessories</a></li>
-                                                <li><a href="#">Beuty Wellness</a></li>
-                                                <li><a href="#">Clothing</a></li>
-                                                <li><a href="#">Dresses</a></li>
-                                            </ul></div>
-                                            <div class="listDiv">
-                                                <ul>
-                                                    <li><a href="#">Home</a></li>
-                                                    <li><a href="#">Plus</a></li>
-                                                    <li><a href="#">Shoes</a></li>
-                                                    
-                                                </ul>
-                                            </div>
-                                        </div>
-                                      
-                                        
-                                </div>
-                                
-                                <div class="submenu-1">
-                                    <div><h4>featured</h4>
-                                        
-                                    </div>
-                                    <hr>
-                                    <div class="submenu-2">
-                                        <div class="listDiv"><ul>
-                                            <li><a href="#">Mark D Sikes</a></li>
-                                            <li><a href="#">The Ethereal Edit:White <br> clothing, shoes & more</a></li>
-                                            <li><a href="#">How to style carves</a></li>
-                                            <li><a href="#">The 90's shop</a></li>
-                                        </ul></div>                   
-                                    </div>
-                                    
-                            </div>
+        </div>
+        <div id="navbar">
+            <div id="inner">
+                <ul>
+                    <li>
+                        <div><a href="homepage.html">New!</a>
+                        <div class="submenu">
                             <div class="submenu-1">
-                                <img src="https://images.ctfassets.net/5de70he6op10/3ZMw5VEJi6CX2Ey5aoyYbn/31f0050a3d8fab8df65d178804046a43/011723_LoveStory_Supernav_NEW.jpg?w=295&q=80&fm=webp" alt="">
-                            </div>
-                                
-                            
-                            </div>
-                        </li>
-                        <li>
-                            <div><a href="dresses.html">Dresses</a>
-                            <div class="submenu">
-                                <div class="submenu-1">
-                                        <div><h4>Shop by category</h4>
-                                        </div>
-                                        <hr>
-                                        <div class="submenu-2">
-                                            
-                                            <div class="listDiv"><ul>
-                                                <li>Accessories</li>
-                                                <li>Beuty Wellness</li>
-                                                <li>Clothing</li>
-                                                <li>Dresses</li>
-                                            </ul></div>
-                                            <div c lass="listDiv">
-                                                <ul>
-                                                    <li>Accessories</li>
-                                                    <li>Beuty Wellness</li>
-                                                    <li>Clothing</li>
-                                                    <li>Dresses</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                      
-                                        
-                                </div>
-                                
-                                <div class="submenu-1">
-                                    <div><h4>featured</h4>
-                                        
+                                    <div><h4>Shop by category</h4>
                                     </div>
                                     <hr>
                                     <div class="submenu-2">
+                                        <div class="listDiv"><ul>
+                                            <li><a href="#">Accessories</a></li>
+                                            <li><a href="#">Beuty Wellness</a></li>
+                                            <li><a href="#">Clothing</a></li>
+                                            <li><a href="#">Dresses</a></li>
+                                        </ul></div>
+                                        <div class="listDiv">
+                                            <ul>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Plus</a></li>
+                                                <li><a href="#">Shoes</a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  
+                                    
+                            </div>
+                            
+                            <div class="submenu-1">
+                                <div><h4>featured</h4>
+                                    
+                                </div>
+                                <hr>
+                                <div class="submenu-2">
+                                    <div class="listDiv"><ul>
+                                        <li><a href="#">Mark D Sikes</a></li>
+                                        <li><a href="#">The Ethereal Edit:White <br> clothing, shoes & more</a></li>
+                                        <li><a href="#">How to style carves</a></li>
+                                        <li><a href="#">The 90's shop</a></li>
+                                    </ul></div>                   
+                                </div>
+                                
+                        </div>
+                        <div class="submenu-1">
+                            <img src="https://images.ctfassets.net/5de70he6op10/3ZMw5VEJi6CX2Ey5aoyYbn/31f0050a3d8fab8df65d178804046a43/011723_LoveStory_Supernav_NEW.jpg?w=295&q=80&fm=webp" alt="">
+                        </div>
+                            
+                        
+                        </div>
+                    </li>
+                    <li>
+                        <div><a href="dresses.html">Dresses</a>
+                        <div class="submenu">
+                            <div class="submenu-1">
+                                    <div><h4>Shop by category</h4>
+                                    </div>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        
                                         <div class="listDiv"><ul>
                                             <li>Accessories</li>
                                             <li>Beuty Wellness</li>
                                             <li>Clothing</li>
                                             <li>Dresses</li>
-                                        </ul></div>                   
-                                    </div>
-                                    
-                            </div>
-                            
-                                
-                            
-                            </div>
-                        </li>
-                        <li>
-                            <div><a href="clothing.html">Clothing</a>
-                            <div class="submenu">
-                                <div class="submenu-1">
-                                        <div><h4>Shop by category</h4>
-                                        </div>
-                                        <hr>
-                                        <div class="submenu-2">
-                                            
-                                            <div class="listDiv"><ul>
+                                        </ul></div>
+                                        <div c lass="listDiv">
+                                            <ul>
                                                 <li>Accessories</li>
                                                 <li>Beuty Wellness</li>
                                                 <li>Clothing</li>
                                                 <li>Dresses</li>
-                                            </ul></div>
-                                            <div class="listDiv">
-                                                <ul>
-                                                    <li>Accessories</li>
-                                                    <li>Beuty Wellness</li>
-                                                    <li>Clothing</li>
-                                                    <li>Dresses</li>
-                                                </ul>
-                                            </div>
+                                            </ul>
                                         </div>
-                                      
-                                        
-                                </div>
-                                
-                                <div class="submenu-1">
-                                    <div><h4>featured</h4>
-                                        
                                     </div>
-                                    <hr>
-                                    <div class="submenu-2">
-                                        <div class="listDiv"><ul>
-                                            <li>Accessories</li>
-                                            <li>Beuty Wellness</li>
-                                            <li>Clothing</li>
-                                            <li>Dresses</li>
-                                        </ul></div>                   
-                                    </div>
+                                  
                                     
                             </div>
+                            
                             <div class="submenu-1">
                                 <div><h4>featured</h4>
                                     
@@ -1148,15 +421,143 @@ a{
                                 </div>
                                 
                         </div>
-                            <div class="submenu-1">
-                                <img src="https://images.ctfassets.net/5de70he6op10/MX3gsRfKxbzoLfN5Hwf4g/964ae67f6f691084656aaa746819eb39/011723_LoveStory_Supernav_CLOTHING.jpg?w=295&q=80&fm=webp" alt="">
-                            </div>
-                                
+                        
                             
+                        
+                        </div>
+                    </li>
+                    <li>
+                        <div><a href="clothing.html">Clothing</a>
+                        <div class="submenu">
+                            <div class="submenu-1">
+                                    <div><h4>Shop by category</h4>
+                                    </div>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        
+                                        <div class="listDiv"><ul>
+                                            <li>Accessories</li>
+                                            <li>Beuty Wellness</li>
+                                            <li>Clothing</li>
+                                            <li>Dresses</li>
+                                        </ul></div>
+                                        <div class="listDiv">
+                                            <ul>
+                                                <li>Accessories</li>
+                                                <li>Beuty Wellness</li>
+                                                <li>Clothing</li>
+                                                <li>Dresses</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  
+                                    
                             </div>
-                        </li>
-                        <li>
-                            <div><a href="shoes.html">Shoes</a>
+                            
+                            <div class="submenu-1">
+                                <div><h4>featured</h4>
+                                    
+                                </div>
+                                <hr>
+                                <div class="submenu-2">
+                                    <div class="listDiv"><ul>
+                                        <li>Accessories</li>
+                                        <li>Beuty Wellness</li>
+                                        <li>Clothing</li>
+                                        <li>Dresses</li>
+                                    </ul></div>                   
+                                </div>
+                                
+                        </div>
+                        <div class="submenu-1">
+                            <div><h4>featured</h4>
+                                
+                            </div>
+                            <hr>
+                            <div class="submenu-2">
+                                <div class="listDiv"><ul>
+                                    <li>Accessories</li>
+                                    <li>Beuty Wellness</li>
+                                    <li>Clothing</li>
+                                    <li>Dresses</li>
+                                </ul></div>                   
+                            </div>
+                            
+                    </div>
+                        <div class="submenu-1">
+                            <img src="https://images.ctfassets.net/5de70he6op10/MX3gsRfKxbzoLfN5Hwf4g/964ae67f6f691084656aaa746819eb39/011723_LoveStory_Supernav_CLOTHING.jpg?w=295&q=80&fm=webp" alt="">
+                        </div>
+                            
+                        
+                        </div>
+                    </li>
+                    <li>
+                        <div><a href="shoes.html">Shoes</a>
+                        <div class="submenu">
+                            <div class="submenu-1">
+                                    <div><h4>Shop by category</h4>
+                                    </div>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        
+                                        <div class="listDiv"><ul>
+                                            <li>Accessories</li>
+                                            <li>Beuty Wellness</li>
+                                            <li>Clothing</li>
+                                            <li>Dresses</li>
+                                        </ul></div>
+                                        <div class="listDiv">
+                                            <ul>
+                                                <li>Accessories</li>
+                                                <li>Beuty Wellness</li>
+                                                <li>Clothing</li>
+                                                <li>Dresses</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  
+                                    
+                            </div>
+                            
+                            <div class="submenu-1">
+                                <div><h4>featured</h4>
+                                    
+                                </div>
+                                <hr>
+                                <div class="submenu-2">
+                                    <div class="listDiv"><ul>
+                                        <li>Accessories</li>
+                                        <li>Beuty Wellness</li>
+                                        <li>Clothing</li>
+                                        <li>Dresses</li>
+                                    </ul></div>                   
+                                </div>
+                                
+                        </div>
+                        <div class="submenu-1">
+                            <div><h4>featured</h4>
+                                
+                            </div>
+                            <hr>
+                            <div class="submenu-2">
+                                <div class="listDiv"><ul>
+                                    <li>Accessories</li>
+                                    <li>Beuty Wellness</li>
+                                    <li>Clothing</li>
+                                    <li>Dresses</li>
+                                </ul></div>                   
+                            </div>
+                            
+                    </div>
+                        <!-- <div class="submenu-1">
+                            <img src="https://images.ctfassets.net/5de70he6op10/2SeKYBtUmynzKkUXudIm2q/7a8841d396011306d04d226a13164716/061322_BrandSpotlight_FarmRio_Supernav_NEW.jpg?w=295&q=80&fm=webp" alt="">
+                        </div> -->
+                            
+                        
+                        </div>
+                    </li>
+                    <li>
+                        <div><a href="beauty1.html">Accessories</a>
                             <div class="submenu">
                                 <div class="submenu-1">
                                         <div><h4>Shop by category</h4>
@@ -1214,55 +615,108 @@ a{
                                 
                         </div>
                             <!-- <div class="submenu-1">
-                                <img src="https://images.ctfassets.net/5de70he6op10/2SeKYBtUmynzKkUXudIm2q/7a8841d396011306d04d226a13164716/061322_BrandSpotlight_FarmRio_Supernav_NEW.jpg?w=295&q=80&fm=webp" alt="">
+                                <img src="https://images.ctfassets.net/5de70he6op10/4gMhsxNkhD3jZ2DI1AewUi/6c9e2424b8edb22a14699fcadb3b6656/060922_30offSelectSwim_Supernav.jpg?w=295&q=80&fm=webp" alt="">
                             </div> -->
                                 
                             
                             </div>
-                        </li>
-                        <li>
-                            <div><a href="beauty1.html">Accessories</a>
-                                <div class="submenu">
-                                    <div class="submenu-1">
-                                            <div><h4>Shop by category</h4>
-                                            </div>
-                                            <hr>
-                                            <div class="submenu-2">
-                                                
-                                                <div class="listDiv"><ul>
-                                                    <li>Accessories</li>
-                                                    <li>Beuty Wellness</li>
-                                                    <li>Clothing</li>
-                                                    <li>Dresses</li>
-                                                </ul></div>
-                                                <div class="listDiv">
-                                                    <ul>
-                                                        <li>Accessories</li>
-                                                        <li>Beuty Wellness</li>
-                                                        <li>Clothing</li>
-                                                        <li>Dresses</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                          
-                                            
+    
+                        
+                    </li>
+                    <li>
+                        <div><a href="#">Gift</a>
+                             <div class="submenu">
+                            <div class="submenu-1">
+                                    <div><h4>Shop by category</h4>
                                     </div>
-                                    
-                                    <div class="submenu-1">
-                                        <div><h4>featured</h4>
-                                            
-                                        </div>
-                                        <hr>
-                                        <div class="submenu-2">
-                                            <div class="listDiv"><ul>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        
+                                        <div class="listDiv"><ul>
+                                            <li>Accessories</li>
+                                            <li>Beuty Wellness</li>
+                                            <li>Clothing</li>
+                                            <li>Dresses</li>
+                                        </ul></div>
+                                        <div class="listDiv">
+                                            <ul>
                                                 <li>Accessories</li>
                                                 <li>Beuty Wellness</li>
                                                 <li>Clothing</li>
                                                 <li>Dresses</li>
-                                            </ul></div>                   
+                                            </ul>
                                         </div>
+                                    </div>
+                                  
+                                    
+                            </div>
+                            
+                            <div class="submenu-1">
+                                <div><h4>featured</h4>
+                                    
+                                </div>
+                                <hr>
+                                <div class="submenu-2">
+                                    <div class="listDiv"><ul>
+                                        <li>Accessories</li>
+                                        <li>Beuty Wellness</li>
+                                        <li>Clothing</li>
+                                        <li>Dresses</li>
+                                    </ul></div>                   
+                                </div>
+                                
+                        </div>
+                        <div class="submenu-1">
+                            <div><h4>featured</h4>
+                                
+                            </div>
+                            <hr>
+                            <div class="submenu-2">
+                                <div class="listDiv"><ul>
+                                    <li>Accessories</li>
+                                    <li>Beuty Wellness</li>
+                                    <li>Clothing</li>
+                                    <li>Dresses</li>
+                                </ul></div>                   
+                            </div>
+                            
+                    </div>
+                        <!-- <div class="submenu-1">
+                            <img src="https://images.ctfassets.net/5de70he6op10/2SeKYBtUmynzKkUXudIm2q/7a8841d396011306d04d226a13164716/061322_BrandSpotlight_FarmRio_Supernav_NEW.jpg?w=295&q=80&fm=webp" alt="">
+                        </div> -->
+                            
+                        
+                        </div>
+
+                    </li>
+                    <li>
+                        <div><a href="homepage.html">BHLDN Weddings</a>
+                            <div class="submenu">
+                                <div class="submenu-1">
+                                        <div><h4>Shop by category</h4>
+                                        </div>
+                                        <hr>
+                                        <div class="submenu-2">
+                                            
+                                            <div class="listDiv"><ul>
+                                                <li>Explore All BHLDN Weddings</li>
+                                                <li>Book An Appointment</li>
+                                                <li>Shop All Weddings</li>
+                                                <li>New!</li>
+                                            </ul></div>
+                                            <div class="listDiv">
+                                                <ul>
+                                                    <li>Mother of the Birde</li>
+                                                    <li>Flower Girl Deesses</li>
+                                                    <li>Weddings Guest Dresses </li>
+                                                    <li>Robes & Lingerie</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                      
                                         
                                 </div>
+                                
                                 <div class="submenu-1">
                                     <div><h4>featured</h4>
                                         
@@ -1270,26 +724,42 @@ a{
                                     <hr>
                                     <div class="submenu-2">
                                         <div class="listDiv"><ul>
-                                            <li>Accessories</li>
-                                            <li>Beuty Wellness</li>
-                                            <li>Clothing</li>
-                                            <li>Dresses</li>
+                                            <li>Exclusive:BHLDN by Carly Cushnie</li>
+                                            <li>New Spring Gowns</li>
+                                            <li>Printed Bridesmaid Dresses</li>
+                                            <li>Mix and Match Bridesmaids</li>
                                         </ul></div>                   
                                     </div>
                                     
                             </div>
-                                <!-- <div class="submenu-1">
-                                    <img src="https://images.ctfassets.net/5de70he6op10/4gMhsxNkhD3jZ2DI1AewUi/6c9e2424b8edb22a14699fcadb3b6656/060922_30offSelectSwim_Supernav.jpg?w=295&q=80&fm=webp" alt="">
-                                </div> -->
+                            <div class="submenu-1">
+                                <div><h4>Bridal by Style</h4>
                                     
-                                
                                 </div>
-        
+                                <hr>
+                                <div class="submenu-2">
+                                    <div class="listDiv"><ul>
+                                        <li>Modern Bride</li>
+                                        <li>Bohemian Bride</li>
+                                        <li>Beach & Destination Bride</li>
+                                        <li>City Hall Bride</li>
+                                        <li>Romantic Bride</li>
+                                        <li>Classic Bride</li>
+                                    </ul></div>                   
+                                </div>
+                                
+                        </div>
+                            <div class="submenu-1">
+                                <img src="https://images.ctfassets.net/5de70he6op10/Li1E6gydh0GZoKiPLJvam/6cb99e2b8ea068be2e0fba9dc2566e84/460601064-120122_home_site_contentsupernav-2x.jpg?w=295&q=80&fm=webp" alt="">
+                            </div>
+                                
                             
-                        </li>
-                        <li>
-                            <div><a href="gift.html">Gift</a>
-                                 <div class="submenu">
+                            </div>
+    
+                    </li>
+                    <li>
+                        <div><a href="homepage.html">Home and furniture</a>
+                            <div class="submenu">
                                 <div class="submenu-1">
                                         <div><h4>Shop by category</h4>
                                         </div>
@@ -1345,219 +815,43 @@ a{
                                 </div>
                                 
                         </div>
-                            <!-- <div class="submenu-1">
-                                <img src="https://images.ctfassets.net/5de70he6op10/2SeKYBtUmynzKkUXudIm2q/7a8841d396011306d04d226a13164716/061322_BrandSpotlight_FarmRio_Supernav_NEW.jpg?w=295&q=80&fm=webp" alt="">
-                            </div> -->
+                            <div class="submenu-1">
+                                <img src="https://images.ctfassets.net/5de70he6op10/Li1E6gydh0GZoKiPLJvam/6cb99e2b8ea068be2e0fba9dc2566e84/460601064-120122_home_site_contentsupernav-2x.jpg?w=295&q=80&fm=webp" alt="">
+                            </div>
                                 
                             
                             </div>
     
-                        </li>
-                        <li>
-                            <div><a href="homepage2.html">BHLDN Weddings</a>
-                                <div class="submenu">
-                                    <div class="submenu-1">
-                                            <div><h4>Shop by category</h4>
-                                            </div>
-                                            <hr>
-                                            <div class="submenu-2">
-                                                
-                                                <div class="listDiv"><ul>
-                                                    <li>Explore All BHLDN Weddings</li>
-                                                    <li>Book An Appointment</li>
-                                                    <li>Shop All Weddings</li>
-                                                    <li>New!</li>
-                                                </ul></div>
-                                                <div class="listDiv">
-                                                    <ul>
-                                                        <li>Mother of the Birde</li>
-                                                        <li>Flower Girl Deesses</li>
-                                                        <li>Weddings Guest Dresses </li>
-                                                        <li>Robes & Lingerie</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                          
-                                            
-                                    </div>
-                                    
-                                    <div class="submenu-1">
-                                        <div><h4>featured</h4>
-                                            
-                                        </div>
-                                        <hr>
-                                        <div class="submenu-2">
-                                            <div class="listDiv"><ul>
-                                                <li>Exclusive:BHLDN by Carly Cushnie</li>
-                                                <li>New Spring Gowns</li>
-                                                <li>Printed Bridesmaid Dresses</li>
-                                                <li>Mix and Match Bridesmaids</li>
-                                            </ul></div>                   
-                                        </div>
-                                        
-                                </div>
-                                <div class="submenu-1">
-                                    <div><h4>Bridal by Style</h4>
-                                        
-                                    </div>
-                                    <hr>
-                                    <div class="submenu-2">
-                                        <div class="listDiv"><ul>
-                                            <li>Modern Bride</li>
-                                            <li>Bohemian Bride</li>
-                                            <li>Beach & Destination Bride</li>
-                                            <li>City Hall Bride</li>
-                                            <li>Romantic Bride</li>
-                                            <li>Classic Bride</li>
-                                        </ul></div>                   
-                                    </div>
-                                    
-                            </div>
-                                <div class="submenu-1">
-                                    <img src="https://images.ctfassets.net/5de70he6op10/Li1E6gydh0GZoKiPLJvam/6cb99e2b8ea068be2e0fba9dc2566e84/460601064-120122_home_site_contentsupernav-2x.jpg?w=295&q=80&fm=webp" alt="">
-                                </div>
-                                    
-                                
-                                </div>
-        
-                        </li>
-                        <li>
-                            <div><a href="homepage2.html">Home and furniture</a>
-                                <div class="submenu">
-                                    <div class="submenu-1">
-                                            <div><h4>Shop by category</h4>
-                                            </div>
-                                            <hr>
-                                            <div class="submenu-2">
-                                                
-                                                <div class="listDiv"><ul>
-                                                    <li>Accessories</li>
-                                                    <li>Beuty Wellness</li>
-                                                    <li>Clothing</li>
-                                                    <li>Dresses</li>
-                                                </ul></div>
-                                                <div class="listDiv">
-                                                    <ul>
-                                                        <li>Accessories</li>
-                                                        <li>Beuty Wellness</li>
-                                                        <li>Clothing</li>
-                                                        <li>Dresses</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                          
-                                            
-                                    </div>
-                                    
-                                    <div class="submenu-1">
-                                        <div><h4>featured</h4>
-                                            
-                                        </div>
-                                        <hr>
-                                        <div class="submenu-2">
-                                            <div class="listDiv"><ul>
-                                                <li>Accessories</li>
-                                                <li>Beuty Wellness</li>
-                                                <li>Clothing</li>
-                                                <li>Dresses</li>
-                                            </ul></div>                   
-                                        </div>
-                                        
-                                </div>
-                                <div class="submenu-1">
-                                    <div><h4>featured</h4>
-                                        
-                                    </div>
-                                    <hr>
-                                    <div class="submenu-2">
-                                        <div class="listDiv"><ul>
-                                            <li>Accessories</li>
-                                            <li>Beuty Wellness</li>
-                                            <li>Clothing</li>
-                                            <li>Dresses</li>
-                                        </ul></div>                   
-                                    </div>
-                                    
-                            </div>
-                                <div class="submenu-1">
-                                    <img src="https://images.ctfassets.net/5de70he6op10/Li1E6gydh0GZoKiPLJvam/6cb99e2b8ea068be2e0fba9dc2566e84/460601064-120122_home_site_contentsupernav-2x.jpg?w=295&q=80&fm=webp" alt="">
-                                </div>
-                                    
-                                
-                                </div>
-        
-                        </li>
-                        <li>
-                            <div><a href="beauty1.html"> Beauty & Wellness</a></div>
-                        </li>
-                        <li>
-                            <div><a href="garden.html"> Garden & Outdoor</a></div>
-                        </li>
-                        <li>
-                            <div><a href="wedding.html"> Weddings</a></div>
-                        </li>
-                        <li>
-                            <div><a href="sale.html"> Sale</a></div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-    
-        </div>
-       
-        <!-- bg_modal -->
-        <!-- SIGN IN -->
-      
-        <div class="bg_modal">
-            <div class="div_content">
-                <div class="close">+</div>
-    
-                <!-- sign in -->
-                <h1>Sign in</h1>
-                <hr>
-                <p>Sign in so you can save items to your wishlists, track your orders, and check out faster!</p>
-                <form id="signinform" action="">
-                    <input id="email" placeholder="Enter Email" type="text" required>
-                    <input id="password" placeholder="Enter Password" type="password" minlength="6" >
-                    <input class="submitButton" type="submit" value="NEXT">
-                    <input class="mobileNumber" type="submit" value="USE MOBILE NUMBER INSTEAD">
-                    <hr>
-                </form>
-                <!-- sign UP -->
-                <h1 id="signUp_tag">Sign Up</h1>
-                <P>Welcome! It's quick and easy to set up an account</P>
-                <form action="">
-                    <input type="submit" value="CREATE AN ACCOUNT" id="signUp">
-                </form>
-    
+                    </li>
+                    <li>
+                        <div><a href="beauty1.html"> Beauty & Wellness</a></div>
+                    </li>
+                    <li>
+                        <div><a href="#"> Garden & Outdoor</a></div>
+                    </li>
+                    <li>
+                        <div><a href="#"> Weddings</a></div>
+                    </li>
+                    <li>
+                        <div><a href="#"> Sale</a></div>
+                    </li>
+                </ul>
             </div>
         </div>
-       <!-- creat account -->
-        <div class="bg_modal_creat">
-            <div class="div_content_creat">
-                <div class="close_creat">+</div>
-    
-                <!-- sign in -->
-                <h1>Create An Account</h1>
-                <hr>
-                <p>Welcome to Anthropologie! It's quick and easy to set up an account</p>
-                <form id="signupform" action="">
-                    <!-- <input type="text" name="" id="" placeholder="Enter your name"> -->
-                    <input id="email_creat" placeholder="Enter Email" type="text" required>
-                    <input id="mobile_creat" placeholder="Enter mobile number" type="number">
-                    <input id="password_creat" placeholder="Enter password" type="password" minlength="6">
-                    
-                       
-                    
-                    <p>Enter your mobile number to receive a verification code. <br> Note: This action does not enroll you in SMS marketing messages.</p>
-                    <input class="submitButton_creat" type="submit" value="NEXT">
-                    
-    
-                    </form>
-            </div>
-        </div>
-      
-      </div>
+
+    </div>
+    <!-- script for login and signup -->
+<script>
+let sign=document.getElementById("signin")
+sign.addEventListener("click", ()=>{
+self.location="profile.html"
+})
+
+let signup=document.getElementById("signup")
+signup.addEventListener("click", ()=>{
+self.location="signup.html"
+})
+</script>
 
       <!-- main  -->
       <div id="main1">
@@ -1617,7 +911,7 @@ a{
                         <button class="card-btn">Quickshop</button>
                     </div>
                     <p id="home_p">Bundled Up Monogram Mug</p>
-                    <!-- g&c -->
+                   
                 </div>
                 <div class="home_product-card">
                     <div class="home_product-image">
@@ -1625,7 +919,7 @@ a{
                         <button class="card-btn">Quickshop</button>
                     </div>
                     <p id="home_p">Bamboo Melamine Hibiscus Bowl</p> 
-                    <!-- h&f -->
+                    
                 </div>
                 <div class="home_product-card">
                     <div class="home_product-image">
@@ -1657,7 +951,7 @@ a{
                         <button class="card-btn">Quickshop</button>
                     </div>
                     <p id="home_p">Cleo Chip & Dip Platter</p>
-                    <!-- hf -->
+                  
                 </div>
                 <div class="home_product-card">
                     <div class="home_product-image">
@@ -1675,7 +969,8 @@ a{
                 </div>
             </div>
         </section>
-        <p id="home_explore_p">More to Explore</p>
+        
+        <!-- <p id="home_explore_p">More to Explore</p>
         <hr id="home_explore_hr">
         <div id="home_explore"> 
             <div>
@@ -1693,167 +988,131 @@ a{
                 <h2><span></span>Lauren McIntosh for Anthropologie</h2>
                 <p>Discover treasures from the talented calligrapher and artist.</p>
             </div>
-        </div>
-        </div>
+        </div> -->
+        
     
         <!-- footer started -->
 
+          
         <div id="footer">
-            <div id="emailcontainer">
-             <div> <h1> Sign Up for Email</h1><br><p>Receive early access to new arrivals, sales, exclusive content, events and much more!</p></div>
-             
-             <h2>Email Address</h2>
-             <div id="enter">
-                   <!-- <label for="email"><b>Email Address </b></label>                        -->
-                 <input type="text" placeholder="Enter Email" name="email" required>
-                 <div>
-             <button type="button" class="cancelbtn">Submit</button>
-             </div>
+            <div id="help">
+              <div>
+                
+                <h3>help</h3>
+                <ul class="footerHelp">
+                  <li>Track Your Order</li>
+                  <li>Start A Return Or Exchange (US)</li>
+                  <li>Return And Exchange</li>
+                  <li>Shipping</li>
+                  <li>Customer Service</li>
+                  <li>Current Promotions</li>
+                  <li>Product Recalls</li>
+                </ul>
+              </div>
+              <div>
+                <h3>About Us</h3>
+                <ul class="footerHelp">
+                  <a href="ourStory.html"><li>Our Story</li></a>
+                  <li>Events</li>
+                  <li>A Greater Good</li>
+                  <li>Diversity & Inclusion</li>
+                  <li>Stories</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Services</h3>
+                <ul class="footerHelp">
+                  <li>AnthroPerks</li>
+                  <li>Gift Cards</li>
+                  <li>Trade Membership</li>
+                  <li>Furniture: Guides & Services</li>
+                  <li>Store Pickup & Collection Points</li>
+                  <li>Klarna</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Contact</h3>
+                <ul class="footerHelp">
+                  <a href="contact.html"><li>Contact Us</li></a>
+                  <li>Stay Connected</li>
+                  <li>Careers</li>
+                  <li>Styling Services</li>
+                  <li>Request A Catalog</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Social Network</h3>
+                <div>
+                  <i class="fa-brands fa-square-instagram"></i>
+                </div>
+                <div>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div>
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div>
+                  <i class="fa-brands fa-github"></i>
+                </div>
+              </div>
             </div>
+            <div id="contactFooter">
+              <div>
+                <div>
+                  <img
+                    style="height: 100%"
+                    src="https://images.ctfassets.net/5de70he6op10/4gWq1G4qLLgmqlNeHfzV2T/55298745127c36c5876f4013434c0c37/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917_Copy_2.svg"
+                  />
+                </div>
+                <div>
+                  <div>
+                    <i class="fa-brands fa-square-instagram"></i>
+                  </div>
+                  <div>
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                  <div>
+                    <i class="fa-brands fa-facebook"></i>
+                  </div>
+                  <div>
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <img
+                  src="https://images.ctfassets.net/5de70he6op10/2DRgCRXNIEkk0wIqUo2ywa/20ea44a95fb361eaf034b42eec179d44/_site_footer__download_app_enable_push_.jpg"
+                />
+              </div>
+              <div>
+                <ul class="footerLaguage">
+                  <li>UK</li>
+                  <li>India</li>
+                  <li>US</li>
+                  <li>France</li>
+                  <li>Germany</li>
+                  <li>Italy</li>
+                  <li>Spain</li>
+                </ul>
+              </div>
+              <div>
+                <div>
+                  <ul class="footerLaguage">
+                    <li>Privacy Policy</li>
+                    <li>Terms of Use</li>
+                    <li>CA Transparency</li>
+                    <li>Accessibility</li>
+                    <li>URBN.com</li>
+                    <li>For CA Residents</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="footerLaguage">
+                    <li>2022 URBN.com. All Rights Reserved.</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-<div id="help">
- <div>
-   
-   <h3>help</h3>
-   <ul class="footerHelp">
-     <li>Track Your Order</li>
-     <li>Start A Return Or Exchange (US)</li>
-     <li>Return And Exchange</li>
-     <li>Shipping</li>
-     <li>Customer Service</li>
-     <li>Current Promotions</li>
-     <li>Product Recalls</li>
-   </ul>
- </div>
- <div>
-   <h3>About Us</h3>
-   <ul class="footerHelp">
-     <a href="ourStory.html"><li>Our Story</li></a>
-     <li>Events</li>
-     <li>A Greater Good</li>
-     <li>Diversity & Inclusion</li>
-     <li>Stories</li>
-   </ul>
- </div>
- <div>
-   <h3>Services</h3>
-   <ul class="footerHelp">
-     <li>AnthroPerks</li>
-     <li>Gift Cards</li>
-     <li>Trade Membership</li>
-     <li>Furniture: Guides & Services</li>
-     <li>Store Pickup & Collection Points</li>
-     <li>Klarna</li>
-   </ul>
- </div>
- <div>
-   <h3>Contact</h3>
-   <ul class="footerHelp">
-     <a href="contact.html"><li>Contact Us</li></a>
-     <li>Stay Connected</li>
-     <li>Careers</li>
-     <li>Styling Services</li>
-     <li>Request A Catalog</li>
-   </ul>
- </div>
- <div>
-   <h3></h3>
-   <div>
-     <a href=""
-       ><img
-         src="https://cdn-icons-png.flaticon.com/128/2838/2838912.png"
-     /></a>
-   </div>
-   <div>
-     <a href=""
-       ><img
-         src="https://cdn-icons-png.flaticon.com/128/9327/9327236.png"
-     /></a>
-   </div>
-   <div>
-     <a href=""
-       ><img
-         src=""
-     /></a>
-   </div>
-   <div>
-     <a href=""
-       ><img
-         src=""
-     /></a>
-   </div>
- </div>
-</div>
-<div id="contactFooter">
- <div>
-   <div>
-     <img
-       style="height: 100%"
-       src="https://images.ctfassets.net/5de70he6op10/4gWq1G4qLLgmqlNeHfzV2T/55298745127c36c5876f4013434c0c37/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917_Copy_2.svg"
-     />
-   </div>
-   <div>
-     <div>
-       <a href=""
-         ><img
-           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYRHI1E_Mh-Hpi4hqtCifpStom1SsyNniyLSIP6e8HU1HN6-lnJ31V&usqp=CAE&s"
-       /></a>
-     </div>
-     <div>
-       <a href=""
-         ><img
-           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAMAAACZHrEMAAAAY1BMVEX///8ArO0AqOwAqu0ApuwApOwAouv4/P7t9/3z+v6v3Pfj8vzY7fvd8Puq2vaJzPPP6vpEte+TzvQvsu633/iByPNiwPF1xvLC5PlnvvEur+6g1PXJ5vlPuO9ww/KX0/UAnOoO9ENTAAAEeElEQVR4nO2b2ZajIBCGIwXuS4j7lsz7P+WoSaa7EyNViNM3fHd9jtK/RfFTLDmdLBaLxWKxWCwWi8XyC3hB0oRpWMSB99tKiiwXgjPGuHDzMgx+T0pUdgycLwCgjlee84vDg+ZlwJxXGC/fopN2F2yTuqIb8S5lCY/bf38sSoFzbJtlqqelXpeyROf6DI6X1B1zGDYwEbhnDSne+FnLpKbz54fOvXTnx+5/IbhMT9PVBCNsaJnUyCGsHLhnNy+wzXZTJ3cRVcxmXBY4fz7CWmyrsZhTDtbG4wYb+fIG5Gjvydj9BZKahuO1OA6+6fYhHxK8Fr8jxIU/Gg4adbvy31vqh59k+E5i+aIlGGqhzsvk6yMBm/OBwGtp/TkmteQC4WbnbyNUZDgvJgSmPhdl7nJweIZoePjeMJOYvP/qWTX5w2mgxXznDzGTcSISZyANpQXoUKP7/GKkrFa+VhI85qFF4kw1fn1x8nHFK4Rx/dDiIA0+em9a1JvvetTAMImdJr1x5Uu620ZfxUQxy+hGcl2bfbn87AoNTQy/oqWcTuH62GBO+OGDQpqYkKDls52yfL2z0u1C5qURbIn3oPr4pUzUzbtXkSJDFVNsfClAV8Yv3UXKGaoYhW8wIcv0e3+RRhNZjLJSAiacazhEd0kknyGLObWIlAQOnWzr26SJ4sCsV//7n/jomW9aUHN8MaMlhupjFDEaC8TePUgMunpcSO4Dt6fXKDhIy8O065dB0h/UU4Q1x2R5nME1TFYKGyOgF9kLcw3JAEDW1SFiKFpO8dNjGGX+wwIjSQyl1KfDbiQxKPvVhuNXqQtHDaMFRtxq8Un2TmSkbsRWx/UTUOrfheY4MRozk2J3bgeCZHkLGmtnJEDWct/vPAJ6mTfhOcd0FFOt2leJDtHiSL1zgPMRHcUwm1VrHJHEiB3FDyS56eAAel/8naA1rIaRlvyvFJ3ZvtqjZRrivTRXYlFLmRU5TclM9ZZ2+k4pE/veyfP8JF7dyiKj5b5PEpDjhDRVC4tdR8pmy89dgZlM2GjFl9OLhx90BkODOULZhLq/uwFxubRGaczzmM7Z9AvSUEexcr+WU2QobVCnVkoGI2K0LhCsEBuwvP2T0j81cu+YgsqUlmmqLHeaH217SMUw7hni1HsMKrwwF7qps6+8WyfORiYYvbTZPQ2s40VDmtXEAO2cqzfxibslwoTzfiDlNC38uLhE1KULPywu/sUl5ougn58gpfTUKRPggDE9E1xyqu0BaO1+KJUMFTFvJ9h4wM1N71xLjUUcvxjWEiRFX/EPlzW3w5IbqV+aOuvTNO1v9dh1DtOqZQAyQzeAk/bPfKtYT8aCUN62ocjZVS9wSTqCVOI1uW5cAFKjhdRCU1HddlYi8vSYm9jzBWKSHua0K/dHTBGF0sXqAQE3w8XlG37fOkqfYRzGC+l4WJtoKHMH1kc6zHcRu2sT/c8fOvhTuVnlwhX8bkHLXQyX51WZNju26XbgeX48FOmdYoh97Z8DWCwWi8VisVgsFotFl7+teTrpC785FgAAAABJRU5ErkJggg=="
-       /></a>
-     </div>
-     <div>
-       <a href=""
-         ><img
-           src="data:image/png;base64,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"
-       /></a>
-     </div>
-     <div>
-       <a href=""
-         ><img
-           src=""
-       /></a>
-     </div>
-   </div>
- </div>
- <div>
-   <img
-     src="https://images.ctfassets.net/5de70he6op10/2DRgCRXNIEkk0wIqUo2ywa/20ea44a95fb361eaf034b42eec179d44/_site_footer__download_app_enable_push_.jpg"
-   />
- </div>
- <div>
-   <ul class="footerLaguage">
-     <li>UK</li>
-     <li>India</li>
-     <li>US</li>
-     <li>France</li>
-     <li>Germany</li>
-     <li>Italy</li>
-     <li>Spain</li>
-   </ul>
- </div>
- <div>
-   <div>
-     <ul class="footerLaguage">
-       <li>Privacy Policy</li>
-       <li>Terms of Use</li>
-       <li>CA Transparency</li>
-       <li>Accessibility</li>
-       <li>URBN.com</li>
-       <li>For CA Residents</li>
-     </ul>
-   </div>
-   <div>
-     <ul class="footerLaguage">
-       <li>2022 URBN.com. All Rights Reserved.</li>
-     </ul>
-   </div>
- </div>
-</div>
-</div>                                                                             
-      
+          </div>
 </body>
 </html>

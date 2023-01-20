@@ -8,8 +8,8 @@
     <!-- <a href="clothing.html"></a>
     <a href="shoes.html"></a> -->
     <script src="https://kit.fontawesome.com/38439e7720.js" crossorigin="anonymous"></script>
-
-    
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/navbar.css">
     <style>
         *{
             padding: 0px;
@@ -322,6 +322,566 @@
 <!-- navbar -->
 
 
+        <!-- nav bar  -->
+
+        <div id="signIn_signUp">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <button id="signin">Sign in/</button> <button id="signup">Sign Up</button>
+        </div>
+    
+        <!-- nav positioning -->
+    
+        
+        <div id="nav-position">
+        <div id="forSticky">
+            <div class="companyLogo_searchBar">
+                <div id="comapnyLogo">
+                    <div  id="mainlogo" ><a href="homepage.html">
+                        <img style="width: 80px; height: 60px;" src="./logo/logo.jpg" ></a></div>
+                <div "><a href="homepage.html"><img src="https://images.ctfassets.net/5de70he6op10/y1O9tEDOvCGliGUvT9RoJ/eb8ab4734c5e3778b8b61da70ed441ac/AL_NewLogo_2.svg"></a></div>
+                </div>
+                
+                <div id="searchBar_cart">
+                    <div id="searchBar">
+                            <input type="search" class="search" placeholder="Search Anthropologies">
+                            <button id="search-btn">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    <div id="cart">
+                        <a id="anch">
+                         <img  src="data:image/png;base64,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" alt="">
+                        </a>
+                        <div id="onnavbar"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="navbar">
+                <div id="inner">
+                    <ul>
+                        <li>
+                            <div><a href="homepage.html">New!</a>
+                            <div class="submenu">
+                                <div class="submenu-1">
+                                        <div><h4>Shop by category</h4>
+                                        </div>
+                                        <hr>
+                                        <div class="submenu-2">
+                                            <div class="listDiv"><ul>
+                                                <li><a href="#">Accessories</a></li>
+                                                <li><a href="#">Beuty Wellness</a></li>
+                                                <li><a href="#">Clothing</a></li>
+                                                <li><a href="#">Dresses</a></li>
+                                            </ul></div>
+                                            <div class="listDiv">
+                                                <ul>
+                                                    <li><a href="#">Home</a></li>
+                                                    <li><a href="#">Plus</a></li>
+                                                    <li><a href="#">Shoes</a></li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                      
+                                        
+                                </div>
+                                
+                                <div class="submenu-1">
+                                    <div><h4>featured</h4>
+                                        
+                                    </div>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        <div class="listDiv"><ul>
+                                            <li><a href="#">Mark D Sikes</a></li>
+                                            <li><a href="#">The Ethereal Edit:White <br> clothing, shoes & more</a></li>
+                                            <li><a href="#">How to style carves</a></li>
+                                            <li><a href="#">The 90's shop</a></li>
+                                        </ul></div>                   
+                                    </div>
+                                    
+                            </div>
+                            <div class="submenu-1">
+                                <img src="https://images.ctfassets.net/5de70he6op10/3ZMw5VEJi6CX2Ey5aoyYbn/31f0050a3d8fab8df65d178804046a43/011723_LoveStory_Supernav_NEW.jpg?w=295&q=80&fm=webp" alt="">
+                            </div>
+                                
+                            
+                            </div>
+                        </li>
+                        <li>
+                            <div><a href="dresses.html">Dresses</a>
+                            <div class="submenu">
+                                <div class="submenu-1">
+                                        <div><h4>Shop by category</h4>
+                                        </div>
+                                        <hr>
+                                        <div class="submenu-2">
+                                            
+                                            <div class="listDiv"><ul>
+                                                <li>Accessories</li>
+                                                <li>Beuty Wellness</li>
+                                                <li>Clothing</li>
+                                                <li>Dresses</li>
+                                            </ul></div>
+                                            <div c lass="listDiv">
+                                                <ul>
+                                                    <li>Accessories</li>
+                                                    <li>Beuty Wellness</li>
+                                                    <li>Clothing</li>
+                                                    <li>Dresses</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                      
+                                        
+                                </div>
+                                
+                                <div class="submenu-1">
+                                    <div><h4>featured</h4>
+                                        
+                                    </div>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        <div class="listDiv"><ul>
+                                            <li>Accessories</li>
+                                            <li>Beuty Wellness</li>
+                                            <li>Clothing</li>
+                                            <li>Dresses</li>
+                                        </ul></div>                   
+                                    </div>
+                                    
+                            </div>
+                            
+                                
+                            
+                            </div>
+                        </li>
+                        <li>
+                            <div><a href="clothing.html">Clothing</a>
+                            <div class="submenu">
+                                <div class="submenu-1">
+                                        <div><h4>Shop by category</h4>
+                                        </div>
+                                        <hr>
+                                        <div class="submenu-2">
+                                            
+                                            <div class="listDiv"><ul>
+                                                <li>Accessories</li>
+                                                <li>Beuty Wellness</li>
+                                                <li>Clothing</li>
+                                                <li>Dresses</li>
+                                            </ul></div>
+                                            <div class="listDiv">
+                                                <ul>
+                                                    <li>Accessories</li>
+                                                    <li>Beuty Wellness</li>
+                                                    <li>Clothing</li>
+                                                    <li>Dresses</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                      
+                                        
+                                </div>
+                                
+                                <div class="submenu-1">
+                                    <div><h4>featured</h4>
+                                        
+                                    </div>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        <div class="listDiv"><ul>
+                                            <li>Accessories</li>
+                                            <li>Beuty Wellness</li>
+                                            <li>Clothing</li>
+                                            <li>Dresses</li>
+                                        </ul></div>                   
+                                    </div>
+                                    
+                            </div>
+                            <div class="submenu-1">
+                                <div><h4>featured</h4>
+                                    
+                                </div>
+                                <hr>
+                                <div class="submenu-2">
+                                    <div class="listDiv"><ul>
+                                        <li>Accessories</li>
+                                        <li>Beuty Wellness</li>
+                                        <li>Clothing</li>
+                                        <li>Dresses</li>
+                                    </ul></div>                   
+                                </div>
+                                
+                        </div>
+                            <div class="submenu-1">
+                                <img src="https://images.ctfassets.net/5de70he6op10/MX3gsRfKxbzoLfN5Hwf4g/964ae67f6f691084656aaa746819eb39/011723_LoveStory_Supernav_CLOTHING.jpg?w=295&q=80&fm=webp" alt="">
+                            </div>
+                                
+                            
+                            </div>
+                        </li>
+                        <li>
+                            <div><a href="shoes.html">Shoes</a>
+                            <div class="submenu">
+                                <div class="submenu-1">
+                                        <div><h4>Shop by category</h4>
+                                        </div>
+                                        <hr>
+                                        <div class="submenu-2">
+                                            
+                                            <div class="listDiv"><ul>
+                                                <li>Accessories</li>
+                                                <li>Beuty Wellness</li>
+                                                <li>Clothing</li>
+                                                <li>Dresses</li>
+                                            </ul></div>
+                                            <div class="listDiv">
+                                                <ul>
+                                                    <li>Accessories</li>
+                                                    <li>Beuty Wellness</li>
+                                                    <li>Clothing</li>
+                                                    <li>Dresses</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                      
+                                        
+                                </div>
+                                
+                                <div class="submenu-1">
+                                    <div><h4>featured</h4>
+                                        
+                                    </div>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        <div class="listDiv"><ul>
+                                            <li>Accessories</li>
+                                            <li>Beuty Wellness</li>
+                                            <li>Clothing</li>
+                                            <li>Dresses</li>
+                                        </ul></div>                   
+                                    </div>
+                                    
+                            </div>
+                            <div class="submenu-1">
+                                <div><h4>featured</h4>
+                                    
+                                </div>
+                                <hr>
+                                <div class="submenu-2">
+                                    <div class="listDiv"><ul>
+                                        <li>Accessories</li>
+                                        <li>Beuty Wellness</li>
+                                        <li>Clothing</li>
+                                        <li>Dresses</li>
+                                    </ul></div>                   
+                                </div>
+                                
+                        </div>
+                            <!-- <div class="submenu-1">
+                                <img src="https://images.ctfassets.net/5de70he6op10/2SeKYBtUmynzKkUXudIm2q/7a8841d396011306d04d226a13164716/061322_BrandSpotlight_FarmRio_Supernav_NEW.jpg?w=295&q=80&fm=webp" alt="">
+                            </div> -->
+                                
+                            
+                            </div>
+                        </li>
+                        <li>
+                            <div><a href="beauty1.html">Accessories</a>
+                                <div class="submenu">
+                                    <div class="submenu-1">
+                                            <div><h4>Shop by category</h4>
+                                            </div>
+                                            <hr>
+                                            <div class="submenu-2">
+                                                
+                                                <div class="listDiv"><ul>
+                                                    <li>Accessories</li>
+                                                    <li>Beuty Wellness</li>
+                                                    <li>Clothing</li>
+                                                    <li>Dresses</li>
+                                                </ul></div>
+                                                <div class="listDiv">
+                                                    <ul>
+                                                        <li>Accessories</li>
+                                                        <li>Beuty Wellness</li>
+                                                        <li>Clothing</li>
+                                                        <li>Dresses</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                          
+                                            
+                                    </div>
+                                    
+                                    <div class="submenu-1">
+                                        <div><h4>featured</h4>
+                                            
+                                        </div>
+                                        <hr>
+                                        <div class="submenu-2">
+                                            <div class="listDiv"><ul>
+                                                <li>Accessories</li>
+                                                <li>Beuty Wellness</li>
+                                                <li>Clothing</li>
+                                                <li>Dresses</li>
+                                            </ul></div>                   
+                                        </div>
+                                        
+                                </div>
+                                <div class="submenu-1">
+                                    <div><h4>featured</h4>
+                                        
+                                    </div>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        <div class="listDiv"><ul>
+                                            <li>Accessories</li>
+                                            <li>Beuty Wellness</li>
+                                            <li>Clothing</li>
+                                            <li>Dresses</li>
+                                        </ul></div>                   
+                                    </div>
+                                    
+                            </div>
+                                <!-- <div class="submenu-1">
+                                    <img src="https://images.ctfassets.net/5de70he6op10/4gMhsxNkhD3jZ2DI1AewUi/6c9e2424b8edb22a14699fcadb3b6656/060922_30offSelectSwim_Supernav.jpg?w=295&q=80&fm=webp" alt="">
+                                </div> -->
+                                    
+                                
+                                </div>
+        
+                            
+                        </li>
+                        <li>
+                            <div><a href="#">Gift</a>
+                                 <div class="submenu">
+                                <div class="submenu-1">
+                                        <div><h4>Shop by category</h4>
+                                        </div>
+                                        <hr>
+                                        <div class="submenu-2">
+                                            
+                                            <div class="listDiv"><ul>
+                                                <li>Accessories</li>
+                                                <li>Beuty Wellness</li>
+                                                <li>Clothing</li>
+                                                <li>Dresses</li>
+                                            </ul></div>
+                                            <div class="listDiv">
+                                                <ul>
+                                                    <li>Accessories</li>
+                                                    <li>Beuty Wellness</li>
+                                                    <li>Clothing</li>
+                                                    <li>Dresses</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                      
+                                        
+                                </div>
+                                
+                                <div class="submenu-1">
+                                    <div><h4>featured</h4>
+                                        
+                                    </div>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        <div class="listDiv"><ul>
+                                            <li>Accessories</li>
+                                            <li>Beuty Wellness</li>
+                                            <li>Clothing</li>
+                                            <li>Dresses</li>
+                                        </ul></div>                   
+                                    </div>
+                                    
+                            </div>
+                            <div class="submenu-1">
+                                <div><h4>featured</h4>
+                                    
+                                </div>
+                                <hr>
+                                <div class="submenu-2">
+                                    <div class="listDiv"><ul>
+                                        <li>Accessories</li>
+                                        <li>Beuty Wellness</li>
+                                        <li>Clothing</li>
+                                        <li>Dresses</li>
+                                    </ul></div>                   
+                                </div>
+                                
+                        </div>
+                            <!-- <div class="submenu-1">
+                                <img src="https://images.ctfassets.net/5de70he6op10/2SeKYBtUmynzKkUXudIm2q/7a8841d396011306d04d226a13164716/061322_BrandSpotlight_FarmRio_Supernav_NEW.jpg?w=295&q=80&fm=webp" alt="">
+                            </div> -->
+                                
+                            
+                            </div>
+    
+                        </li>
+                        <li>
+                            <div><a href="homepage.html">BHLDN Weddings</a>
+                                <div class="submenu">
+                                    <div class="submenu-1">
+                                            <div><h4>Shop by category</h4>
+                                            </div>
+                                            <hr>
+                                            <div class="submenu-2">
+                                                
+                                                <div class="listDiv"><ul>
+                                                    <li>Explore All BHLDN Weddings</li>
+                                                    <li>Book An Appointment</li>
+                                                    <li>Shop All Weddings</li>
+                                                    <li>New!</li>
+                                                </ul></div>
+                                                <div class="listDiv">
+                                                    <ul>
+                                                        <li>Mother of the Birde</li>
+                                                        <li>Flower Girl Deesses</li>
+                                                        <li>Weddings Guest Dresses </li>
+                                                        <li>Robes & Lingerie</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                          
+                                            
+                                    </div>
+                                    
+                                    <div class="submenu-1">
+                                        <div><h4>featured</h4>
+                                            
+                                        </div>
+                                        <hr>
+                                        <div class="submenu-2">
+                                            <div class="listDiv"><ul>
+                                                <li>Exclusive:BHLDN by Carly Cushnie</li>
+                                                <li>New Spring Gowns</li>
+                                                <li>Printed Bridesmaid Dresses</li>
+                                                <li>Mix and Match Bridesmaids</li>
+                                            </ul></div>                   
+                                        </div>
+                                        
+                                </div>
+                                <div class="submenu-1">
+                                    <div><h4>Bridal by Style</h4>
+                                        
+                                    </div>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        <div class="listDiv"><ul>
+                                            <li>Modern Bride</li>
+                                            <li>Bohemian Bride</li>
+                                            <li>Beach & Destination Bride</li>
+                                            <li>City Hall Bride</li>
+                                            <li>Romantic Bride</li>
+                                            <li>Classic Bride</li>
+                                        </ul></div>                   
+                                    </div>
+                                    
+                            </div>
+                                <div class="submenu-1">
+                                    <img src="https://images.ctfassets.net/5de70he6op10/Li1E6gydh0GZoKiPLJvam/6cb99e2b8ea068be2e0fba9dc2566e84/460601064-120122_home_site_contentsupernav-2x.jpg?w=295&q=80&fm=webp" alt="">
+                                </div>
+                                    
+                                
+                                </div>
+        
+                        </li>
+                        <li>
+                            <div><a href="homepage.html">Home and furniture</a>
+                                <div class="submenu">
+                                    <div class="submenu-1">
+                                            <div><h4>Shop by category</h4>
+                                            </div>
+                                            <hr>
+                                            <div class="submenu-2">
+                                                
+                                                <div class="listDiv"><ul>
+                                                    <li>Accessories</li>
+                                                    <li>Beuty Wellness</li>
+                                                    <li>Clothing</li>
+                                                    <li>Dresses</li>
+                                                </ul></div>
+                                                <div class="listDiv">
+                                                    <ul>
+                                                        <li>Accessories</li>
+                                                        <li>Beuty Wellness</li>
+                                                        <li>Clothing</li>
+                                                        <li>Dresses</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                          
+                                            
+                                    </div>
+                                    
+                                    <div class="submenu-1">
+                                        <div><h4>featured</h4>
+                                            
+                                        </div>
+                                        <hr>
+                                        <div class="submenu-2">
+                                            <div class="listDiv"><ul>
+                                                <li>Accessories</li>
+                                                <li>Beuty Wellness</li>
+                                                <li>Clothing</li>
+                                                <li>Dresses</li>
+                                            </ul></div>                   
+                                        </div>
+                                        
+                                </div>
+                                <div class="submenu-1">
+                                    <div><h4>featured</h4>
+                                        
+                                    </div>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        <div class="listDiv"><ul>
+                                            <li>Accessories</li>
+                                            <li>Beuty Wellness</li>
+                                            <li>Clothing</li>
+                                            <li>Dresses</li>
+                                        </ul></div>                   
+                                    </div>
+                                    
+                            </div>
+                                <div class="submenu-1">
+                                    <img src="https://images.ctfassets.net/5de70he6op10/Li1E6gydh0GZoKiPLJvam/6cb99e2b8ea068be2e0fba9dc2566e84/460601064-120122_home_site_contentsupernav-2x.jpg?w=295&q=80&fm=webp" alt="">
+                                </div>
+                                    
+                                
+                                </div>
+        
+                        </li>
+                        <li>
+                            <div><a href="beauty1.html"> Beauty & Wellness</a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"> Garden & Outdoor</a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"> Weddings</a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"> Sale</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+        </div>
+        <!-- script for login and signup -->
+    <script>
+    let sign=document.getElementById("signin")
+    sign.addEventListener("click", ()=>{
+    self.location="profile.html"
+    })
+    
+    let signup=document.getElementById("signup")
+    signup.addEventListener("click", ()=>{
+    self.location="signup.html"
+    })
+    </script>
     
 
 
@@ -346,10 +906,10 @@
             <a href="index.html">Home</a>
             <a href="shoes.html">shoes</a>
             <a href="clothing.html">clothing</a>
-            <a href="homepage2.html">Homes and Furniture</a>
-            <a href="wedding.html">Weddings</a>
-            <a href="sale.html">Sale</a>
-            <a href="garden.html">Garden & outdoor</a>
+            <a href="homepage.html">Homes and Furniture</a>
+            <a href="#">Weddings</a>
+            <a href="#">Sale</a>
+            <a href="#">Garden & outdoor</a>
             <h3>Filter by:</h3>
             <hr>
             <h2 id="price">Price +</h2>
@@ -381,7 +941,7 @@
                     <option value="za">Z-A</option>
                 </select>
                 <!-- <button class="btn-btn"><a class="cloth"href=""><</a></button> -->
-                <button id="btn-btn"><a id="cloth" href="garden.html">5</a></button>
+                <button id="btn-btn"><a id="cloth" href="#">5</a></button>
             </div>
         </div>
         <div id="images">
@@ -390,7 +950,128 @@
     </div>
     </div>
     </div>
-    
+    <!-- footer section -->
+
+    <div id="footer">
+        <div id="help">
+          <div>
+            
+            <h3>help</h3>
+            <ul class="footerHelp">
+              <li>Track Your Order</li>
+              <li>Start A Return Or Exchange (US)</li>
+              <li>Return And Exchange</li>
+              <li>Shipping</li>
+              <li>Customer Service</li>
+              <li>Current Promotions</li>
+              <li>Product Recalls</li>
+            </ul>
+          </div>
+          <div>
+            <h3>About Us</h3>
+            <ul class="footerHelp">
+              <a href="ourStory.html"><li>Our Story</li></a>
+              <li>Events</li>
+              <li>A Greater Good</li>
+              <li>Diversity & Inclusion</li>
+              <li>Stories</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Services</h3>
+            <ul class="footerHelp">
+              <li>AnthroPerks</li>
+              <li>Gift Cards</li>
+              <li>Trade Membership</li>
+              <li>Furniture: Guides & Services</li>
+              <li>Store Pickup & Collection Points</li>
+              <li>Klarna</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <ul class="footerHelp">
+              <a href="contact.html"><li>Contact Us</li></a>
+              <li>Stay Connected</li>
+              <li>Careers</li>
+              <li>Styling Services</li>
+              <li>Request A Catalog</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Social Network</h3>
+            <div>
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+            <div>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div>
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </div>
+        </div>
+        <div id="contactFooter">
+          <div>
+            <div>
+              <img
+                style="height: 100%"
+                src="https://images.ctfassets.net/5de70he6op10/4gWq1G4qLLgmqlNeHfzV2T/55298745127c36c5876f4013434c0c37/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917_Copy_2.svg"
+              />
+            </div>
+            <div>
+              <div>
+                <i class="fa-brands fa-square-instagram"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-github"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://images.ctfassets.net/5de70he6op10/2DRgCRXNIEkk0wIqUo2ywa/20ea44a95fb361eaf034b42eec179d44/_site_footer__download_app_enable_push_.jpg"
+            />
+          </div>
+          <div>
+            <ul class="footerLaguage">
+              <li>UK</li>
+              <li>India</li>
+              <li>US</li>
+              <li>France</li>
+              <li>Germany</li>
+              <li>Italy</li>
+              <li>Spain</li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <ul class="footerLaguage">
+                <li>Privacy Policy</li>
+                <li>Terms of Use</li>
+                <li>CA Transparency</li>
+                <li>Accessibility</li>
+                <li>URBN.com</li>
+                <li>For CA Residents</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="footerLaguage">
+                <li>2022 URBN.com. All Rights Reserved.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
 
@@ -799,7 +1480,7 @@ display1(items)
 //  }
 function send(el){
     localStorage.setItem("obj", JSON.stringify(el))
-    window.location.href="cartshoe.html"
+    window.location.href="shoecart.html"
 }
 document.querySelector("#price").addEventListener("click", pri)
  function pri(){

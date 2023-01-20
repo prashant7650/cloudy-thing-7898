@@ -16,8 +16,13 @@ function login(){
         }else if(password.value== "" || mob.value==""){
             alert("Please fill in the empty fields");
         }else if(mob.value!==element.mob&&password.value!==element.password){
-            window.location.href="./sign.up.html"
+            window.location.href="./signup.html"
         }
 });
         
 }
+
+let admin= document.getElementById("admin")
+admin.addEventListener("click", ()=>{
+    self.location="adminlogin.html"
+})

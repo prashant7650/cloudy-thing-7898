@@ -6,43 +6,572 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoes</title>
     <link rel="stylesheet" href="style\shoes.css">
-    <!-- <link rel="stylesheet" href="shoes.js"> -->
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/navbar.css">
 </head>
 <body>
-    <!-- <div id="size" >
-        <div> <img src="https://images.ctfassets.net/5de70he6op10/2fzUgZMXWUPrC84rgBxaSY/9193a3ee06dc32835f6707ca130b9999/5_Shoe_Topper.jpg?w=630&q=80&fm=jpg&fl=progressive" alt=""></div>
-        <div> <img src="https://images.ctfassets.net/5de70he6op10/2qYKuPxJVyKb7n60A4xu6T/25a590f8599449559c65b0daec39eb8b/6_Shoe_Topper.jpg?w=630&q=80&fm=jpg&fl=progressive" alt=""></div>
-        <div> <img src="https://images.ctfassets.net/5de70he6op10/4mYgaZvDjiMO0ogglhyGvJ/46fdad07bb955e7ecbb14acc7e045581/7_Shoe_Topper.jpg?w=630&q=80&fm=jpg&fl=progressive" alt=""></div>
-        <div> <img src="https://images.ctfassets.net/5de70he6op10/3iNdIE0LZbZPDYuR6nD8Ez/03c286802421cd10b65eed004a59c0a3/8_Shoe_Topper.jpg?w=630&q=80&fm=jpg&fl=progressive" alt=""></div>
-        <div> <img src="https://images.ctfassets.net/5de70he6op10/5irHE9rTk9tLXZbUCxtNow/681f9fe4f6d062d8cff812f913c1ca93/9_Shoe_Topper.jpg?w=630&q=80&fm=jpg&fl=progressive" alt=""></div>
-        <div> <img src="https://images.ctfassets.net/5de70he6op10/61AjzQ71WgOAQfYooxFzaQ/59d06b09fb9334e99c0db1f02f5fb16c/10-11_Shoe_Topper.jpg?w=630&q=80&fm=webp" alt=""></div>
+       <!-- nav bar  -->
+
+       <div id="signIn_signUp">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <button id="signin">Sign in/</button> <button id="signup">Sign Up</button>
     </div>
 
-    <div id="upper">
-        <div>
-            <h3>Browse by:</h3>
-            <hr>
-            <a href="index.html">Home</a>
-            <a href="clothing.html">clothing</a>
-            <a href="beauty1.html">Beauty & Wellness</a>
-            <a href="homepage2.html">Homes and furniture</a>
-            <a href="wedding.html">Weddings</a>
-            <a href="sale.html">Sale</a>
-            <a href="garden.html">Garden & outdoor</a>
-            <h3>Filter by:</h3>
-            <hr>
-            <h2 id="price">Price +</h2>
-            <hr>
-            <h2 id="size">Size +</h2>
-            <hr>
-            <h2>Color +</h2>
-            <hr>
-            <h2>Brand +</h2>
-            <hr>
-            <h2>Free pickup +</h2>
-            <hr>
+    <!-- nav positioning -->
+
     
-        </div> -->
+    <div id="nav-position">
+    <div id="forSticky">
+        <div class="companyLogo_searchBar">
+            <div id="comapnyLogo">
+                <div  id="mainlogo" ><a href="homepage.html">
+                  <img style="width: 80px; height: 60px;" src="./logo/logo.jpg" ></a></div>
+            <div "><a href="homepage.html"><img src="https://images.ctfassets.net/5de70he6op10/y1O9tEDOvCGliGUvT9RoJ/eb8ab4734c5e3778b8b61da70ed441ac/AL_NewLogo_2.svg"></a></div>
+            </div>
+            
+            <div id="searchBar_cart">
+                <div id="searchBar">
+                        <input type="search" class="search" placeholder="Search Anthropologies">
+                        <button id="search-btn">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                <div id="cart">
+                    <a id="anch">
+                     <img  src="data:image/png;base64,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" alt="">
+                    </a>
+                    <div id="onnavbar"></div>
+                </div>
+            </div>
+        </div>
+        <div id="navbar">
+            <div id="inner">
+                <ul>
+                    <li>
+                        <div><a href="homepage.html">New!</a>
+                        <div class="submenu">
+                            <div class="submenu-1">
+                                    <div><h4>Shop by category</h4>
+                                    </div>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        <div class="listDiv"><ul>
+                                            <li><a href="#">Accessories</a></li>
+                                            <li><a href="#">Beuty Wellness</a></li>
+                                            <li><a href="#">Clothing</a></li>
+                                            <li><a href="#">Dresses</a></li>
+                                        </ul></div>
+                                        <div class="listDiv">
+                                            <ul>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Plus</a></li>
+                                                <li><a href="#">Shoes</a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  
+                                    
+                            </div>
+                            
+                            <div class="submenu-1">
+                                <div><h4>featured</h4>
+                                    
+                                </div>
+                                <hr>
+                                <div class="submenu-2">
+                                    <div class="listDiv"><ul>
+                                        <li><a href="#">Mark D Sikes</a></li>
+                                        <li><a href="#">The Ethereal Edit:White <br> clothing, shoes & more</a></li>
+                                        <li><a href="#">How to style carves</a></li>
+                                        <li><a href="#">The 90's shop</a></li>
+                                    </ul></div>                   
+                                </div>
+                                
+                        </div>
+                        <div class="submenu-1">
+                            <img src="https://images.ctfassets.net/5de70he6op10/3ZMw5VEJi6CX2Ey5aoyYbn/31f0050a3d8fab8df65d178804046a43/011723_LoveStory_Supernav_NEW.jpg?w=295&q=80&fm=webp" alt="">
+                        </div>
+                            
+                        
+                        </div>
+                    </li>
+                    <li>
+                        <div><a href="dresses.html">Dresses</a>
+                        <div class="submenu">
+                            <div class="submenu-1">
+                                    <div><h4>Shop by category</h4>
+                                    </div>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        
+                                        <div class="listDiv"><ul>
+                                            <li>Accessories</li>
+                                            <li>Beuty Wellness</li>
+                                            <li>Clothing</li>
+                                            <li>Dresses</li>
+                                        </ul></div>
+                                        <div c lass="listDiv">
+                                            <ul>
+                                                <li>Accessories</li>
+                                                <li>Beuty Wellness</li>
+                                                <li>Clothing</li>
+                                                <li>Dresses</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  
+                                    
+                            </div>
+                            
+                            <div class="submenu-1">
+                                <div><h4>featured</h4>
+                                    
+                                </div>
+                                <hr>
+                                <div class="submenu-2">
+                                    <div class="listDiv"><ul>
+                                        <li>Accessories</li>
+                                        <li>Beuty Wellness</li>
+                                        <li>Clothing</li>
+                                        <li>Dresses</li>
+                                    </ul></div>                   
+                                </div>
+                                
+                        </div>
+                        
+                            
+                        
+                        </div>
+                    </li>
+                    <li>
+                        <div><a href="clothing.html">Clothing</a>
+                        <div class="submenu">
+                            <div class="submenu-1">
+                                    <div><h4>Shop by category</h4>
+                                    </div>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        
+                                        <div class="listDiv"><ul>
+                                            <li>Accessories</li>
+                                            <li>Beuty Wellness</li>
+                                            <li>Clothing</li>
+                                            <li>Dresses</li>
+                                        </ul></div>
+                                        <div class="listDiv">
+                                            <ul>
+                                                <li>Accessories</li>
+                                                <li>Beuty Wellness</li>
+                                                <li>Clothing</li>
+                                                <li>Dresses</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  
+                                    
+                            </div>
+                            
+                            <div class="submenu-1">
+                                <div><h4>featured</h4>
+                                    
+                                </div>
+                                <hr>
+                                <div class="submenu-2">
+                                    <div class="listDiv"><ul>
+                                        <li>Accessories</li>
+                                        <li>Beuty Wellness</li>
+                                        <li>Clothing</li>
+                                        <li>Dresses</li>
+                                    </ul></div>                   
+                                </div>
+                                
+                        </div>
+                        <div class="submenu-1">
+                            <div><h4>featured</h4>
+                                
+                            </div>
+                            <hr>
+                            <div class="submenu-2">
+                                <div class="listDiv"><ul>
+                                    <li>Accessories</li>
+                                    <li>Beuty Wellness</li>
+                                    <li>Clothing</li>
+                                    <li>Dresses</li>
+                                </ul></div>                   
+                            </div>
+                            
+                    </div>
+                        <div class="submenu-1">
+                            <img src="https://images.ctfassets.net/5de70he6op10/MX3gsRfKxbzoLfN5Hwf4g/964ae67f6f691084656aaa746819eb39/011723_LoveStory_Supernav_CLOTHING.jpg?w=295&q=80&fm=webp" alt="">
+                        </div>
+                            
+                        
+                        </div>
+                    </li>
+                    <li>
+                        <div><a href="shoes.html">Shoes</a>
+                        <div class="submenu">
+                            <div class="submenu-1">
+                                    <div><h4>Shop by category</h4>
+                                    </div>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        
+                                        <div class="listDiv"><ul>
+                                            <li>Accessories</li>
+                                            <li>Beuty Wellness</li>
+                                            <li>Clothing</li>
+                                            <li>Dresses</li>
+                                        </ul></div>
+                                        <div class="listDiv">
+                                            <ul>
+                                                <li>Accessories</li>
+                                                <li>Beuty Wellness</li>
+                                                <li>Clothing</li>
+                                                <li>Dresses</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  
+                                    
+                            </div>
+                            
+                            <div class="submenu-1">
+                                <div><h4>featured</h4>
+                                    
+                                </div>
+                                <hr>
+                                <div class="submenu-2">
+                                    <div class="listDiv"><ul>
+                                        <li>Accessories</li>
+                                        <li>Beuty Wellness</li>
+                                        <li>Clothing</li>
+                                        <li>Dresses</li>
+                                    </ul></div>                   
+                                </div>
+                                
+                        </div>
+                        <div class="submenu-1">
+                            <div><h4>featured</h4>
+                                
+                            </div>
+                            <hr>
+                            <div class="submenu-2">
+                                <div class="listDiv"><ul>
+                                    <li>Accessories</li>
+                                    <li>Beuty Wellness</li>
+                                    <li>Clothing</li>
+                                    <li>Dresses</li>
+                                </ul></div>                   
+                            </div>
+                            
+                    </div>
+                        <!-- <div class="submenu-1">
+                            <img src="https://images.ctfassets.net/5de70he6op10/2SeKYBtUmynzKkUXudIm2q/7a8841d396011306d04d226a13164716/061322_BrandSpotlight_FarmRio_Supernav_NEW.jpg?w=295&q=80&fm=webp" alt="">
+                        </div> -->
+                            
+                        
+                        </div>
+                    </li>
+                    <li>
+                        <div><a href="beauty1.html">Accessories</a>
+                            <div class="submenu">
+                                <div class="submenu-1">
+                                        <div><h4>Shop by category</h4>
+                                        </div>
+                                        <hr>
+                                        <div class="submenu-2">
+                                            
+                                            <div class="listDiv"><ul>
+                                                <li>Accessories</li>
+                                                <li>Beuty Wellness</li>
+                                                <li>Clothing</li>
+                                                <li>Dresses</li>
+                                            </ul></div>
+                                            <div class="listDiv">
+                                                <ul>
+                                                    <li>Accessories</li>
+                                                    <li>Beuty Wellness</li>
+                                                    <li>Clothing</li>
+                                                    <li>Dresses</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                      
+                                        
+                                </div>
+                                
+                                <div class="submenu-1">
+                                    <div><h4>featured</h4>
+                                        
+                                    </div>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        <div class="listDiv"><ul>
+                                            <li>Accessories</li>
+                                            <li>Beuty Wellness</li>
+                                            <li>Clothing</li>
+                                            <li>Dresses</li>
+                                        </ul></div>                   
+                                    </div>
+                                    
+                            </div>
+                            <div class="submenu-1">
+                                <div><h4>featured</h4>
+                                    
+                                </div>
+                                <hr>
+                                <div class="submenu-2">
+                                    <div class="listDiv"><ul>
+                                        <li>Accessories</li>
+                                        <li>Beuty Wellness</li>
+                                        <li>Clothing</li>
+                                        <li>Dresses</li>
+                                    </ul></div>                   
+                                </div>
+                                
+                        </div>
+                            <!-- <div class="submenu-1">
+                                <img src="https://images.ctfassets.net/5de70he6op10/4gMhsxNkhD3jZ2DI1AewUi/6c9e2424b8edb22a14699fcadb3b6656/060922_30offSelectSwim_Supernav.jpg?w=295&q=80&fm=webp" alt="">
+                            </div> -->
+                                
+                            
+                            </div>
+    
+                        
+                    </li>
+                    <li>
+                        <div><a href="#">Gift</a>
+                             <div class="submenu">
+                            <div class="submenu-1">
+                                    <div><h4>Shop by category</h4>
+                                    </div>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        
+                                        <div class="listDiv"><ul>
+                                            <li>Accessories</li>
+                                            <li>Beuty Wellness</li>
+                                            <li>Clothing</li>
+                                            <li>Dresses</li>
+                                        </ul></div>
+                                        <div class="listDiv">
+                                            <ul>
+                                                <li>Accessories</li>
+                                                <li>Beuty Wellness</li>
+                                                <li>Clothing</li>
+                                                <li>Dresses</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  
+                                    
+                            </div>
+                            
+                            <div class="submenu-1">
+                                <div><h4>featured</h4>
+                                    
+                                </div>
+                                <hr>
+                                <div class="submenu-2">
+                                    <div class="listDiv"><ul>
+                                        <li>Accessories</li>
+                                        <li>Beuty Wellness</li>
+                                        <li>Clothing</li>
+                                        <li>Dresses</li>
+                                    </ul></div>                   
+                                </div>
+                                
+                        </div>
+                        <div class="submenu-1">
+                            <div><h4>featured</h4>
+                                
+                            </div>
+                            <hr>
+                            <div class="submenu-2">
+                                <div class="listDiv"><ul>
+                                    <li>Accessories</li>
+                                    <li>Beuty Wellness</li>
+                                    <li>Clothing</li>
+                                    <li>Dresses</li>
+                                </ul></div>                   
+                            </div>
+                            
+                    </div>
+                        <!-- <div class="submenu-1">
+                            <img src="https://images.ctfassets.net/5de70he6op10/2SeKYBtUmynzKkUXudIm2q/7a8841d396011306d04d226a13164716/061322_BrandSpotlight_FarmRio_Supernav_NEW.jpg?w=295&q=80&fm=webp" alt="">
+                        </div> -->
+                            
+                        
+                        </div>
+
+                    </li>
+                    <li>
+                        <div><a href="homepage.html">BHLDN Weddings</a>
+                            <div class="submenu">
+                                <div class="submenu-1">
+                                        <div><h4>Shop by category</h4>
+                                        </div>
+                                        <hr>
+                                        <div class="submenu-2">
+                                            
+                                            <div class="listDiv"><ul>
+                                                <li>Explore All BHLDN Weddings</li>
+                                                <li>Book An Appointment</li>
+                                                <li>Shop All Weddings</li>
+                                                <li>New!</li>
+                                            </ul></div>
+                                            <div class="listDiv">
+                                                <ul>
+                                                    <li>Mother of the Birde</li>
+                                                    <li>Flower Girl Deesses</li>
+                                                    <li>Weddings Guest Dresses </li>
+                                                    <li>Robes & Lingerie</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                      
+                                        
+                                </div>
+                                
+                                <div class="submenu-1">
+                                    <div><h4>featured</h4>
+                                        
+                                    </div>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        <div class="listDiv"><ul>
+                                            <li>Exclusive:BHLDN by Carly Cushnie</li>
+                                            <li>New Spring Gowns</li>
+                                            <li>Printed Bridesmaid Dresses</li>
+                                            <li>Mix and Match Bridesmaids</li>
+                                        </ul></div>                   
+                                    </div>
+                                    
+                            </div>
+                            <div class="submenu-1">
+                                <div><h4>Bridal by Style</h4>
+                                    
+                                </div>
+                                <hr>
+                                <div class="submenu-2">
+                                    <div class="listDiv"><ul>
+                                        <li>Modern Bride</li>
+                                        <li>Bohemian Bride</li>
+                                        <li>Beach & Destination Bride</li>
+                                        <li>City Hall Bride</li>
+                                        <li>Romantic Bride</li>
+                                        <li>Classic Bride</li>
+                                    </ul></div>                   
+                                </div>
+                                
+                        </div>
+                            <div class="submenu-1">
+                                <img src="https://images.ctfassets.net/5de70he6op10/Li1E6gydh0GZoKiPLJvam/6cb99e2b8ea068be2e0fba9dc2566e84/460601064-120122_home_site_contentsupernav-2x.jpg?w=295&q=80&fm=webp" alt="">
+                            </div>
+                                
+                            
+                            </div>
+    
+                    </li>
+                    <li>
+                        <div><a href="homepage.html">Home and furniture</a>
+                            <div class="submenu">
+                                <div class="submenu-1">
+                                        <div><h4>Shop by category</h4>
+                                        </div>
+                                        <hr>
+                                        <div class="submenu-2">
+                                            
+                                            <div class="listDiv"><ul>
+                                                <li>Accessories</li>
+                                                <li>Beuty Wellness</li>
+                                                <li>Clothing</li>
+                                                <li>Dresses</li>
+                                            </ul></div>
+                                            <div class="listDiv">
+                                                <ul>
+                                                    <li>Accessories</li>
+                                                    <li>Beuty Wellness</li>
+                                                    <li>Clothing</li>
+                                                    <li>Dresses</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                      
+                                        
+                                </div>
+                                
+                                <div class="submenu-1">
+                                    <div><h4>featured</h4>
+                                        
+                                    </div>
+                                    <hr>
+                                    <div class="submenu-2">
+                                        <div class="listDiv"><ul>
+                                            <li>Accessories</li>
+                                            <li>Beuty Wellness</li>
+                                            <li>Clothing</li>
+                                            <li>Dresses</li>
+                                        </ul></div>                   
+                                    </div>
+                                    
+                            </div>
+                            <div class="submenu-1">
+                                <div><h4>featured</h4>
+                                    
+                                </div>
+                                <hr>
+                                <div class="submenu-2">
+                                    <div class="listDiv"><ul>
+                                        <li>Accessories</li>
+                                        <li>Beuty Wellness</li>
+                                        <li>Clothing</li>
+                                        <li>Dresses</li>
+                                    </ul></div>                   
+                                </div>
+                                
+                        </div>
+                            <div class="submenu-1">
+                                <img src="https://images.ctfassets.net/5de70he6op10/Li1E6gydh0GZoKiPLJvam/6cb99e2b8ea068be2e0fba9dc2566e84/460601064-120122_home_site_contentsupernav-2x.jpg?w=295&q=80&fm=webp" alt="">
+                            </div>
+                                
+                            
+                            </div>
+    
+                    </li>
+                    <li>
+                        <div><a href="beauty1.html"> Beauty & Wellness</a></div>
+                    </li>
+                    <li>
+                        <div><a href="#"> Garden & Outdoor</a></div>
+                    </li>
+                    <li>
+                        <div><a href="#"> Weddings</a></div>
+                    </li>
+                    <li>
+                        <div><a href="#"> Sale</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- script for login and signup -->
+<script>
+let sign=document.getElementById("signin")
+sign.addEventListener("click", ()=>{
+self.location="profile.html"
+})
+
+let signup=document.getElementById("signup")
+signup.addEventListener("click", ()=>{
+self.location="signup.html"
+})
+</script>
+
+<!-- main section -->
 
         <div id="complete">
             <div id="top">
@@ -57,13 +586,13 @@
             <div>
                 <h3>Browse by:</h3>
                 <hr>
-                <a href="index.html">Home</a>
+                <a href="homepage.html">Home</a>
                 <a href="clothing.html">clothing</a>
                 <a href="beauty1.html">Beauty & Wellness</a>
-                <a href="homepage2.html">Homes and furniture</a>
-                <a href="wedding.html">Weddings</a>
-                <a href="sale.html">Sale</a>
-                <a href="garden.html">Garden & outdoor</a>
+                <a href="homepage.html">Homes and furniture</a>
+                <a href="#">Weddings</a>
+                <a href="#">Sale</a>
+                <a href="#">Garden & outdoor</a>
                 <h3>Filter by:</h3>
                 <hr>
                 <h2 id="price">Price +</h2>
@@ -97,7 +626,7 @@
                         <option value="za">Z-A</option>
                     </select>
                     <!-- <button class="btn-btn"><a class="cloth"href=""><</a></button> -->
-                    <button id="btn-btn"><a id="cloth" href="gift.html">3</a></button>
+                    <button id="btn-btn"><a id="cloth" href="#">3</a></button>
                 </div>
             </div>
             <div id="images">
@@ -106,151 +635,128 @@
         </div>
         </div>
         </div>
+
+        <!-- footer section -->
         <div id="footer">
-            <div id="help">
-              <div>
-                
-                <h3>Help</h3>
-                <ul class="footerHelp">
-                  <li>Track Your Order</li>
-                  <li>Start A Return Or Exchange (US)</li>
-                  <li>Return And Exchange</li>
-                  <li>Shipping</li>
-                  <li>Customer Service</li>
-                  <li>Current Promotions</li>
-                  <li>Product Recalls</li>
-                </ul>
-              </div>
-              <div>
-                <h3>About Us</h3>
-                <ul class="footerHelp">
-                  <a href="ourStory.html"><li>Our Story</li></a>
-                  <li>Events</li>
-                  <li>A Greater Good</li>
-                  <li>Diversity & Inclusion</li>
-                  <li>Stories</li>
-                </ul>
-              </div>
-              <div>
-                <h3>Services</h3>
-                <ul class="footerHelp">
-                  <li>AnthroPerks</li>
-                  <li>Gift Cards</li>
-                  <li>Trade Membership</li>
-                  <li>Furniture: Guides & Services</li>
-                  <li>Store Pickup & Collection Points</li>
-                  <li>Klarna</li>
-                </ul>
-              </div>
-              <div>
-                <h3>Contact</h3>
-                <ul class="footerHelp">
-                  <a href="contact.html"><li>Contact Us</li></a>
-                  <li>Stay Connected</li>
-                  <li>Careers</li>
-                  <li>Styling Services</li>
-                  <li>Request A Catalog</li>
-                </ul>
-              </div>
-              <div>
-                <h3>Social Network</h3>
-                <div>
-                  <a href="https://www.instagram.com/gaurav_7ingh/"
-                    ><img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYRHI1E_Mh-Hpi4hqtCifpStom1SsyNniyLSIP6e8HU1HN6-lnJ31V&usqp=CAE&s"
-                  /></a>
-                </div>
-                <div>
-                  <a href="https://twitter.com/gaurav__singh"
-                    ><img
-                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAMAAACZHrEMAAAAY1BMVEX///8ArO0AqOwAqu0ApuwApOwAouv4/P7t9/3z+v6v3Pfj8vzY7fvd8Puq2vaJzPPP6vpEte+TzvQvsu633/iByPNiwPF1xvLC5PlnvvEur+6g1PXJ5vlPuO9ww/KX0/UAnOoO9ENTAAAEeElEQVR4nO2b2ZajIBCGIwXuS4j7lsz7P+WoSaa7EyNViNM3fHd9jtK/RfFTLDmdLBaLxWKxWCwWi8XyC3hB0oRpWMSB99tKiiwXgjPGuHDzMgx+T0pUdgycLwCgjlee84vDg+ZlwJxXGC/fopN2F2yTuqIb8S5lCY/bf38sSoFzbJtlqqelXpeyROf6DI6X1B1zGDYwEbhnDSne+FnLpKbz54fOvXTnx+5/IbhMT9PVBCNsaJnUyCGsHLhnNy+wzXZTJ3cRVcxmXBY4fz7CWmyrsZhTDtbG4wYb+fIG5Gjvydj9BZKahuO1OA6+6fYhHxK8Fr8jxIU/Gg4adbvy31vqh59k+E5i+aIlGGqhzsvk6yMBm/OBwGtp/TkmteQC4WbnbyNUZDgvJgSmPhdl7nJweIZoePjeMJOYvP/qWTX5w2mgxXznDzGTcSISZyANpQXoUKP7/GKkrFa+VhI85qFF4kw1fn1x8nHFK4Rx/dDiIA0+em9a1JvvetTAMImdJr1x5Uu620ZfxUQxy+hGcl2bfbn87AoNTQy/oqWcTuH62GBO+OGDQpqYkKDls52yfL2z0u1C5qURbIn3oPr4pUzUzbtXkSJDFVNsfClAV8Yv3UXKGaoYhW8wIcv0e3+RRhNZjLJSAiacazhEd0kknyGLObWIlAQOnWzr26SJ4sCsV//7n/jomW9aUHN8MaMlhupjFDEaC8TePUgMunpcSO4Dt6fXKDhIy8O065dB0h/UU4Q1x2R5nME1TFYKGyOgF9kLcw3JAEDW1SFiKFpO8dNjGGX+wwIjSQyl1KfDbiQxKPvVhuNXqQtHDaMFRtxq8Un2TmSkbsRWx/UTUOrfheY4MRozk2J3bgeCZHkLGmtnJEDWct/vPAJ6mTfhOcd0FFOt2leJDtHiSL1zgPMRHcUwm1VrHJHEiB3FDyS56eAAel/8naA1rIaRlvyvFJ3ZvtqjZRrivTRXYlFLmRU5TclM9ZZ2+k4pE/veyfP8JF7dyiKj5b5PEpDjhDRVC4tdR8pmy89dgZlM2GjFl9OLhx90BkODOULZhLq/uwFxubRGaczzmM7Z9AvSUEexcr+WU2QobVCnVkoGI2K0LhCsEBuwvP2T0j81cu+YgsqUlmmqLHeaH217SMUw7hni1HsMKrwwF7qps6+8WyfORiYYvbTZPQ2s40VDmtXEAO2cqzfxibslwoTzfiDlNC38uLhE1KULPywu/sUl5ougn58gpfTUKRPggDE9E1xyqu0BaO1+KJUMFTFvJ9h4wM1N71xLjUUcvxjWEiRFX/EPlzW3w5IbqV+aOuvTNO1v9dh1DtOqZQAyQzeAk/bPfKtYT8aCUN62ocjZVS9wSTqCVOI1uW5cAFKjhdRCU1HddlYi8vSYm9jzBWKSHua0K/dHTBGF0sXqAQE3w8XlG37fOkqfYRzGC+l4WJtoKHMH1kc6zHcRu2sT/c8fOvhTuVnlwhX8bkHLXQyX51WZNju26XbgeX48FOmdYoh97Z8DWCwWi8VisVgsFotFl7+teTrpC785FgAAAABJRU5ErkJggg=="
-                  /></a>
-                </div>
-                <div>
-                  <a href="https://www.facebook.com/profile.php?id=100007446062466"
-                    ><img
-                      src="data:image/png;base64,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"
-                  /></a>
-                </div>
-                <div>
-                  <a href="https://github.com/gaurav7ingh"
-                    ><img
-                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAACOCAMAAADQI8A6AAAAbFBMVEX///8XFRUAAAAUEhL4+Pj8/Pzb29sLCAgPDAz09PQIBATg4ODx8fGcnJzt7e0SDw/n5+fT09N8fHxRUVG1tbWsrKxiYmKSkZFYV1dcXFxFRUXIyMguLi6Kioq/v79xcXEhICA3NjY+Pj4pJyccyPY8AAAGYklEQVR4nO1b2bKqOhCVDpPMAqKCiMP//+NJHJiSYCb3rbrFetvnFHHR6WF1J2w2K1asWLFixYoVK1b8H5C4l31e3eAFv+7asnGj/4SK3bRVbREaXmo9kQbkr2tRxa7zt1zCfYV/OfCRRQF5mBXKL8lfcYkuxwf+RZrJgBTgXO3sPyCTHb5x6RnV+18TCrsA0u9cXvDgevjlntm5JWKYsYlu8c/IxEK7NCd0LX/CZlfLkyHwoTO/Y04LgQoZAoC9YTZuoWaaF1LDBroEoE7maaB7aIyMcxAPbh4CuJiik+ts1AepIQeyj5ob9QaCgwk6tRk2GNBqk7FPxthgProp2jHJRp9Pa5QN9h+t+DqYZUP4NOpsmmmEB0z59+X3/cAb/+3dMlU2Gfjjhb3jiah0iYyIJVhan4qJiaFQZONU03Vy246y8vSYkFwAFqh5k0R2dJ/YR9Wd4wmbfteT+Aye9RUBHMu3Np16IPJ2KmzCqeOkt174Ovux9PG9d5/VdzjkH6EafrRJpy74UGAz2yorGO95hIUhfs0niev91LVtm3fF7fUPPrakVY5areg89TeV7SpnMT6rOEkH/jGPm6mOcbKm7WqY/1493VyEXGk655nDwlzyNu6W/WS0mztHN3+1TpZNPE+AoOSAL1DZVHax6DGPZpA3cA/63Tq5Ln5PVQcd61B0JF9ue6NSndHNkvSeC106KVeWwNyVcXBdZaR8QfdUkKvTudNlRSb3ZAxd4dXKbLIHXXb9s/jzLNGFkLLz0HFhyfiiXTBKJBTKwxp3nlLlNt9NaZXlP5RlEyXjXgvWojNNOk3gl9EQlZorsuJKuspM4Dzo7ReOLfpVkKXZ8TMSWSAYqjtGDtTtH7eM6ACxRxlxCRp+zF9UrG7l1JPeTZfNxmbQERpp2BXlySZmDzdqt8RWTegKoxflL6hW9TCY5yx01ZBeH9CxFZw46nYCl3pOPIEuoPHmb+nfReaXDe3J6uVqwO5KG10kXmmreqpt9RghrTJAJLfSGcI7mqBzpumIuCSDjgnruAzrqNHxf+M7ynRqkYj8RocWUYp0UvWJ1QA6YMXozGcFJCI1eiz+smJ0WD2WgSJBC0IkFOgsuWPgOKGifUBIftNFQqvl+4BW734tUiRCRD2YCgq3BTA6yaASyR9JzWhhf6IGhWzOkF/6+stRX5TREnuFpsRwKXkhPBNhtdS6R4esrl8ozslAmX40uGuxyRhdMRKND+bAQeuuANM4orKFdaSWCkk3DhiJXiK3sucxJ2U2GT1pxHuVihZCl5YmlkZqtpmHu+IC3Dkyr1soNuoJ+zhVYjXWOMZSnKokd85i4r3blnOtAG7SSmPPudgiOk55YhgEI3Ik1JML/FYqPbsV76xSSrP0ShJZXXzohitWmN1B1MpOUwHvpFlM6/Qr1W8TB8RdnDC+jsx1Lcrsa1RE7uHOJSMdph9lm56JLdo4Gx33ogCgaPc77rZllzg/w9IJrpguHWB/Dug8Uh22iR1NxSVmFCCPFWnhGfmwyMVSyBl9ZkbPs6f93ZknM+Q9mK94+X7bR9Y4GHUfoFBHm+1+E1mzIOGJju/3NhQS6qhNe6a/zJ2VMu7AkKUmJkjPCuV4NLEkE+kSwtmtA67koHuYmXFUxMp2yGAIko1TbqNx9VmY0DH1xIiN2kBktDmvNHHJjn3EICi4cwSXmi6OoTxpHLYLeWSJB2z2Nbk2TQK54Gd5xuxVd6sIouFg4xkLO+xC2+ZQFVW+X7o/HrHOw/qVKkU2pD/+uA/xHoIdiTJ3RyzH72hZTVXPptYYXZV9zEL+NIcdl5vsjrNY2/GXXaDj642oByE26hmzLzmVTyfVOY0nGNwZWmFxy6OD9NojsvSgxOAk+Go8OsjEnGjgE0Bdfm7JbEN+oufQMcJm44wu5AZYe3UEVXHll0HnxKKTau/UG/FI8D4/EsGZ0FuoyjaLTuAZGDC+UDKuwknSgZuB6esHrkUfjsnQwRXO6GX3hLrRLUPHg9j0N0nxrC9YonOc7C2ChzG3GZB0Ew8SpgNmLpXTKG+jBmGhU9qO6ARQGPThGeLh/usSnV5geFAY+x6BhSi+vWcA3+ngBrq+/PoLrajEgtBHaOmCSQWIXEitmj/5xi/McRO2NGgM755VHP7uE8hot1t8cfz/f/Fh34oVK1asWLFixYoVP8Q/l9xQHg2cw5gAAAAASUVORK5CYII="
-                  /></a>
-                </div>
-              </div>
+          <div id="help">
+            <div>
+              
+              <h3>help</h3>
+              <ul class="footerHelp">
+                <li>Track Your Order</li>
+                <li>Start A Return Or Exchange (US)</li>
+                <li>Return And Exchange</li>
+                <li>Shipping</li>
+                <li>Customer Service</li>
+                <li>Current Promotions</li>
+                <li>Product Recalls</li>
+              </ul>
             </div>
-            <div id="contactFooter">
+            <div>
+              <h3>About Us</h3>
+              <ul class="footerHelp">
+                <a href="ourStory.html"><li>Our Story</li></a>
+                <li>Events</li>
+                <li>A Greater Good</li>
+                <li>Diversity & Inclusion</li>
+                <li>Stories</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Services</h3>
+              <ul class="footerHelp">
+                <li>AnthroPerks</li>
+                <li>Gift Cards</li>
+                <li>Trade Membership</li>
+                <li>Furniture: Guides & Services</li>
+                <li>Store Pickup & Collection Points</li>
+                <li>Klarna</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Contact</h3>
+              <ul class="footerHelp">
+                <a href="contact.html"><li>Contact Us</li></a>
+                <li>Stay Connected</li>
+                <li>Careers</li>
+                <li>Styling Services</li>
+                <li>Request A Catalog</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Social Network</h3>
               <div>
-                <div>
-                  <img
-                    style="height: 100%"
-                    src="https://images.ctfassets.net/5de70he6op10/4gWq1G4qLLgmqlNeHfzV2T/55298745127c36c5876f4013434c0c37/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917_Copy_2.svg"
-                  />
-                </div>
-                <div>
-                  <div>
-                    <a href="https://www.instagram.com/gaurav_7ingh/"
-                      ><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYRHI1E_Mh-Hpi4hqtCifpStom1SsyNniyLSIP6e8HU1HN6-lnJ31V&usqp=CAE&s"
-                    /></a>
-                  </div>
-                  <div>
-                    <a href="https://twitter.com/gaurav__singh"
-                      ><img
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAMAAACZHrEMAAAAY1BMVEX///8ArO0AqOwAqu0ApuwApOwAouv4/P7t9/3z+v6v3Pfj8vzY7fvd8Puq2vaJzPPP6vpEte+TzvQvsu633/iByPNiwPF1xvLC5PlnvvEur+6g1PXJ5vlPuO9ww/KX0/UAnOoO9ENTAAAEeElEQVR4nO2b2ZajIBCGIwXuS4j7lsz7P+WoSaa7EyNViNM3fHd9jtK/RfFTLDmdLBaLxWKxWCwWi8XyC3hB0oRpWMSB99tKiiwXgjPGuHDzMgx+T0pUdgycLwCgjlee84vDg+ZlwJxXGC/fopN2F2yTuqIb8S5lCY/bf38sSoFzbJtlqqelXpeyROf6DI6X1B1zGDYwEbhnDSne+FnLpKbz54fOvXTnx+5/IbhMT9PVBCNsaJnUyCGsHLhnNy+wzXZTJ3cRVcxmXBY4fz7CWmyrsZhTDtbG4wYb+fIG5Gjvydj9BZKahuO1OA6+6fYhHxK8Fr8jxIU/Gg4adbvy31vqh59k+E5i+aIlGGqhzsvk6yMBm/OBwGtp/TkmteQC4WbnbyNUZDgvJgSmPhdl7nJweIZoePjeMJOYvP/qWTX5w2mgxXznDzGTcSISZyANpQXoUKP7/GKkrFa+VhI85qFF4kw1fn1x8nHFK4Rx/dDiIA0+em9a1JvvetTAMImdJr1x5Uu620ZfxUQxy+hGcl2bfbn87AoNTQy/oqWcTuH62GBO+OGDQpqYkKDls52yfL2z0u1C5qURbIn3oPr4pUzUzbtXkSJDFVNsfClAV8Yv3UXKGaoYhW8wIcv0e3+RRhNZjLJSAiacazhEd0kknyGLObWIlAQOnWzr26SJ4sCsV//7n/jomW9aUHN8MaMlhupjFDEaC8TePUgMunpcSO4Dt6fXKDhIy8O065dB0h/UU4Q1x2R5nME1TFYKGyOgF9kLcw3JAEDW1SFiKFpO8dNjGGX+wwIjSQyl1KfDbiQxKPvVhuNXqQtHDaMFRtxq8Un2TmSkbsRWx/UTUOrfheY4MRozk2J3bgeCZHkLGmtnJEDWct/vPAJ6mTfhOcd0FFOt2leJDtHiSL1zgPMRHcUwm1VrHJHEiB3FDyS56eAAel/8naA1rIaRlvyvFJ3ZvtqjZRrivTRXYlFLmRU5TclM9ZZ2+k4pE/veyfP8JF7dyiKj5b5PEpDjhDRVC4tdR8pmy89dgZlM2GjFl9OLhx90BkODOULZhLq/uwFxubRGaczzmM7Z9AvSUEexcr+WU2QobVCnVkoGI2K0LhCsEBuwvP2T0j81cu+YgsqUlmmqLHeaH217SMUw7hni1HsMKrwwF7qps6+8WyfORiYYvbTZPQ2s40VDmtXEAO2cqzfxibslwoTzfiDlNC38uLhE1KULPywu/sUl5ougn58gpfTUKRPggDE9E1xyqu0BaO1+KJUMFTFvJ9h4wM1N71xLjUUcvxjWEiRFX/EPlzW3w5IbqV+aOuvTNO1v9dh1DtOqZQAyQzeAk/bPfKtYT8aCUN62ocjZVS9wSTqCVOI1uW5cAFKjhdRCU1HddlYi8vSYm9jzBWKSHua0K/dHTBGF0sXqAQE3w8XlG37fOkqfYRzGC+l4WJtoKHMH1kc6zHcRu2sT/c8fOvhTuVnlwhX8bkHLXQyX51WZNju26XbgeX48FOmdYoh97Z8DWCwWi8VisVgsFotFl7+teTrpC785FgAAAABJRU5ErkJggg=="
-                    /></a>
-                  </div>
-                  <div>
-                    <a href="https://www.facebook.com/profile.php?id=100007446062466"
-                      ><img
-                        src="data:image/png;base64,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"
-                    /></a>
-                  </div>
-                  <div>
-                    <a href="https://github.com/gaurav7ingh"
-                      ><img
-                        src="data:image/png;base64,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"
-                    /></a>
-                  </div>
-                </div>
+                <i class="fa-brands fa-square-instagram"></i>
               </div>
               <div>
-                <img
-                  src="https://images.ctfassets.net/5de70he6op10/2DRgCRXNIEkk0wIqUo2ywa/20ea44a95fb361eaf034b42eec179d44/_site_footer__download_app_enable_push_.jpg"
-                />
+                <i class="fa-brands fa-twitter"></i>
               </div>
               <div>
-                <ul class="footerLaguage">
-                  <li>UK</li>
-                  <li>India</li>
-                  <li>US</li>
-                  <li>France</li>
-                  <li>Germany</li>
-                  <li>Italy</li>
-                  <li>Spain</li>
-                </ul>
+                <i class="fa-brands fa-facebook"></i>
               </div>
               <div>
-                <div>
-                  <ul class="footerLaguage">
-                    <li>Privacy Policy</li>
-                    <li>Terms of Use</li>
-                    <li>CA Transparency</li>
-                    <li>Accessibility</li>
-                    <li>URBN.com</li>
-                    <li>For CA Residents</li>
-                  </ul>
-                </div>
-                <div>
-                  <ul class="footerLaguage">
-                    <li>2022 URBN.com. All Rights Reserved.</li>
-                  </ul>
-                </div>
+                <i class="fa-brands fa-github"></i>
               </div>
             </div>
           </div>
-
+          <div id="contactFooter">
+            <div>
+              <div>
+                <img
+                  style="height: 100%"
+                  src="https://images.ctfassets.net/5de70he6op10/4gWq1G4qLLgmqlNeHfzV2T/55298745127c36c5876f4013434c0c37/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917_Copy_2.svg"
+                />
+              </div>
+              <div>
+                <div>
+                  <i class="fa-brands fa-square-instagram"></i>
+                </div>
+                <div>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div>
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div>
+                  <i class="fa-brands fa-github"></i>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://images.ctfassets.net/5de70he6op10/2DRgCRXNIEkk0wIqUo2ywa/20ea44a95fb361eaf034b42eec179d44/_site_footer__download_app_enable_push_.jpg"
+              />
+            </div>
+            <div>
+              <ul class="footerLaguage">
+                <li>UK</li>
+                <li>India</li>
+                <li>US</li>
+                <li>France</li>
+                <li>Germany</li>
+                <li>Italy</li>
+                <li>Spain</li>
+              </ul>
+            </div>
+            <div>
+              <div>
+                <ul class="footerLaguage">
+                  <li>Privacy Policy</li>
+                  <li>Terms of Use</li>
+                  <li>CA Transparency</li>
+                  <li>Accessibility</li>
+                  <li>URBN.com</li>
+                  <li>For CA Residents</li>
+                </ul>
+              </div>
+              <div>
+                <ul class="footerLaguage">
+                  <li>2022 URBN.com. All Rights Reserved.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 </body>
 </html>
-<script src="shoes.js" ></script>
+<script src="./script/shoes.js" ></script>

@@ -4,13 +4,8 @@
 
 }
 
-#signIn_signUp>p {
-    margin-top: 10px;
-    margin-right: 10px;
+#signIn_signUp > button{
     border: 1px solid;
-    padding: 5px;
-    color: white;
-    background-color: rgb(22,123,147);
     cursor: pointer;
     font-family: sans-serif;
 
@@ -29,7 +24,7 @@
 
     border-top: 1px solid rgb(163, 163, 163);
     height: 60px;
-    /* display: flex; */
+    
     border-bottom: 1px solid rgb(163, 163, 163);
     /* justify-content: center;
     align-content: center; */
@@ -47,7 +42,7 @@
     /* margin-top: 30px;
     margin-bottom: 30px; */
     position: relative;
-    z-index: 1;
+    z-index: 900000;
 }
 
 #inner>ul {
@@ -63,7 +58,6 @@
     text-decoration: underline;
 }
 #inner>ul>li {
-
     margin-left: 15px;
     margin-right: 15px;
     font-size: 0.88rem;
@@ -92,12 +86,10 @@ li>div {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.823);
     opacity: 0.97;
-    z-index: 1;
+    z-index: 9;
 }
 
-/* .submenu {
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-    /* border: 1px solid; */
+
 
 
 .submenu-1 {
@@ -113,6 +105,7 @@ li>div {
     display: block;
     margin: 10px 0px;
     margin-right: 50px;
+    z-index: 9;
 }
 
 .listDiv ul li {
@@ -490,4 +483,4 @@ a {
     position:absolute;
     border-radius: 10px;
     right: -3px;
-} *
+} 

@@ -300,7 +300,7 @@ display1(items)
 //  }
 function send(el){
     localStorage.setItem("obj", JSON.stringify(el))
-    window.location.href="cartshoe.html"
+    window.location.href="shoecart.html"
 }
  document.querySelector("#price").addEventListener("click", pri)
  function pri(){
