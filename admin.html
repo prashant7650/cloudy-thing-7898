@@ -25,10 +25,10 @@
         <div class="items">
            <li><i class="fa-solid fa-chart-simple"></i> <a href="admin.html">DASHBOARD</a></li> 
            <li><i class="fa-solid fa-circle-info"></i> <a href="userInfo.html">USER INFO</a></li>
-           <li><i class="fa-solid fa-people-group"></i> <a href="#">TOTAL CUSTOMER</a></li>
-           <li><i class="fa-solid fa-wrench"></i> <a href="#">UPDATE DATA</a></li>
-           <li><i class="fa-solid fa-trash"></i> <a href="#">DELETE DATA</a></li>
-           <li><i class="fa-solid fa-truck-fast"></i> <a href="#">BUYED ITEM</a></li>
+           <li><i class="fa-solid fa-people-group"></i> <a href="totalCustomer.html">TOTAL CUSTOMER</a></li>
+           <li><i class="fa-solid fa-wrench"></i> <a href="updateData.html">UPDATE DATA</a></li>
+           <li><i class="fa-solid fa-trash"></i> <a href="deleteData.html">DELETE DATA</a></li>
+           <li><i class="fa-solid fa-truck-fast"></i> <a href="buyedItem.html">BUYED ITEM</a></li>
            <li><i class="fa-solid fa-user"></i> <a href="#">ADD ADMIN</a></li>
           
         </div>
@@ -101,116 +101,7 @@
                     </tr>
                 </thead>
                <tbody>
-                <!-- <tr>
-                    <td class="people">
-                        <img src="logo/logo.jpg" alt="">
-                        <div class="people-de">
-                            <h5>Prashant</h5>
-                            <p>prashant@gmail.com</p>
-                        </div>
-                    </td>
-                    <td class="people-des">
-                        <h5>owner</h5>
-                        <p>web devloper</p>
-                    </td>
-                    <td class="active"> 
-                        <p>active</p>
-                    </td>
-                    <td class="role">
-                        <p>Team lead</p>
-                    </td>
-                    <td class="edit">
-                        <a href="#">edit</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="people">
-                        <img src="logo/logo.jpg" alt="">
-                        <div class="people-de">
-                            <h5>Saloni</h5>
-                            <p>saloni@gmail.com</p>
-                        </div>
-                    </td>
-                    <td class="people-des">
-                        <h5>beauty and wellness</h5>
-                        <p>web devloper</p>
-                    </td>
-                    <td class="active"> 
-                        <p>active</p>
-                    </td>
-                    <td class="role">
-                        <p>developer</p>
-                    </td>
-                    <td class="edit">
-                        <a href="#">edit</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="people">
-                        <img src="logo/CE0E26F3-51A2-4401-BD15-EAF9C0DDF644 (1).JPG" alt="">
-                        <div class="people-de">
-                            <h5>Kausal</h5>
-                            <p>kausal@gmail.com</p>
-                        </div>
-                    </td>
-                    <td class="people-des">
-                        <h5>Furniture section</h5>
-                        <p>web devloper</p>
-                    </td>
-                    <td class="active"> 
-                        <p>active</p>
-                    </td>
-                    <td class="role">
-                        <p>developer</p>
-                    </td>
-                    <td class="edit">
-                        <a href="#">edit</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="people">
-                        <img src="logo/logo.jpg" alt="">
-                        <div class="people-de">
-                            <h5>Tejas</h5>
-                            <p>tejas@gmail.com</p>
-                        </div>
-                    </td>
-                    <td class="people-des">
-                        <h5>Home section</h5>
-                        <p>web devloper</p>
-                    </td>
-                    <td class="active"> 
-                        <p>active</p>
-                    </td>
-                    <td class="role">
-                        <p>developer</p>
-                    </td>
-                    <td class="edit">
-                        <a href="#">edit</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="people">
-                        <img src="logo/IMG_20211101_152537.jpg" alt="">
-                        <div class="people-de">
-                            <h5>Rajneesh</h5>
-                            <p>rajneesh@gmail.com</p>
-                        </div>
-                    </td>
-                    <td class="people-des">
-                        <h5>Admin section</h5>
-                        <p>web devloper</p>
-                    </td>
-                    <td class="active"> 
-                        <p>active</p>
-                    </td>
-                    <td class="role">
-                        <p>developer</p>
-                    </td>
-                    <td class="edit">
-                        <a href="#">edit</a>
-                    </td>
-                </tr> -->
+               
                </tbody>
             </table>
         </dir>
@@ -236,10 +127,11 @@ let tbody =document.querySelector("tbody")
        changeProfile.src=`${x}`
 
     // admin data
-let arr=[{img:"logo/person-logo.png", name:"Tejas", email:"tejas@gmail.com", desc:"Home section", p:"web devloper", active:"active", role:"developer", edit:"edit", detail:"" },
-{img:"logo/person-logo.png", name:"Prashant", email:"prashant@gmail.com", desc:"owner", p:"web devloper", active:"active", role:"Team lead", edit:"edit"},{img:"logo/person-logo.png", name:"saloni", email:"saloni@gmail.com", desc:"beauty and wellness", p:"web devloper", active:"active", role:"developer", edit:"edit"},
-{img:"logo/CE0E26F3-51A2-4401-BD15-EAF9C0DDF644 (1).JPG", name:"Kausal", email:"kausal@gmail.com", desc:"shoes section", p:"web devloper", active:"active", role:"developer", edit:"edit"},
-{img:"logo/IMG_20211101_152537.jpg", name:"Rajneesh", email:"rajneesh@gmail.com", desc:"Admin section", p:"web devloper", active:"active", role:"developer", edit:"edit"},]
+let arr=[{img:"logo/person-logo.png", name:"Tejas", email:"tejas@gmail.com", desc:"Home section", p:"web devloper", active:"active", role:"developer", edit:"edit", work:"nav bar and footer with all the UI of home page", contact:{number:09898709, github:"https://github.com/Teju255", linkdin:"", }},
+{img:"logo/person-logo.png", name:"Prashant", email:"prashant@gmail.com", desc:"owner", p:"web devloper", active:"active", role:"Team lead", edit:"edit" , work:"all the work of signin page and dress page",contact:{number:09898709, github:"https://github.com/prashant7650", linkdin:"", }},
+{img:"logo/person-logo.png", name:"saloni", email:"saloni@gmail.com", desc:"beauty and wellness", p:"web devloper", active:"active", role:"developer", edit:"edit",  work:"all the work of signup page and also beauty and wellness page done by me",contact:{number:09898709, github:"https://github.com/Saloni0282", linkdin:"", }},
+{img:"logo/CE0E26F3-51A2-4401-BD15-EAF9C0DDF644 (1).JPG", name:"Kausal", email:"kausal@gmail.com", desc:"shoes section", p:"web devloper", active:"active", role:"developer", edit:"edit", work:"all the work of shoes and furniture page done by me ",contact:{number:09898709, github:"https://github.com/KaushalDU", linkdin:"", }},
+{img:"logo/IMG_20211101_152537.jpg", name:"Rajneesh", email:"rajneesh@gmail.com", desc:"Admin section", p:"web devloper", active:"active", role:"developer", edit:"edit", work:"admin sections work is done by me", contact:{number:09898709, github:"https://github.com/Rajneesh0021", linkdin:"", }}]
 
 
 

@@ -25,7 +25,7 @@
         <div class="items">
            <li><i class="fa-solid fa-chart-simple"></i> <a href="admin.html">DASHBOARD</a></li> 
            <li><i class="fa-solid fa-circle-info"></i> <a href="userInfo.html">USER INFO</a></li>
-           <li><i  class="fa-solid fa-people-group"></i> <a href="#">TOTAL CUSTOMER</a></li>
+           <li><i  class="fa-solid fa-people-group"></i> <a href="totalCustomer.html">TOTAL CUSTOMER</a></li>
            <li><i class="fa-solid fa-wrench"></i> <a href="#">UPDATE DATA</a></li>
            <li><i class="fa-solid fa-trash"></i> <a href="#">DELETE DATA</a></li>
            <li><i class="fa-solid fa-truck-fast"></i> <a href="#">BUYED ITEM</a></li>
@@ -52,7 +52,7 @@
             </div>
         </div>
         <!-- info box -->
-        <h3 class="i-name">DASHBOARD</h3>
+        <h3 class="i-name">USER INFO</h3>
         <div class="values">
             <!-- 1st -->
             <div class="val-box">
@@ -137,8 +137,8 @@
        let data =JSON.parse(localStorage.getItem("email"))
        let x;
        let tb= document.querySelector("tbody")
-       let DATA = JSON.parse(localStorage.getItem("login-data"))
-
+       let DATA = JSON.parse(localStorage.getItem("userarr"))
+    console.log(DATA)
     //    toggle function
         $(`#menu-btn`).click(function(){
             $(`#menu`).toggleClass("active")
