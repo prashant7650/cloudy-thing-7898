@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEAUTY</title>
+    <!-- <a href="clothing.html"></a>
+    <a href="shoes.html"></a> -->
+    <script src="https://kit.fontawesome.com/38439e7720.js" crossorigin="anonymous"></script>
+
+    
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family:  Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        #upper>div>h2:hover{
+            cursor: pointer;
+            color: rgb(66, 153, 253);
+        }
+        #shoes>div{
+            position:relative;
+        }
+       #upper>div>div{
+        position: relative;
+       }
+        
+        #complete{
+            /* border: 1px solid red; */
+            width:90%;
+            margin: auto;
+            margin-top: 10px;
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            z-index: -1;
+        }
+        #top{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        #top>div{
+            /* border:1px solid green; */
+            width:15%;
+            height:60px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           font-size: 14px;
+           font-weight: 10px;
+           box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        #shoes{
+            /* border: 1px solid green; */
+            /* margin-left: 300px; */
+            margin-top: 20px;
+            display: flex;
+            
+    
+        }
+        #shoes>div:nth-child(1){
+            /* border: 1px solid blue; */
+            display: flex;
+            width:400px;
+        
+            /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+        
+        }
+        #shoes>div:nth-child(1)>p{
+            margin-top: 13px;
+            margin-left: 13px;
+            color: #555;
+            margin-right: 40px;
+
+        }
+        #shoes>div:last-child{
+            display: flex;
+            /* border: 1px solid green; */
+            width:200px;
+            margin-left: 200px;
+            margin-top: 12px;
+        }
+        #sort{
+        
+            width:60%;
+            font-size: 15px;
+            color: rgb(92,92,95);
+            /* margin-left: 20px; */
+            padding: 5px;
+            
+            
+        }
+        #shoes>div:last-child>p{
+            color:black;
+            margin-top: 7px;
+            margin-right: 2px;
+        }
+        #images{
+            /* border: 1px solid green; */
+            /* margin-left: 300px; */
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 15px;
+            
+        }
+        /* #images>div{
+            border:1px solid red;
+        } */
+        #images>div {
+            overflow: hidden;
+            position: relative;
+            height: 405px;
+        }
+        #images>div>img{
+            width:100%;
+            height:300px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            transition-duration: 2s;
+        }
+        #images>div>p{
+            margin-top: 10px;
+        }
+        #images>div>p+p{
+            color:#555;
+            margin-top: 5px;
+            font-size: 15px;
+        }
+        #images>div:hover img{
+            transform: scale(1.1);
+        }
+        img+p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #top>div:nth-child(1){
+            background-color:rgb(20,104,71) ;
+            color:white;
+        }
+        #top>div:nth-child(2){
+            background-color: rgb(69,157,147);
+            color:white;
+        }
+        #top>div:nth-child(3){
+            background-color: rgb(102,135,167);
+            color:white;
+        }
+        #top>div:nth-child(4){
+            background-color:#4f9589;
+            color:white;
+        }
+        #top>div:nth-child(5){
+            background-color:#5d8b52;
+            color:white;
+        }
+        #top>div:nth-child(6){
+            background-color: #6799aa;
+            color:white;
+        }
+        h1{
+        font-family: Arial, Helvetica, sans-serif;
+         font-size: 20px;
+         font-weight: 2px;
+         margin-top: 7px;
+        }
+        #box{
+            /* border: 1px solid yellow; */
+            margin-left: 0px;
+            width:1400px;
+        
+            
+            /* position: relative; */
+            
+        }
+       
+        .coloursForPic{
+            position: absolute;
+            bottom:0px;
+        
+        }
+        #upper{
+            /* border:1px solid red; */
+            display: flex;
+            margin-top: 10px;
+            position: relative;
+        }
+        #upper>div:first-child{
+            /* border: 1px solid green; */
+            
+            width: 250px;
+            height: 600px;
+            display: block;
+            margin-top: 29px;
+            margin-right: 40px;
+        }
+        #complete>#upper a{
+            margin-top: 20px;
+            text-decoration: none;
+            display: block;
+            color: #555;
+        }
+        #complete>#upper a:hover{
+            text-decoration: underline;
+        }
+        #shoes>div:nth-child(2){
+            /* border: 1px solid red; */
+            width:300px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #cloth{
+            margin-top: 0px;
+            width:50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px 0 5px;
+            padding-bottom: 20px;
+        }
+        #sec1{
+         margin-top: 20px;
+         /* border: 1px solid red; */
+         width:100px;
+         padding-right: 20px;
+         
+        }
+        #complete>#upper a+h3{
+            margin-top: 20px;
+            
+        }
+        #upper>div:first-child>h2{
+            margin-top: 20px;
+        }
+        #price~h2{
+            font-weight: normal;
+            font-size: 20px;
+        }
+        #price{
+            font-weight: normal;
+            font-size: 20px;
+        }
+        
+        #btn-btn{
+            margin-left: 100px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+        #images>div>p>button{
+            height:20px;
+            width:20px;
+            border-radius: 50%;
+            /* margin: 5px; */
+            margin-right: 5px;
+           }
+           .coloursForPic>button{
+            border:0.5px solid #5555;
+           }
+    @media all and (min-width:784px) and (max-width:1074px){
+        #images{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(7,420px);
+            /* width:100%; */
+            gap:10px;
+            
+        }
+
+       
+        
+        #box{
+            width:100%;
+        
+        }
+        #shoes>div:nth-child(1)>p{
+            margin-left: 4px;
+        }
+        #upper{
+            width:100%;
+        }
+
+    }
+    @media all and (min-width:200px) and (max-width:783px){
+        #images{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(10,400px);
+            /* width:100%; */
+            gap:10px;
+        }
+        
+        /* #complete{
+            width: 400px;
+            height: 380px;
+        } */
+        #box{
+            width:100%;
+        }
+        #shoes>div:nth-child(1)>p{
+            margin-left: 4px;
+        }
+        #upper>div:first-child{
+            display: none;
+        }
+        /* #upper>div:first-child>h2{
+           margin-top: 0px;
+           height: 0px;
+           display: none;
+        } */
+    #upper{
+        width:100%;
+    }
+    }
+
+    
+    
+    
+    </style>
+</head>
+<body>
+<!-- navbar -->
+
+
+    
+
+
+
+  <!-- main -->
+
+
+
+    <div id="complete">
+        <!-- <div id="top">
+            <div>5-5.5</div>
+            <div>6-6.5</div>
+            <div>7-7.5</div>
+            <div>8-8.5</div>
+            <div>9-9.5</div>
+            <div>10-11</div>
+        </div> -->
+    <div id="upper">
+        <div>
+            <h3>Browse by:</h3>
+            <hr>
+            <a href="index.html">Home</a>
+            <a href="shoes.html">shoes</a>
+            <a href="clothing.html">clothing</a>
+            <a href="homepage2.html">Homes and Furniture</a>
+            <a href="wedding.html">Weddings</a>
+            <a href="sale.html">Sale</a>
+            <a href="garden.html">Garden & outdoor</a>
+            <h3>Filter by:</h3>
+            <hr>
+            <h2 id="price">Price +</h2>
+            <hr>
+            <h2 id="size">Size +</h2>
+            <hr>
+            <h2>Color +</h2>
+            <hr>
+            <h2>Brand +</h2>
+            <hr>
+            <h2>Free pickup +</h2>
+            <hr>
+        </div>
+    <div id="box">
+        <div id="shoes">
+            <div>
+                <h1>Beauty & Wellness</h1>
+                <p>1713 products</p>
+            </div>
+            <div>
+                <p>Sort:</p>
+                <select name="" id="sort">
+                    <option value="Featured">Featured</option>
+                    <option value="lowhigh">Price:Low to High</option>
+                    <option value="highlow">Price:High to Low</option>
+                    <option value="Newest">Newest</option>
+                    <option value="Bestselling">Bestselling</option>
+                    <option value="az">A-Z</option>
+                    <option value="za">Z-A</option>
+                </select>
+                <!-- <button class="btn-btn"><a class="cloth"href=""><</a></button> -->
+                <button id="btn-btn"><a id="cloth" href="garden.html">5</a></button>
+            </div>
+        </div>
+        <div id="images">
+
+        </div>
+    </div>
+    </div>
+    </div>
+    
+</body>
+</html>
+
+<script>
+let item=[
+{
+    image:["https://images.urbndata.com/is/image/Anthropologie/65972366_067_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349"],
+    name: "Mer-Sea & Co. Shimmer Sun Lotion ",
+    price: "28.00",
+    productID: "Beauty1",
+    catagory: "Home",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972366_067_s?fit=constrain&hei=56&qlt=75")',
+    'url( "https://images.urbndata.com/is/image/Anthropologie/65972366_040_s?fit=constrain&hei=56&qlt=75")'],
+  },
+   {
+    image:["https://images.urbndata.com/is/image/Anthropologie/65972341_000_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349"],
+    name: "Mer-Sea & Co. After-Sun Soothe",
+    price: 24.00,
+     productID: "Beauty2",
+     catagory: "Home",
+     img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972341_000_s?fit=constrain&hei=56&qlt=75")'],
+  },
+   {
+    image:["https://images.urbndata.com/is/image/Anthropologie/65972374_000_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349"],
+    name: "Mer-Sea & Co. Sun Bath Soak",
+    price: 30.00,
+    productID: "Beauty3",
+    catagory: "Home",
+     img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972374_000_s?fit=constrain&hei=56&qlt=75")'],
+  },
+   {
+    image:["https://images.urbndata.com/is/image/Anthropologie/65972358_000_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698"],
+    name: "Mer-Sea & Co. Sun Handheld Dry Brush",
+    price: "34.00",
+    productID: "Beauty4",
+    catagory: "Home",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972358_000_s?fit=constrain&hei=56&qlt=75")'],
+  },
+    {
+    image:["https://images.urbndata.com/is/image/Anthropologie/40188179_000_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349"],
+    name: "Capri Blue Volcano Hand Soap & Lotion Gift Set",
+    price: 42.00,
+    productID: "Beauty5",
+    catagory: "Home",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/40188179_000_s?fit=constrain&hei=56&qlt=75")'],
+  },
+     {
+    image:["https://images.urbndata.com/is/image/Anthropologie/37010790_000_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349"],
+    name: "Capri Blue Volcano Hand Cream",
+    price: "22.00",
+    productID: "Beauty6",
+    catagory: "Home",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/37010790_000_s?fit=constrain&hei=56&qlt=75")'],
+  },
+    {
+    image:["https://images.urbndata.com/is/image/Anthropologie/59162230_040_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        "https://images.urbndata.com/is/image/Anthropologie/59162230_040_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
+    name: "Capri Blue Volcano Bar Soap",
+    price: 12.00,
+    productID: "Beauty7",
+    catagory: "Bestselling",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/59162230_040_s?fit=constrain&hei=56&qlt=75")'],
+  },
+    {
+    image:["https://images.urbndata.com/is/image/Anthropologie/60467438_040_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349"],
+    name: "Capri Blue Mini Hand Cream",
+    price: 14.00,
+    productID: "Beauty8",
+    catagory: "Home",
+     img: ['url("https://images.urbndata.com/is/image/Anthropologie/60467438_040_s?fit=constrain&hei=56&qlt=75")'],
+  },
+    {
+    image:["https://images.urbndata.com/is/image/Anthropologie/65972382_000_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349"],
+    name: "Mer-Sea & Co. Sun Loofah Brush",
+    price: 38.00,
+    productID: "Beauty9",
+    catagory: "Home",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972382_000_s?fit=constrain&hei=56&qlt=75")'],
+  },
+   {
+    image:["https://images.urbndata.com/is/image/Anthropologie/68446657_000_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+         "https://images.urbndata.com/is/image/Anthropologie/68446657_000_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
+    name: "Wrapped in Florals Fragrance Sampler",
+    price: 20.00,
+    productID: "Beauty10",
+    catagory: "Home",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/68446657_000_s?fit=constrain&hei=56&qlt=75")'],
+  },
+    {
+    image:["https://images.urbndata.com/is/image/Anthropologie/69266591_001_b10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
+    name: "Memo Paris Eau De Parfum",
+    price: 300.00,
+    productID: "Beauty11",
+    catagory: "Home",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/69266591_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_010_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_040_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_070_s?fit=constrain&hei=56&qlt=75")',
+	'url("https://images.urbndata.com/is/image/Anthropologie/69266591_072_s?fit=constrain&hei=56&qlt=75")'],
+  },
+     {
+    image:["https://images.urbndata.com/is/image/Anthropologie/40334666_070_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
+    name: "Slip Silk Pillowcase",
+    price: 89.00,
+    productID: "Beauty12",
+    catagory: "Home",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/40334666_052_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/40334666_065_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/40334666_007_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/40334666_010_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image:["https://images.urbndata.com/is/image/Anthropologie/40522195_030_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+            "https://images.urbndata.com/is/image/Anthropologie/40522195_030_b10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
+    name: "Pharmacia Eau De Parfum",
+    price: 26.00,
+    productID: "Beauty13",
+    catagory: "Home",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972341_000_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/40522195_065_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/40522195_055_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/40522195_072_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image:["https://images.urbndata.com/is/image/Anthropologie/66398389_041_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
+    name: "Soleil Toujours SPF 30 Antioxidant Sunscreen Spray",
+    price: 36.00,
+    productID: "Beauty14",
+    catagory: "Bestselling",
+    img: ['url("data:"image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAGFBMVEUAKlTa18308+/p6u0AAEPp5+H+8AADDjngE8AAABH0lEQVR4nO3PCQ2EABAAMX78Oz4IORGzaR10Wadb1nOb7HyG27XPdW3vcL+Pqe79Gx7LVIdhnmGfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYd9/eB9T3d/w2ue63uG5TXY+w+l+h1EihcbqknUAAAAASUVORK5CYII=")'],
+  },
+	{
+    image:["https://images.urbndata.com/is/image/Anthropologie/69267904_070_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+            "https://images.urbndata.com/is/image/Anthropologie/69267698_001_b11?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
+    name: "Vilhelm Parfumerie Eau De Parfum",
+    price: 150.00,
+    productID: "Beauty15",
+    catagory: "Home",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/69267698_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_072_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_070_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image:["https://images.urbndata.com/is/image/Anthropologie/48436679_025_b10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+            "https://images.urbndata.com/is/image/Anthropologie/48436679_025_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
+    name: "Nostalgia Eau De Parfum",
+    price: 24.00,
+    productID: "Beauty16",
+    catagory: "Bestselling",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/48436679_025_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/48436679_080_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/48436679_049_s?fit=constrain&hei=56&qlt=75")',
+	'url("https://images.urbndata.com/is/image/Anthropologie/48436679_030_s?fit=constrain&hei=56&qlt=75)'],
+  },
+	{
+    image:["https://images.urbndata.com/is/image/Anthropologie/76183573_010_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
+    name: "ATHR The Big Bang Mascara",
+    price: 28.00,
+    productID: "Beauty17",
+    catagory: "Newest",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/76183573_010_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image:["https://images.urbndata.com/is/image/Anthropologie/76183565_000_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
+    name: "ATHR Citrine Crystal Eyeshadow Quad",
+    price: 20.00,
+    productID: "Beauty18",
+    catagory: "Newest",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/76183565_000_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image:["https://images.urbndata.com/is/image/Anthropologie/76183524_065_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
+    name: "ATHR Desert Moon Illuminating Oil",
+    price: 38.00,
+    productID: "Beauty19",
+    catagory: "Newest",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/76183524_065_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image:["https://images.urbndata.com/is/image/Anthropologie/76183508_000_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"],
+    name: "ATHR Desert Sunset Eyeshadow Palette",
+    price: 48.00,
+    productID: "Beauty20",
+    catagory: "Newest",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/76183508_000_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image:["https://images.urbndata.com/is/image/Anthropologie/78205309_010_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"],
+    name: "Mario Badescu Coconut Body Oil",
+    price: "16.00",
+    productID: "Beauty21",
+    catagory: "Newest",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/78205309_010_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image:["https://images.urbndata.com/is/image/Anthropologie/76183508_000_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"],
+    name: "ATHR Desert Sunset Eyeshadow Palette",
+    price: "48.00",
+    productID: "Beauty22",
+    catagory: "Newest",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/76183508_000_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image:["https://images.urbndata.com/is/image/Anthropologie/78001815_040_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"],
+    name: "Swissco Round Scalp Brush",
+    price: "10.00",
+    productID: "Beauty23",
+    catagory: "Newest",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/78001815_040_s?fit=constrain&hei=56&qlt=75")',
+        'url("https://images.urbndata.com/is/image/Anthropologie/78001815_066_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image:["https://images.urbndata.com/is/image/Anthropologie/78001831_046_b10?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"],
+    name: "Swissco Wooden Paddle Brush",
+    price: "12.00",
+    productID: "Beauty24",
+    catagory: "Newest",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/78001831_046_s?fit=constrain&hei=56&qlt=75")',
+        'url("https://images.urbndata.com/is/image/Anthropologie/78001831_263_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image:["https://images.urbndata.com/is/image/Anthropologie/64934433_048_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"],
+    name: "Mer-Sea & Co. Avant Garden Bar Soap",
+    price: "10.95",
+    productID: "Beauty25",
+    catagory: "Bestselling",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/64934433_048_s?fit=constrain&hei=56&qlt=75")',
+        'url("https://images.urbndata.com/is/image/Anthropologie/64934433_066_s?fit=constrain&hei=56&qlt=75")'],
+  },
+  {
+    image:["https://images.urbndata.com/is/image/Anthropologie/66398389_041_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"],
+    name: "Soleil Toujours SPF 30 Antioxidant Sunscreen Spray",
+    price: "36.00",
+    productID: "Beauty26",
+    catagory: "Home",
+    img: ['url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAGFBMVEUAKlTa18308+/p6u0AAEPp5+H+//8AADDjngE8AAABH0lEQVR4nO3PCQ2EABAAMX78Oz4IORGzaR10Wadb1nOb7HyG27XPdW3vcL+Pqe79Gx7LVIdhnmGfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYd9/eB9T3d/w2ue63uG5TXY+w+l+h1EihcbqknUAAAAASUVORK5CYII=")'],
+  },
+	{
+    image:["https://images.urbndata.com/is/image/Anthropologie/67983239_000_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"],
+    name: "Straw Fan",
+    price: "24.00",
+    productID: "Beauty27",
+    catagory: "Bestselling",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/67983239_000_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image:["https://images.urbndata.com/is/image/Anthropologie/64018831_111_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"],
+    name: "De La Heart Lymphatic Drainage Body Tool",
+    price: "29.00",
+    productID: "Beauty28",
+    catagory: "Bestselling",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/64018831_111_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image:["https://images.urbndata.com/is/image/Anthropologie/65972366_067_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
+    name: "Mer-Sea & Co. Shimmer Sun Lotion",
+    price: "28.00",
+    productID: "Beauty29",
+    catagory: "Bestselling",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972366_067_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/65972366_040_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image:["https://images.urbndata.com/is/image/Anthropologie/61389706_270_b10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
+    name: "Feel Better De-Stress Ball",
+    price: "28.00",
+    productID: "Beauty30",
+    catagory: "Bestselling",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/61389706_060_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/61389706_270_s?fit=constrain&hei=56&qlt=75")'],
+  },
+
+ 
+];
+
+
+   let items=JSON.parse(localStorage.getItem("data"))||[]
+
+ document.querySelector("#sort").addEventListener("change", on1)
+ function on1(){
+    let select=document.querySelector("#sort").value
+    
+
+    if(select=="lowhigh"){
+        item.sort(function(a,b){
+        
+            return a.price-b.price
+        })
+        display(item);
+    }else if(select=="highlow"){
+        item.sort(function(a,b){
+            return b.price-a.price
+        })
+        display(item);
+    }
+else if(select=="az"){
+        item.sort(function(a,b){
+    if(a.name>b.name) return 1
+    if(a.name<b.name) return -1
+    else return 0
+         })
+         display(item);
+        }else if(select=="za"){
+        item.sort(function(a,b){
+    if(a.name<b.name) return 1
+    if(a.name>b.name) return -1
+    else return 0
+         })
+         display(item)
+    }else if(select=="shl"){
+        item.sort(function(a,b){
+            if(a.size<b.size) return 1
+            if(a.size>b.size) return -1
+            else return 0
+        })
+        display(item)
+    }else if(select=="slh"){
+        item.sort(function(a,b){
+            if(a.size>b.size) return 1
+            if(a.size<b.size) return -1
+            else return 0
+        })
+        display(item)
+    }else if(select=="Newest"){
+        output=item.filter(function(el){
+            return(el.catagory=="Newest")
+        })
+        display(output)
+    }else if(select=="Bestselling"){
+        output=item.filter(function(el){
+            return(el.catagory=="Bestselling")
+        })
+        display(output)
+    }else if(select=="Featured"){
+        window.location.reload()
+    }
+
+    // window.location.reload()
+
+}
+display1(items)
+ display(item)
+
+ 
+ function display(item){
+   document.querySelector("#images").innerHTML=""
+   item.forEach(function(el){
+    let box=document.createElement("div")
+    box.addEventListener("click", function(){
+        send(el)
+    })
+   // let im=document.createElement("img")
+    //im.setAttribute("src",el.image)
+    let im=document.createElement("img")
+    // //console.log(el.image[0])
+     im.setAttribute("src",el.image[0])
+     im.setAttribute("class", "ChangeImg");
+    // // im.setAttribute("onmouseover", "setNewImg()");
+    // // im.setAttribute("onmouseout", "setOldImg()");
+    // box.append(im);
+    let nam=document.createElement("p")
+    nam.innerText=el.name
+    // if(item.price==""){
+    let pr=document.createElement("p")
+    if(el.price!=""){
+    pr.innerText=`$ ${el.price}`
+    }
+    let sz=document.createElement("p")
+     let colr=document.createElement("p")
+     for(let i=0;i<el.img.length;i++){
+        if(i<4){
+        let inp=document.createElement("button")
+        //let a=
+       // console.log(a)
+        inp.style.backgroundImage =el.img[i]
+        colr.append(inp)
+        }else{
+        colr.append("+"+(el.img.length-4))
+        break;
+        }
+     }
+    box.append(im,nam,pr,colr)
+    document.querySelector("#images").append(box)
+   })
+   localStorage.setItem("data", JSON.stringify(item))
+ }
+ function display1(items){
+   items.forEach(function(el){
+    let box=document.createElement("div")
+    let im=document.createElement("img")
+    im.setAttribute("src",el.image)
+    let nam=document.createElement("p")
+    nam.innerText=el.name
+    let pr=document.createElement("p")
+    pr.innerText=`$ ${el.price}`
+    let sz=document.createElement("p")
+    // sz.innerText=el.size
+    box.append(im,nam,pr,sz)
+    document.querySelector("#images").append(box)
+   })
+   localStorage.setItem("data",JSON.stringify(item))
+ }
+//  document.querySelector("#btn-btn").addEventListener("click", on2)
+//  function on2(){
+   
+//  }
+function send(el){
+    localStorage.setItem("obj", JSON.stringify(el))
+    window.location.href="cartshoe.html"
+}
+document.querySelector("#price").addEventListener("click", pri)
+ function pri(){
+    item.sort(function(a,b){
+        return a.price-b.price
+    })
+    display(item)
+ }
+ document.querySelector("#size").addEventListener("click", siz)
+ function siz(){
+    item.sort(function(a,b){
+        return a.size-b.size
+    })
+    display(item)
+ }
+ 
+
+
+ // code for Imagechange on mouseover
+let changeImg=document.querySelectorAll(".ChangeImg")
+  //console.log(changeImg)
+   changeImg.forEach(function (el,index){
+    //console.log(el)
+   let imgOld;
+    el.addEventListener("mouseover", function Change(event,a=(item[index].image)){
+      event.preventDefault();
+     imgOld=el.getAttribute('src')
+     for(let i=0;i<a.length&& a.length>1;i++){
+     // console.log(el,a[i],imgOld)
+      if(a[i]==imgOld)
+     event.target.src=a[i+1]||a[i-1]
+     }
+      })
+    el.addEventListener("mouseout", function Change(event,a=(item[index].image)){
+      event.preventDefault();
+     event.target.src=imgOld
+      })
+   });
+</script>
+
+
+
