@@ -9,79 +9,13 @@
     <script src="https://kit.fontawesome.com/e962f2728f.js" crossorigin="anonymous"></script>
     <title>DASHBOARD</title>
     <style>
-
-      .card {
-        margin: auto;
-        margin-top: 110px;
- --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
- width: 300px;
- height: 360px;
- padding: 5px;
- border-radius: 1rem;
- overflow: visible;
- background: #f7ba2b;
- background: var(--background);
- position: relative;
- z-index: 1;
+br{
+    margin-top: 100px;
 }
 
-.card::after {
- position: absolute;
- content: "";
-
- top: 30px;
- left: 0;
- right: 0;
- z-index: -1;
- height: 100%;
- width: 100%;
- transform: scale(0.8);
- filter: blur(25px);
- background: #f7ba2b;
- background: var(--background);
- transition: opacity .5s;
-}
-
-.card-info {
- --color: #181818;
- background: var(--color);
- color: var(--color);
- display: flex;
- justify-content: center;
- align-items: center;
- width: 100%;
- height: 100%;
- overflow: visible;
- border-radius: .7rem;
-}
-
-.card .title {
- font-weight: bold;
- letter-spacing: .1em;
- width: 80%;
- height: 80%;
- display: none;
-
-}
-
-/*Hover*/
-.card:hover::after {
- opacity: 0;
- 
-}
-.card:hover .title{
-    display: flex;
-    transition:  1s ease
-}
-.card:hover .card-info {
- color: #f7ba2b;
- transition: color 1s;
- flex-direction: column;
-}
-.info{
-    text-align: center;
-}
-
+#menu .items li:nth-child(5){
+        border-left: 4px solid white;
+       }
     </style>
     <link rel="stylesheet" href="/style/adminPage.css">
 </head>
@@ -122,23 +56,10 @@
             </div>
         </div>
        
-<!-- card for person -->
-            <div class="card">
-                <div class="card-info">
-                  <img class="title" src="" alt=""/>
-                  <p></p>
-                </div>
-              </div>
+<!-- chart -->
+          
+             <br>
             
-             <div class="info">
-               <h1></h1>
-              <p></p>
-              <p id="work"></p>
-              <i class="fa-brands fa-github"></i>
-              <i class="fa-solid fa-phone"></i>
-              <i class="fa-brands fa-linkedin"></i>
-             </div> 
-       
     </section>
     <script>
         // toggle
@@ -152,17 +73,7 @@
        let email = localStorage.getItem("e")
        let data =JSON.parse(localStorage.getItem("email"))
        let x;
-      let inf= document.querySelector(".info>h1")
-      let infp= document.querySelector(".info>p")
-      let crdp= document.querySelector(".card-info>p")
-       let editdata = JSON.parse(localStorage.getItem("see"))
-       let work=document.getElementById("work")
-       let github= document.querySelector(".fa-brands")
-       github.addEventListener("click",()=>{
-        let x=editdata.contact.github
-        // location.replace(`${x}`)
-        self.location=`${x}`
-       })
+    
 // getting profile
        data.forEach((ele) => {
         if(ele.email==email){
@@ -170,14 +81,7 @@
         }
        });
        changeProfile.src=`${x}`
-    //    t.src=`${x}`
-//  sow data on card
-t.src=editdata.img
-inf.innerHTML=editdata.name
-crdp.innerHTML=`Email:- ${editdata.email}`
-infp.innerHTML=`Email:- ${editdata.email}`
-work.innerHTML=`Work:- ${editdata.work}`
-
+  
     </script>
 </body>
 </html>
