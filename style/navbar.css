@@ -4,56 +4,47 @@
 
 }
 
-#signIn_signUp>p {
-    margin-top: 10px;
-    margin-right: 10px;
-    border: 1px solid;
-    padding: 5px;
-    color: white;
-    background-color: rgb(22,123,147);
-    cursor: pointer;
-    font-family: sans-serif;
-
-}
-
-#signIn_signUp {
-    font-family: sans-serif;
-    letter-spacing: 0.06rem;
-}
 
 #signIn_signUp>i {
-    margin-top: 12px;
+    margin-top: 11px;
 }
 
+#comapnyLogo{
+    width: 100%;
+}
+#comapnyLogo>img{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+width:90px;
+height: 60px;
+
+}
+
+#comapny>img{
+width: 90px;
+height: 90px;
+}
+/* nav bar 3 */
 #navbar {
 
     border-top: 1px solid rgb(163, 163, 163);
     height: 60px;
 
     border-bottom: 1px solid rgb(163, 163, 163);
-    /* justify-content: center;
-    align-content: center; */
+    justify-content: center;
+    align-content: center;
     background-color: white;
 }
-#inner>ul{
-    width: 100%;
-    /* display: flex; */
-    /* justify-content: space-around; */
-    /* align-items: center; */
-    /* background-color: red; */
-}
-
-
 #inner {
     width: 90%;
     height: 100%;
+    margin: auto;
     /* border: 1px solid; */
     display: flex;
-    margin-left: 5px;
     justify-content: center;
     align-items: center;
-    /* margin-top: 30px;
-    margin-bottom: 30px; */
+    /* border: 1px solid grey; */
     position: relative;
     z-index: 1;
 }
@@ -71,13 +62,12 @@
     text-decoration: underline;
 }
 #inner>ul>li {
-
     margin-left: 15px;
     margin-right: 15px;
-    font-size: 0.88rem;
+    font-size: 17px;
     line-height: 1.0;
     letter-spacing: 0.06rem;
-    line-height: 15px;
+    /* line-height: 15px; */
 }
 
 
@@ -103,14 +93,10 @@ li>div {
     z-index: 1;
 }
 
-/* .submenu {
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-    /* border: 1px solid; */
 
 
 .submenu-1 {
-    /* margin-right: 20px; */
-    /* display: flex; */
+    
     padding-top: 30px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     background-color: white;
@@ -169,27 +155,33 @@ a {
 }
 
 .companyLogo_searchBar {
+    /* border: 1px solid blue; */
+    width: 90%;
     height: 60px;
     display: flex;
+    flex-direction:row;
     justify-content: space-between;
     background-color: white;
+    margin: auto;
 }
 
 #comapnyLogo {
-    display: flex;
-    /* border: 1px solid; */
-    /* align-items: center; */
-    margin-left: 30px;
+ display: flex;
+ /* border: 1px solid;  */
+ align-items: center;
+ margin-left: 10px; 
+ justify-content: flex-start;
+ width: 30%;
 }
 
 #comapnyLogo>div:first-child {
-    /* margin-right: 20px; */
+    margin-right: 10px;
     cursor: pointer;
-    /* height: 100%; */
-    padding: 0px 10px;
+   
+   
     display: flex;
     align-items: center;
-    /* border: 1px solid; */
+   
     border-top: 5px solid;
     border-left: 1px solid;
     border-right: 1px solid;
@@ -198,25 +190,33 @@ a {
 #comapnyLogo>div:last-child {
     cursor: pointer;
     opacity: 0.4;
-    /* height: 100%; */
-    padding: 0px 30px;
+    height: 100%;
+   
     display: flex;
-    align-items: center;
-    /* border: 1px solid; */
-    /* border-top: 5px solid; */
-    /* border-left: 1px solid grey; */
+    align-items:flex-end;
+  
+    border-top: 5px solid;
+     border-left: 1px solid grey;
     border-right: 1px solid grey;
+    /* border: 1px solid blue; */
 }
 
 #comapnyLogo>div:last-child:hover {
     opacity: 1;
-}
 
+}
+#comapnyLogo>div>a{
+    width: 100%;
+    /* border: 1px solid blue; */
+    margin-top: 90px;
+    margin: auto;
+}
 #searchBar_cart {
     width: 30%;
     display: flex;
-    margin-right: 50px;
+    margin-right: 10px;
     align-items: center;
+    justify-content: end;
     /* border: 1px solid; */
 
 }
@@ -243,18 +243,14 @@ a {
     width: 100%;
     height: 35px;
     font-size: 1.1rem;
-    border: 1px solid;
+    /* border: 1px solid; */
     padding: 0px 10px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     margin-bottom: 20px;
     /* border-radius: 10px;       */
 }
-#signIn_signUp>button{
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
+
 
 #searchBar>button {
     padding: 10px;
@@ -272,10 +268,12 @@ a {
     height: 40px;
     display: flex;
     justify-content: end;
-
-    /* margin-right: 100px; */
     background-color: #f7f6f2;
     color: rgb(0, 208, 255);
+}
+#signIn_signUp>div{
+   
+    margin-right: 70px;
 }
 
 #signIn_signUp button {
@@ -285,12 +283,12 @@ a {
     background-color: transparent;
     letter-spacing: inherit;
     color: rgb(100, 179, 195);
-
 }
 
 #forSticky {
     position: sticky;
     top: 0px;
+    margin: auto;
 }
 
 .bg_modal {
@@ -331,76 +329,9 @@ a {
     align-items: center;
     display: none;
     position: fixed;
-    z-index: 8000;
+    z-index: 80;
 }
 
-.div_content_creat {
-    width: 500px;
-    height: 600px;
-    background-color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-}
-.div_content>h1 {
-    margin-bottom: 10px;
-}
-
-#signinform input {
-    display: block;
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 20px;
-    font-size: 20px;
-    width: 80%;
-}
-
-.submitButton {
-    width: 80%;
-    padding: 10px;
-    background-color: gray;
-    color: white;
-    cursor: pointer;
-}
-
-.submitButton:hover {
-    background-color: white;
-    color: black;
-}
-
-.close {
-    position: absolute;
-    top: 0;
-    font-size: 30px;
-    right: 14px;
-    transform: rotate(45deg);
-    cursor: pointer;
-}
-
-.mobileNumber {
-    background-color: transparent;
-    margin-bottom: 10px;
-}
-
-#signUp_tag {
-    margin: 10px 0px;
-}
-
-#signUp {
-    background-color: transparent;
-    cursor: pointer;
-}
-
-
-/* creat account */
-
-
-
-
-.div_content_creat>h1 {
-    margin-bottom: 10px;
-}
 
 #nav-position input {
     display: block;
@@ -410,12 +341,11 @@ a {
     margin-top: 20px;
     font-size: 20px;
     width: 80%;
-}
+} 
 #searchBar>input{
     margin-bottom: 18px;
     margin-left: 20px;
     font-size: 15px;
-    
 }
 #searchBar>input::placeholder{
     color: rgb(115, 170, 181);
@@ -452,6 +382,8 @@ a {
 
 }
 #cart{
+    margin: 0;
+    padding: 0;
     cursor: pointer;
     /* border: 1px solid; */
 }
@@ -470,22 +402,9 @@ a {
 
 #cart{
     cursor: pointer;
-    /* border: 1px solid; */
+   
     display: flex;
-    /* border: 1px solid; */
+    
     position: relative;
 }
-#onnavbar{
-    display: none;
-    text-align: center;
-    color: white;
-    font-size: 15px;
-    height: 20px;
-    width: 20px;
-    padding-left: 5px;
-    background-color: rgb(22,123,147);
-    opacity: 0.8;
-    position:absolute;
-    border-radius: 10px;
-    right: -3px;
-}
+

@@ -1,4 +1,4 @@
-var data =JSON.parse(localStorage.getItem("userarr")) ||[];
+var data =JSON.parse(localStorage.getItem("loginobj")) ||[];
 let btn=document.getElementById("signup_button");
 
 const name = document.getElementById("name");
@@ -21,9 +21,9 @@ else {
                  };
 
         data.push(obj);
-        localStorage.setItem("userarr",JSON.stringify(data));
+        localStorage.setItem("loginobj",JSON.stringify(data));
         alert("signed up successfully");
-    window.location.href="./profile.html"
+    window.location.href="./otp.html"
      }
 });
 

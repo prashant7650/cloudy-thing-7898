@@ -1,4 +1,4 @@
-var userData =JSON.parse(localStorage.getItem("userarr"));
+var userData =JSON.parse(localStorage.getItem("loginobj"));
 
 let mob=document.getElementById("mob");
 let password=document.getElementById("pass");

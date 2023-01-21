@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#cartPageFinal{
+    display: flex; 
+    padding: 20px 70px;
+    line-height: 25px;
+}
+#fitThisImgInCart{
+    width: 100%;
+}
+#productSectionCart{
+    width: 65%;
+}
+#productSectionPayment{
+    width: 35%;
+    height: 400px;
+    position: sticky;
+    top: 0;
+    margin:40px auto 50px 60px;
+    
+}
+#productSectionPayment>div{
+    border:1px solid rgb(229 226 222);
+    padding: 20px 20px;
+    margin-top: 15px;
+}
+#productSectionCart>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+}
+#productSectionCart>div>h1+span{
+    font-size: 15px;
+    color: rgb(74, 166, 197);
+    text-decoration: underline;
+}
+
+#CartTableProduct{
+    width: 100%;
+    line-height: 25px;
+    border-collapse: collapse; 
+}
+tr{
+    border-bottom: 1px solid rgb(195, 195, 195);
+}
+tr>td{
+    padding: 20px;
+}
+tr>td:nth-child(2){
+    width: 160px;
+}
+#cartSelect-tag{
+    height: 40px;
+    width: 50px;
+}
+tr>td~td{
+    padding:35px 25px;
+    vertical-align: top;
+}
+.hover:hover{
+    cursor: pointer;
+}
+#productSectionPayment>div>ul{
+    list-style-type: none;
+    
+}
+#productSectionPayment>div>ul>li{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(92 92 95);
+}
+#productSectionPayment>div>ul>li:nth-child(4){
+    font-weight: bold;
+    color: black;
+}
+
+.ProceedToCheckout-btn{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#fit-this{
+    height: 100%;
+}
+
+#productSectionPayment>div>ul>button:nth-child(5){
+    background-color: #4b5666;
+    color: white;
+    border: none;
+    margin-top: 25px;
+}
+#productSectionPayment>div>ul>button:nth-child(5):hover{
+    background-color: white;
+    color: #4b5666;
+    cursor: pointer;
+    border: 1px solid #4b5666;
+}
+#productSectionPayment>div>ul>button:nth-child(6){
+    cursor: pointer;
+}
+#productSectionPayment>div>ul>button:nth-child(6){
+    height: 50px;
+    margin-bottom: 20px;
+}
+#promoDiv>input{
+    height: 35px;
+    width: 60%;
+    margin-top: 10px;
+}
+#promoDiv{
+    display: flex;
+    justify-content: space-between;
+}
+#promoDiv>button:hover{
+    cursor: pointer;
+    background-color: #4b5666;
+    color: white;
+    border: none;
+}
+#promoDiv>button{
+    height: 35px;
+    width: 75px;
+    font-size: 18px;
+    margin: 10px 30px auto;
+    color: #4b5666;
+}
+hr{
+    margin-bottom: 10px;
+}
+#lableForPromo{
+    font-size: 20px;
+    color: #464d56;
+}

@@ -32,7 +32,7 @@
 </html>
 <script>
 
-
+let x = true
  let res_otp=otp();
     alert("Your OTP is "+res_otp)
 function otpfun (){
@@ -44,9 +44,10 @@ function otpfun (){
     add=+(add);
     debugger;
        if(res_otp===add){
-        
+         localStorage.setItem("x", x)
         alert("logIn successfull")
-        self.location="homepage.html"
+
+        self.location="index.html"
        } else{
             alert("Invalid OTP")
        }
