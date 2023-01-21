@@ -196,74 +196,12 @@ h2{
                          <th>TOTAL ITEM COUNT</th>
                          <th>TOTAL PRICE</th>
                          <th>PROFIT</th>
-                         <th></th>
+                         <th>Number</th>
                      </tr>
                      </thead>
                      <tbody>
                      
-                     <tr>
-                         <td>Content 2</td>
-                         <td>Content 2</td>
-                         <td>Content 2</td>
-                         <td>Content 2</td>
-                         <td>Content 2</td>
-                     </tr>
-                     <tr>
-                         <td>Content 3</td>
-                         <td>Content 3</td>
-                         <td>Content 3</td>
-                         <td>Content 3</td>
-                         <td>Content 3</td>
-                     </tr>
-                     <tr>
-                         <td>Content 4</td>
-                         <td>Content 4</td>
-                         <td>Content 4</td>
-                         <td>Content 4</td>
-                         <td>Content 4</td>
-                     </tr>
-                     <tr>
-                         <td>Content 5</td>
-                         <td>Content 5</td>
-                         <td>Content 5</td>
-                         <td>Content 5</td>
-                         <td>Content 5</td>
-                     </tr>
-                     <tr>
-                         <td>Content 6</td>
-                         <td>Content 6</td>
-                         <td>Content 6</td>
-                         <td>Content 6</td>
-                         <td>Content 6</td>
-                     </tr>
-                     <tr>
-                         <td>Content 7</td>
-                         <td>Content 7</td>
-                         <td>Content 7</td>
-                         <td>Content 7</td>
-                         <td>Content 7</td>
-                     </tr>
-                     <tr>
-                         <td>Content 8</td>
-                         <td>Content 8</td>
-                         <td>Content 8</td>
-                         <td>Content 8</td>
-                         <td>Content 8</td>
-                     </tr>
-                     <tr>
-                         <td>Content 9</td>
-                         <td>Content 9</td>
-                         <td>Content 9</td>
-                         <td>Content 9</td>
-                         <td>Content 9</td>
-                     </tr>
-                     <tr>
-                         <td>Content 10</td>
-                         <td>Content 10</td>
-                         <td>Content 10</td>
-                         <td>Content 10</td>
-                         <td>Content 10</td>
-                     </tr>
+                    <!-- append cards -->
                      <tbody>
                  </table>
              </div>
@@ -273,6 +211,7 @@ h2{
         window.addEventListener("blur",()=>{
             document.title="come back 😤"
         })
+      
         // toggle
         $(`#menu-btn`).click(function(){
             $(`#menu`).toggleClass("active")
@@ -285,8 +224,8 @@ h2{
        let data =JSON.parse(localStorage.getItem("email"))
        let x;
        let count =document.querySelector("br+h2")
-       console.log(count);
-       let users = JSON.parse(localStorage.getItem("usearr"))||[]
+    //    console.log(count);
+       let users = JSON.parse(localStorage.getItem("userarr")) || []
 
        count.innerHTML=`TOTAL CUSTOMER:- ${users.length}`
 // getting profile
@@ -298,16 +237,23 @@ h2{
        changeProfile.src=`${x}`
 //   append in table
 users.forEach((ele)=>{
-
     console.log(ele)
+    let tr =document.createElement("tr")
+    // 1st td
+    let td1 = document.createElement("td")
+    td1.innerHTML=`${ele.name}`
+    let td2 = document.createElement("td")
+    td2.innerHTML=`${ele.tItem || 0}`
+    let td3 = document.createElement("td")
+    td3.innerHTML=`${ele.Tprice || 0}`
+    let td4 = document.createElement("td")
+    td4.innerHTML=`${ele.Tprice/4*100 || 0}`
+    let td5 = document.createElement("td")
+    td5.innerHTML=`${ele.mob}`
+    tr.append(td1,td2,td3,td4,td5)
+    tbody.append(tr)
 })
-tbody.innerHTML=`<tr>
-                         <td>Content 1</td>
-                         <td>Content 1</td>
-                         <td>Content 1</td>
-                         <td>Content 1</td>
-                         <td>Content 1</td>
-                     </tr>`
+            
     </script>
 </body>
 </html>
