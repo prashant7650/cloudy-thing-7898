@@ -24,12 +24,21 @@
 
     border-top: 1px solid rgb(163, 163, 163);
     height: 60px;
+    width: 100%;
     
     border-bottom: 1px solid rgb(163, 163, 163);
     /* justify-content: center;
     align-content: center; */
     background-color: white;
 }
+#inner>ul{
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* background-color: red; */
+}
+
 
 #inner {
     width: 100%;
