@@ -94,38 +94,17 @@
                 <thead>
                     <tr>
                         <td>NAME</td>
-                        <td>TITLE</td>
-                        <td>STATUS</td>
-                        <td>ROLE</td>
+                        <td>Number</td>
+                        <td>Email</td>
+                        <td>PROFESSION</td>
                         <td></td>
                     </tr>
                 </thead>
                <tbody>
-                <tr>
-                    <td class="people">
-                        <img src="logo/logo.jpg" alt="">
-                        <div class="people-de">
-                            <h5>Prashant</h5>
-                            <p>prashant@gmail.com</p>
-                        </div>
-                    </td>
-                    <td class="people-des">
-                        <h5>owner</h5>
-                        <p>web devloper</p>
-                    </td>
-                    <td class="active"> 
-                        <p>active</p>
-                    </td>
-                    <td class="role">
-                        <p>Team lead</p>
-                    </td>
-                    <td class="edit">
-                        <a href="#">edit</a>
-                    </td>
-                </tr>
+
                 
                
-               
+               <!-- append userss -->
               
                </tbody>
             </table>
@@ -153,31 +132,55 @@
        changeProfile.src=`${x}`
 
 //  appending users
-// DATA.forEach((ele)=>{
-    tb.appendChild=`<tr>
-                    <td class="people">
-                        <img src="logo/logo.jpg" alt="">
-                        <div class="people-de">
-                            <h5>prashant</h5>
-                            <p>prashant@gmail.com</p>
-                        </div>
-                    </td>
-                    <td class="people-des">
-                        <h5>owner</h5>
-                        <p>web devloper</p>
-                    </td>
-                    <td class="active"> 
-                        <p>active</p>
-                    </td>
-                    <td class="role">
-                        <p>Team lead</p>
-                    </td>
-                    <td class="edit">
-                        <a href="#">edit</a>
-                    </td>
-                </tr>`
-// })
-  
+DATA.forEach((ele)=>{
+    let tr =document.createElement("tr")
+    // 1st td
+    let td1 = document.createElement("td")
+    td1.classList.add("people")
+    let img = document.createElement("img")
+    img.setAttribute("src" , `${"./logo/person-logo.png"}`)
+    let div= document.createElement("div")
+    div.classList.add("people-de")
+    let h5= document.createElement("h5")
+    h5.innerText=`${ele.name}`
+    let p =document.createElement("p")
+    p.innerText= ""
+    div.append(h5 , p)
+    td1.append(img, div)
+    // 2nd td
+    let td2= document.createElement("td")
+    td2.classList.add("people-des")
+    let h52= document.createElement("h5")
+    h52.innerText=`${ele.mob}`
+    let p2=document.createElement("p")
+    p2.innerText=""
+    td2.append(h52, p2)
+    // 3rd td
+    let td3 = document.createElement("td")
+    td3.classList.add("active")
+    let p3 = document.createElement("p")
+    p3.innerText=`${ele.mail}`
+    td3.append(p3)
+    // 4th td
+    let td4 = document.createElement("td")
+    td4.classList.add("role")
+    let p4 = document.createElement("p")
+    p4.innerText=`${ele.role || "not provided"}`
+    td4.append(p4)
+    // 5th td
+    let td5 = document.createElement("td")
+    td5.classList.add("edit")
+    let a = document.createElement("a")
+    a.setAttribute("href", "#")
+    a.addEventListener("click", ()=>{
+        localStorage.setItem("see", JSON.stringify(ele))
+        self.location="edit.html"
+    })
+    a.innerText=`edit`
+    td5.append(a)
+    tr.append(td1, td2, td3, td4, td5)
+    tb.append(tr)
+    })
   
     </script>
 </body>
