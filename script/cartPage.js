@@ -7,7 +7,7 @@ let subtotal = document.querySelector("#subtotal")
 
 let total = document.querySelector("#total")
 
-let promo = document.querySelector('#promoDiv>button');
+let promo = document.querySelector('#ProceedToCheckout-btn');
 
 
 displayTable(cartDataArray)
@@ -47,7 +47,6 @@ function displayTable(cartDataArray) {
       selectquantity.append(option)
     }
     selectquantity.addEventListener("change", function () {
-      //   console.log(+selectquantity.value)
       if (eval(selectquantity.value >= 1)) {
         let total1=eval(element.price * selectquantity.value)
         td5.innerText ="$"+total1.toFixed(2)
@@ -104,54 +103,16 @@ function del(element, index) {
   }
   total.innerText ="$" +(eval(newTotal-element.price))
   subtotal.innerText ="$" +(eval(newSubTotal-element.price))
-  localStorage.setItem("objarrayforBasket", JSON.stringify(cartDataArray))
+  localStorage.setItem("Basket", JSON.stringify(cartDataArray))
   displayTable(cartDataArray)
   window.location.reload()
 }
-if (subtotal.innerText == "") {
-  let subtotalFromDocument = document.querySelectorAll(".subtotalFromDocument")
 
-  let sumOfAll = 0
-  for (let i = 0; i < subtotalFromDocument.length; i++) {
-    //  console.log(+subtotalFromDocument[0].innerText);
-    let x = subtotalFromDocument[i].innerText
-    let y = "";
-    for(let j = 1; j < x.length;j++){
-      y += x[j]
-    }
-    sumOfAll += +y
-    // console.log(sumOfAll)
-  }
-  sumOfAll =  sumOfAll.toFixed(2)
-  subtotal.innerText = "$ " + sumOfAll
-  total.innerHTML = "$ "+ sumOfAll
-}
-
-let checkout = document.querySelector("#productSectionPayment>div>ul>button:nth-child(5)");
+// alert when item is purchased
 
 promo.addEventListener("click",function(){
-  let promoCode = document.querySelector('#promoDiv>input');
-  if(promoCode.value=="masai30" && localStorage.getItem("promo")!="done"){
-    let priceAfterPromo=""; 
-    for(let i = 1; i <total.innerText.length;i++){
-      priceAfterPromo += total.innerText[i];
-    };
-    priceAfterPromo = (eval(priceAfterPromo- priceAfterPromo*30/100)).toFixed(2)
-    total.innerText="$ "+(priceAfterPromo)
-    alert("Applied")
-    localStorage.setItem("promo","done")
-  }else if(promoCode.value != "masai30"){
-    alert("Enter a Valid Promo Code")
-  }else if(localStorage.getItem("promo")=="done"){
-    alert("Already Applied")
-  }
-})
-checkout.addEventListener("click",checkoutFunction);
+  alert(`successfully purchased \nYour total bill is ${total.innerText} `)
 
-function checkoutFunction(){
-  localStorage.setItem("promo","");
-  localStorage.setItem("total",total.innerText);
-  localStorage.setItem("subtotal",subtotal.innerText);
-  window.location.reload()
-  location.href = "payment.html"
-}
+})
+
+
