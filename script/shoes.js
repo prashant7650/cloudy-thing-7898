@@ -318,4 +318,5 @@ function send(el){
  }
 
 
- 
+//  for admin page
+let adminshoesdata= localStorage.setItem("shoesdata", JSON.stringify(item))

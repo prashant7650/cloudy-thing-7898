@@ -155,15 +155,15 @@ h2{
             <h4>E-SHOPPING MART</h4>
         </div>
         <div class="items">
-           <li><i class="fa-solid fa-chart-simple"></i> <a href="admin.html">DASHBOARD</a></li> 
-           <li><i class="fa-solid fa-circle-info"></i> <a href="userInfo.html">USER INFO</a></li>
-           <li><i class="fa-solid fa-people-group"></i> <a href="totalCustomer.html">TOTAL CUSTOMER</a></li>
-           <li><i class="fa-solid fa-wrench"></i> <a href="updateData.html">UPDATE DATA</a></li>
-           <li><i class="fa-solid fa-trash"></i> <a href="deleteData.html">DELETE DATA</a></li>
-           <li><i class="fa-solid fa-truck-fast"></i> <a href="buyedItem.html">BUYED ITEM</a></li>
-           <li><i class="fa-solid fa-user"></i> <a href="#">ADD ADMIN</a></li>
-          
-        </div>
+            <li><i class="fa-solid fa-chart-simple"></i> <a href="admin.html">DASHBOARD</a></li> 
+            <li><i class="fa-solid fa-circle-info"></i> <a href="userInfo.html">USER INFO</a></li>
+            <li><i class="fa-solid fa-people-group"></i> <a href="totalCustomer.html">TOTAL CUSTOMER</a></li>
+            <li><i class="fa-solid fa-wrench"></i> <a href="updateData.html">TOTAL DATA</a></li>
+            <li><i class="fa-solid fa-trash"></i> <a href="deleteData.html">DELETE DATA</a></li>
+            <li><i class="fa-solid fa-truck-fast"></i> <a href="buyedItem.html">BUYED ITEM</a></li>
+            <li><i class="fa-solid fa-user"></i> <a href="index.html">GO TO MAIN PAGE</a></li>
+           
+         </div>
     </section>
     <!-- top search section -->
     <section id="interface">
@@ -225,7 +225,7 @@ h2{
        let x;
        let count =document.querySelector("br+h2")
     //    console.log(count);
-       let users = JSON.parse(localStorage.getItem("userarr")) || []
+       let users = JSON.parse(localStorage.getItem("loginobj")) || []
 
        count.innerHTML=`TOTAL CUSTOMER:- ${users.length}`
 // getting profile
