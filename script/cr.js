@@ -8,7 +8,7 @@ let fa = document.querySelector(".fa")
 fa.addEventListener("click", ()=>{
 if(crJs){
   alert("want to logout ?")
-  localStorage.clear("x")
+  localStorage.removeItem('x')
   window.location.reload()
 }
  
