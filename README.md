@@ -3,7 +3,7 @@
 <h3>Contributor</h3>
 <a href="prashant7650"> Prashant Kad</a>
 <br>
-<a href="Rajneesh0021">Rajneesh Yadav </a>
+<a href="https://github.com/Rajneesh0021">Rajneesh Yadav </a>
 <br>
 <a href="Teju255"> Tejas Pawar</a>
 <br>
