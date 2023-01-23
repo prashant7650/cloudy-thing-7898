@@ -1,7 +1,7 @@
 
 # cloudy-thing-7898
 <h3>Contributor</h3>
-<a href="https://github.com/prashant7650)"> Prashant Kad</a>
+<a href="https://github.com/prashant7650"> Prashant Kad</a>
 <br>
 <a href="https://github.com/Rajneesh0021">Rajneesh Yadav </a>
 <br>
